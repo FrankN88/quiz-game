@@ -1,17 +1,48 @@
 <!doctype html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A quiz game!" />
+    <meta name="keywords"
+        content="quiz, game" />
+    <meta name="author" content="Francesco Nardecchia" />
+
+    <!-- title -->
     <title>Quiz</title>
+
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="{{ url_for('static', filename='images/favicon/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="{{ url_for('static', filename='images/favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="{{ url_for('static', filename='images/favicon/favicon-16x16.png') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon/favicon.ico') }}">
+
+    <!-- bootstrap style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    <!-- style css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
 </head>
 <body>
+
+    <!-- header with top navigation bar -->
     <header>
+        <!-- app name -->
         <div>Quiz</div>
-        <div class="ms-auto">
-            <a href="/"><button type="button" class="btn btn-success text-light me-1">Home</button></a>
-            <a href="/quiz"><button type="button" class="btn btn-success text-light me-1">Quiz</button></a>
-            <a href="/questions"><button type="button" class="btn btn-success text-light me-1">Questions</button></a>
+
+        <!-- main menu -->
+        <div class="ml-auto">
+            <a href="/"><button type="button" class="btn btn-success text-light ms-1">Home</button></a>
+            <a href="/quiz"><button type="button" class="btn btn-success text-light ms-1">Quiz</button></a>
+            <a href="/questions"><button type="button" class="btn btn-success text-light ms-1">Questions</button></a>
         </div>
     </header>
+
+    <!-- main -->
     <main>
