@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>{% block title %}</title>
+</head>
+<body>
+    <header>
+        <div>Quiz</div>
+        <div class="ms-auto">
+            <a href="/"><button type="button" class="btn btn-success text-light me-1">Home</button></a>
+            <a href="/quiz"><button type="button" class="btn btn-success text-light me-1">Quiz</button></a>
+            <a href="/questions"><button type="button" class="btn btn-success text-light me-1">Questions</button></a>
+        </div>
+    </header>
+    <main>
