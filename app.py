@@ -72,7 +72,7 @@ def login():
 # ==============================================================
 @app.route("/logout")
 def logout():
-    session.pop('username', default=None)
+    session.clear()
 
     #return to login page
     return redirect(url_for('login'))
