@@ -1,1 +1,1 @@
-web: python3 -m flusk run
+web: python app.py
