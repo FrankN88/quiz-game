@@ -1,0 +1,97 @@
+{% include 'header.html' %}
+
+  <div class="d-flex">
+
+    <div class="admin_container">
+
+      <form method="post" action="#">
+
+        {% if error %}
+          <div class="alert alert-danger" role="alert">
+            {{ error }}
+          </div>
+        {% endif %}
+
+        {% if message %}
+          <div class="alert alert-info" role="alert">
+            {{ message }}
+          </div>
+        {% endif %}
+        
+        {% if id_question %}
+          <h2>Edit question</h2>
+        {% else %}
+          <h2>Add new question</h2>
+        {% endif %}
+
+        <input type="hidden" name="id_question" value="{{id_question}}">
+
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <span class="input-group-text" style="width:120px">Question</span>
+          </div>
+          <input type="text" class="form-control" name="question" value="{{fields['question']}}">
+        </div>
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <span class="input-group-text" style="width:120px">Answer1</span>
+          </div>
+          <input type="text" class="form-control" name="answer1" value="{{fields['answer1']}}">
+        </div>
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <span class="input-group-text" style="width:120px">Answer2</span>
+          </div>
+          <input type="text" class="form-control" name="answer2" value="{{fields['answer2']}}">
+        </div>
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <span class="input-group-text" style="width:120px">Answer3</span>
+          </div>
+          <input type="text" class="form-control" name="answer3" value="{{fields['answer3']}}">
+        </div>
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <span class="input-group-text" style="width:120px">Answer4</span>
+          </div>
+          <input type="text" class="form-control" name="answer4" value="{{fields['answer4']}}">
+        </div>
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <span class="input-group-text" style="width:120px">Correct is nr.</span>
+          </div>
+          <input type="number" class="form-control" name="correct" value="{{fields['correct']}}">
+        </div>
+        <button type="submit" class="btn btn-success w-100">Save question</button>
+
+        {% if id_question %}
+          <div class="small text-secondary text-center fst-italic mt-2">or</div>
+          <a href="/questions"><button type="button" class="btn btn-secondary mt-1 w-100">Create new one</button></a>
+        {% endif %}
+      </form>
+
+    </div>
+
+    <div class="admin_container">
+
+      <h2>Manage questions</h2>
+
+      <div class="list_questions">
+        {%for i in range(0, tot)%}
+        <div class="question border border-top-0 border-start-0 border-end-0 pb-2 mb-2">
+            <strong>{{questions[i].question}}</strong><br>
+            1) {{questions[i].answer1}}<br>
+            2) {{questions[i].answer2}}<br>
+            3) {{questions[i].answer3}}<br>
+            4) {{questions[i].answer4}}<br>
+            <i>The correct answer is nr.: <strong>{{questions[i].correct}}</strong></i>
+            <div class="mt-1"><a href="/questions?id_question={{questions[i]._id}}"><button type="button" class="btn btn-success btn-sm mr-1">Edit</button></a><a href="/delete_question?id_question={{questions[i]._id}}"><button type="button" class="btn btn-danger btn-sm">Delete</button></a></div>
+        </div>
+        {% endfor %}
+      </div>
+          
+    </div>
+  
+  </div>
+
+{% include 'footer.html' %}
