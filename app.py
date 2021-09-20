@@ -158,6 +158,10 @@ def quiz():
         answer = request.args.get('ans')
         if(answer):
 
+            #save choice in db
+            query = { 'id_quiz_done' : session['id_quiz'], 'id_question' : str(question['_id']), 'answer_number' : answer }
+            db_answers_done.insert_one(query)
+
             #check if the answer is correct
             if question['correct'] == answer:
 
@@ -194,7 +198,7 @@ def quiz():
             return render_template("quiz.html",question = question, tot_question = len(questions))
 
 # ==============================================================
-# QUESTIONS PAGE
+# QUESTIONS PAGE (ONLY ADMIN)
 # ==============================================================
 @app.route("/questions", methods=["POST", "GET"])
 def questions():
