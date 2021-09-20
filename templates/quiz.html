@@ -1,0 +1,15 @@
+{% include 'header.html' %}
+
+    <form class="form_question" action="#" method="post">
+
+      <h5>Quiz question nr. {{session.get('quiz_question')}}</h5>
+      <h3>{{question.question}}</h3>
+
+      <div class="answer">{{question.answer1}}</div>
+      <div class="answer">{{question.answer2}}</div>
+      <div class="answer">{{question.answer3}}</div>
+      <div class="answer">{{question.answer4}}</div>
+    
+    </form>
+
+{% include 'footer.html' %}
