@@ -136,7 +136,7 @@ def quiz():
     if session.get("id_quiz") is None:
 
         #Create new quiz session in db and get the id
-        query = {'id_user' : session.get("id_user")}
+        query = {'id_user' : session.get("id_user"), 'total_corrects' : 0}
         id_quiz = str(db_quiz_done.insert_one(query).inserted_id)
 
         #Create session for actual quiz starting from the first question
@@ -164,6 +164,14 @@ def quiz():
 
             #check if the answer is correct
             if question['correct'] == answer:
+
+                #get info from db of this quiz session
+                query = {"_id": ObjectId(session['id_quiz'])}
+                quiz = db_quiz_done.find_one(query)
+
+                #increment correct from total
+                values = {'total_corrects' : quiz['total_corrects']+1}
+                db_quiz_done.update_one(query, {"$set": values})
 
                 #answer is correct
                 return render_template("quiz.html",question = question, tot_question = len(questions), answer = answer, response = 'correct')
