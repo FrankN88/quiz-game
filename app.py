@@ -132,16 +132,30 @@ def registration():
 @app.route("/quiz", methods=["POST", "GET"])
 def quiz():
 
-    #Check if session is ok
-    if session.get("username"):
+    #If not exist quiz session -> create new one
+    if session.get("id_quiz") is None:
+
+        #Create new quiz session in db and get the id
+        query = {'id_user' : session.get("id_user")}
+        id_quiz = str(db_quiz_done.insert_one(query).inserted_id)
+
+        #Create session for actual quiz starting from the first question
+        session['id_quiz'] = id_quiz
+        session['quiz_question'] = 0
 
         #Go to quiz page
-        return render_template("quiz.html")
+        return redirect(url_for('quiz'))
 
     else:
 
+        #Resume the quiz, get all questions
+        questions = list(db_questions.find())
+
+        #Show the actual number
+        question = questions[session.get('quiz_question')]
+
         #Go to login page
-        return redirect(url_for('login'))
+        return render_template("quiz.html",question = question)
 
 # ==============================================================
 # QUESTIONS PAGE
