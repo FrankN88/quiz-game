@@ -49,3 +49,37 @@ form h2{
     background: #ddd;
     margin-bottom: 10px;
 }
+
+/*=====================================================
+# QUIZ PAGE
+=====================================================*/
+.form_question h2, .form_question h5{
+    text-align: center;
+}
+
+.form_question .answer{
+    display: block;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #eee;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.form_question .answer:hover{
+    background: #ddd;
+}
+
+.form_question .answers.correct .answer_select{
+    background: #28a745;
+    color: #fff;
+}
+
+.form_question .answers.wrong .answer_select{
+    background: #dc3545;
+    color: #fff;
+}
