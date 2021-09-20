@@ -168,6 +168,25 @@ def quiz():
 
                 #anser is wrong
                 return render_template("quiz.html",question = question, tot_question = len(questions), answer = answer, response = 'wrong')
+        
+
+        #Go to the next question
+        next_question = request.args.get('next')
+        if(next_question):
+
+            #go to the next one
+            session['quiz_question'] = session.get("quiz_question")+1
+
+            #check if you have another question
+            if session['quiz_question'] >= len(questions):
+
+                #show the result page
+                return redirect(url_for("results"))
+            
+            else:
+                
+                #go to the next question
+                return redirect(url_for('quiz'))
 
         else:
 
