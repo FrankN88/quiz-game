@@ -2,14 +2,45 @@
 
     <form class="form_question" action="#" method="post">
 
-      <h5>Quiz question nr. {{session.get('quiz_question')}}</h5>
-      <h3>{{question.question}}</h3>
+      <h5 class="text-info">Quiz question {{session.get('quiz_question')+1}}/{{tot_question}}</h5>
+      <h2>{{question.question}}</h2>
+      
+      <div class="small text-secondary text-center fst-italic mt-2">click on the correct answer</div>
 
-      <div class="answer">{{question.answer1}}</div>
-      <div class="answer">{{question.answer2}}</div>
-      <div class="answer">{{question.answer3}}</div>
-      <div class="answer">{{question.answer4}}</div>
+      <div class="answers {{response}}">
+
+        {% if answer == "1": %}
+          <a href="?ans=1" class="answer answer_select">{{question.answer1}}</a>
+        {% else: %}
+          <a href="?ans=1" class="answer">{{question.answer1}}</a>
+        {% endif %}
+
+        {% if answer == "2": %}
+          <a href="?ans=2" class="answer answer_select">{{question.answer2}}</a>
+        {% else: %}
+          <a href="?ans=2" class="answer">{{question.answer2}}</a>
+        {% endif %}
+
+        {% if answer == "3": %}
+          <a href="?ans=3" class="answer answer_select">{{question.answer3}}</a>
+        {% else: %}
+          <a href="?ans=3" class="answer">{{question.answer3}}</a>
+        {% endif %}
+
+        {% if answer == "4": %}
+          <a href="?ans=4" class="answer answer_select">{{question.answer4}}</a>
+        {% else: %}
+          <a href="?ans=4" class="answer">{{question.answer4}}</a>
+        {% endif %}
+
+      </div>
     
+      {% if response: %}
+        <a href="?next=1">
+          <button type="button" class="btn btn-info w-100 mt-2">Next</button>
+        </a>
+      {% endif %}
+
     </form>
 
 {% include 'footer.html' %}
