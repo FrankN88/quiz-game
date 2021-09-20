@@ -1,8 +1,6 @@
 from flask import Flask, redirect, url_for, render_template, request, session
 from flask_pymongo import PyMongo
 import os
-if os.path.exists("env.py"):
-    import env
 
 # ==============================================================
 # Config access to MongoDB with .env file
