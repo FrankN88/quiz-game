@@ -34,13 +34,34 @@
     <!-- header with top navigation bar -->
     <header>
         <!-- app name -->
-        <div>Quiz</div>
+        <div>
+            {% if session.get("username") %}
+                Hi {{session.get("username")}}!
+            {% else %}
+                Hi Guest!
+            {% endif %}
+        </div>
 
-        <!-- main menu -->
         <div class="ml-auto">
-            <a href="/"><button type="button" class="btn btn-success text-light ms-1">Home</button></a>
-            <a href="/quiz"><button type="button" class="btn btn-success text-light ms-1">Quiz</button></a>
-            <a href="/questions"><button type="button" class="btn btn-success text-light ms-1">Questions</button></a>
+            <!-- main menu -->
+            <a href="/quiz"><button type="button" class="btn btn-primary text-light mr-1">Quiz</button></a>
+            
+            {% if session.get("username") %}
+                <!-- only for user logged -->
+
+                <!-- only for admins -->
+                <a href="/questions"><button type="button" class="btn btn-secondary text-light mr-1">Manage questions</button></a>
+                <a href="/users"><button type="button" class="btn btn-secondary text-light mr-1">Manage users</button></a>
+
+                <!-- all users logged -->
+                <a href="/logout"><button type="button" class="btn btn-danger text-light mr-1">Logout</button></a>
+
+            {% else %}
+                <!-- only for guests -->
+                <a href="/"><button type="button" class="btn btn-success text-light mr-1">Login</button></a>
+                <a href="/registration"><button type="button" class="btn btn-secondary text-light">Registration</button></a>
+
+            {% endif %}
         </div>
     </header>
 
