@@ -44,6 +44,7 @@ def login():
         if user:
 
             #Create session for user by username
+            session['id_user'] = str(user['_id'])
             session['username'] = user['username']
             session['level'] = user['level']
 
