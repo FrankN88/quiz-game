@@ -148,14 +148,31 @@ def quiz():
 
     else:
 
-        #Resume the quiz, get all questions
+        #Get all questions
         questions = list(db_questions.find())
 
-        #Show the actual number
+        #Get the actual question number
         question = questions[session.get('quiz_question')]
 
-        #Go to login page
-        return render_template("quiz.html",question = question)
+        #Check if there is an answer
+        answer = request.args.get('ans')
+        if(answer):
+
+            #check if the answer is correct
+            if question['correct'] == answer:
+
+                #answer is correct
+                return render_template("quiz.html",question = question, tot_question = len(questions), answer = answer, response = 'correct')
+
+            else:
+
+                #anser is wrong
+                return render_template("quiz.html",question = question, tot_question = len(questions), answer = answer, response = 'wrong')
+
+        else:
+
+            #Go to login page
+            return render_template("quiz.html",question = question, tot_question = len(questions))
 
 # ==============================================================
 # QUESTIONS PAGE
