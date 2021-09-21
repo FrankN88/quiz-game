@@ -146,7 +146,7 @@ The information architecture was organized in a fluid and clear way in order to 
 ---
 
 ### Skeleton 
-Wireframe mockups were created in Figma Workspace [Click here for final wireframes](assets/final_wireframes).
+Wireframe mockups were created in Figma Workspace [Click here for final wireframes](docs/wireframes).
 Several style changes were made in the final project compared to the inital wireframe on Figma. Those changes were mainly related to colours, font size, positioning on the page; all aimed at providing the best user experience and responsiveness.
 
 ---
@@ -180,6 +180,246 @@ The colors chosen are combinations of: xxxxxx. Please check out the colour [Colo
  </details>
 
 ---
+
+## Features
+
+### Design Features
+Each page of the website features a consistent responsive navigational system:
+
+<br>
+
+#### Header
+- The **Header** contains a conventionally placed **logo** at the top left of the page (clicking this will redirect users back to the home page) and **navigation bar** at the top right of the page.
+<ul>
+    <li><strong>User stories covered by this feature:</strong>  
+    </li>
+    <li><strong>x</strong> - x
+    </li>
+    <li><strong>x</strong> - x
+    </li>
+    <li><strong>x</strong> - x
+    </li>
+</ul>
+  <details><summary>Header</summary>
+    <img src="add link">
+  </details>
+
+<br>
+
+#### Toggler
+- On smaller screens, the navigation bar collapses into a **toggler** icon whereby clicking it will reveal the links to the other pages.
+<ul>
+    <li><strong>User stories covered by this feature:</strong>  
+    </li>
+    <li><strong>x</strong> - x
+    </li>
+    <li><strong>x</strong> - x
+    </li>
+    <li><strong>D</strong> - x
+    </li>
+    <li><strong>x</strong> - x
+    </li>
+</ul>
+  <details><summary>Toggle btn</summary>
+    <img src="add link">
+  </details>
+
+<br>
+
+#### Footer
+- The **Footer** contains the appropriate **social media icons**, linking users to the main social media pages of the Quiz Game.
+<ul>
+    <li><strong>User stories covered by this feature:</strong>  
+    </li>
+    <li><strong>x</strong> - x
+    </li>
+    <li><strong>x</strong> - x
+    </li>
+    <li><strong>x</strong> - x
+    </li>
+    <li><strong>x</strong> - x
+    </li>
+</ul>
+  <details><summary>Footer</summary>
+    <img src="add link">
+  </details>
+
+<br>
+
+#### Mailto/Callto
+- In the footer, there are respectively a **Mailto** and a **Callto** embedded in the email and number.
+<ul>
+    <li><strong>User stories covered by this feature:</strong>  
+    </li>
+    <li><strong>x</strong> - x
+    </li>
+    <li><strong>x</strong> - x
+    </li>
+    <li><strong>x</strong> - x
+    </li>
+    <li><strong>x</strong> - x
+    </li>
+    <li><strong>x</strong> - x
+    </li>
+</ul>
+  <details><summary>Mailto/Callto</summary>
+    <img src="add link">
+  </details>
+
+<br>
+
+#### Back to the top button
+- **Back to the top button**  - Those <strong>buttons</strong> :arrow_up: are present in the footer so that the user can comfortably click them to be redirected to the top of the page. This feature improves the quality of navigation, especially if using smartphones.
+<ul>
+    <li><strong>User stories covered by this feature:</strong>  
+    </li>
+    <li><strong>x</strong> - x
+    </li>
+    <li><strong>x</strong> - x
+    </li>
+</ul>
+  <details><summary>Btn back to the top</summary>
+    <img src="add link">
+  </details>
+
+<br>
+
+<dl>
+  <dt><a href="index.html" target="_blank" alt="Quiz game Home Page">Home Page</a></dt>
+     <ul>
+         <li><strong>User stories covered by this feature:</strong>  
+      </li>
+          <li><strong>x</strong> - x
+      </li>
+          <li><strong>x</strong> - x
+      </li>
+          <li><strong>x</strong> - x
+      </li>
+          <li><strong>x</strong> - x
+      </li>
+     </ul>
+  <dd>The Home Page consists of the following elements:
+     <ul>
+          <li><strong>x</strong> - x
+          </li>
+          <li><strong>x</strong> - x
+          </li>
+          <li><strong>x</strong> - x
+          </li>
+          <li><strong>x</strong> - x
+          </li>
+     </ul>
+        <details><summary>Home</summary>
+        <img src="add link">
+        </details>
+  </dd>
+
+  <br>
+
+  <dt><a href="x.html" target="_blank" alt="x Page">x</a></dt>
+     <ul>
+         <li><strong>User stories covered by this feature:</strong>  
+      </li>
+          <li><strong>x</strong> - x
+      </li>
+          <li><strong>x</strong> - x
+      </li>
+          <li><strong>x</strong> - x
+      </li>
+          <li><strong>x</strong> - x
+      </li>
+          <li><strong>x</strong> - x
+      </li>
+     </ul>
+  <dd>The x page consists of the following elements:
+     <ul>
+          <li><strong>x</strong> - x
+          </li>
+          <li><strong>x</strong> - x
+          </li>
+          <li><strong>x</strong> - x
+          </li>
+     </ul>
+         <details><summary>x</summary>
+         <img src="assets/images/testing_images/pages/people.png">
+         </details>
+  </dd>
+
+  <br>
+
+  <dt><a href="x.html" target="_blank" alt="x Page">x Page</a></dt>
+     <ul>
+         <li><strong>User stories covered by this feature:</strong>  
+      </li>
+          <li><strong>x</strong> - x
+      </li>
+          <li><strong>x</strong> - x
+      </li>
+          <li><strong>x</strong> - x
+      </li>
+          <li><strong>x</strong> - x
+      </li>
+          <li><strong>x</strong> - x
+      </li>
+     </ul>
+  <dd>The projects page consists of the following elements:
+     <ul>
+          <li><strong>x</strong> - x
+          </li>
+          <li><strong>x</strong> - x
+          </li>
+          <li><strong>x</strong> - x
+          </li>
+          <li><strong>x</strong> - x
+          </li>
+     </ul>
+         <details><summary>x</summary>
+         <img src="assets/images/testing_images/pages/projects.png">
+         </details>
+  </dd>
+
+  <br>
+
+  <dt><a href="404.html" target="_blank" alt="404 Page">404 Page</a></dt>
+     <ul>
+         <li><strong>User stories covered by this feature:</strong>  
+      </li>
+          <li><strong>x</strong> - x
+      </li>
+          <li><strong>x</strong> - x
+      </li>
+     </ul>
+  <dd>The 404 page consists of the following elements:
+     <ul>
+          <li><strong>Navbar</strong> - Occupies 100% of the page width, from the left to the right, while being viewed on all devices. It Includes the standard links to the other pages.
+          </li>
+          <li><strong>Title</strong> - It shows that the user is on page 404.
+          </li>
+          <li><strong>Title 2</strong> - Standard line for a page 404, inviting the user to click on the links to go back to a page of the website.
+          </li>
+          <li><strong>Footer</strong> - Standard footer with the links as in the other pages.
+          </li>
+     </ul>
+         <details><summary>404</summary>
+         <img src="assets/images/testing_images/pages/404.png">
+         </details>
+  </dd>
+  </dl>
+
+  <br>
+
+### Features left to implement
+
+- The option for users to personalize their profile with images.
+- The option for users to delete their account from the database.
+- The option to have a few super users.
+- A contact form built in to submit requests.
+- A personalized message to each user is displayed on log in.
+- The user will be able to choose among many subjects (maths, history, physics, chemistry etc) based on his/her inclination.
+- When logged in, the user will be redirected to their profile page with his personalised settings.
+
+---
+
 
 
 
