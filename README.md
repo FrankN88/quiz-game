@@ -17,11 +17,11 @@ The website is designed to be responsive and accessible on all devices being at 
 1. [UX](#ux)
 - [User Stories](#user-stories)
 - [User Centered Design](#user-centered-design)
-  - [Strategy plane](#strategy-plane)
+  - [Strategy](#strategy)
     - [User needs](#user-needs)
-  - [Scope plane](#scope-plane-|-trade-offs)
-  - [Structure plane](#structure-plane)
-  - [Skeleton plane](#Skeleton-plane)
+  - [Scope](#scope)
+  - [Structure](#structure)
+  - [Skeleton](#Skeleton)
 
 2. [DESIGN](#design)
 - [Color scheme](#color-scheme)
@@ -138,5 +138,14 @@ This will all be achieved through creating a clear and strong UI focusing on wel
  - Contact section to send an email to the Admin directly from the website.
 
 ---
+
+### Structure
+
+The information architecture was organized in a fluid and clear way in order to ensure that users could navigate through the site with ease and efficiency.
+![Site Map](add_image_structure)
+
+--- 
+
+
 
 
