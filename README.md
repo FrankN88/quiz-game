@@ -84,7 +84,7 @@ The website is designed to be responsive and accessible on all devices being at 
 
 ## USER CENTERED DESIGN
 
-### **Strategy Plane**
+### **Strategy**
 
 - #### User needs
 
@@ -94,9 +94,9 @@ Registered users will be able to see their previous scores and their progress in
 The website will show a bright palette as well as minimalistic but aesthetically pleasing imagery to invite users to play.
 
 - **Demographic:**
-- Anyone who wants to play a game online.
-- No specific age or background.
-- Whoever is interested in a culture quiz.
+ - Anyone who wants to play a game online.
+ - No specific age or background.
+ - Whoever is interested in a culture quiz.
 
 The steps a new user would ideally take when landing onto the website are the following:
 
@@ -108,17 +108,35 @@ The steps a new user would ideally take when landing onto the website are the fo
  - Check out the links in the footer for feedbacks.
 
 The website needs to enable the **User** to:
-- Easy access the features of the website.
-- Register and log in if further interested.
-- Get in touch with the website owner and/or admin.
-- Give feedback.
+ - Easy access the features of the website.
+ - Register and log in if further interested.
+ - Get in touch with the website owner and/or admin.
+ - Give feedback.
 
 The website needs to enable the **Website owner and/or admin** to:
-- Develop an online presence .
-- Provide an easily navigable website for users.
-- Improve the website thanks to the contacts.
-- Use this website as a starting point for a bigger project.
+ - Develop an online presence .
+ - Provide an easily navigable website for users.
+ - Improve the website thanks to the contacts.
+ - Use this website as a starting point for a bigger project.
 
 This will all be achieved through creating a clear and strong UI focusing on well structured content. Having a clear hierarchy will allow the user to navigate and use the functionality of the website without the need of instructions. Simplicity and UX friendly functionality will be the strongholds of the whole project. 
 
 ---
+
+### **Scope**
+
+- **Features within the design plan with highest priority:**
+ - Minimal but functional and appealing homepage .
+ - Navigation links clearly visible on the top of the website.
+ - Responsive navigation bar.
+ - Only allow registered users to create and manage their own account.
+ - Only allow registered users to check out their previous scores.
+
+- **Lower priority features that may not be included in the initial release of the website:**
+ - The ability for logged in users to search the websites database.
+ - Search bar on the navigation bar so the users have fast access to their scores.
+ - Contact section to send an email to the Admin directly from the website.
+
+---
+
+
