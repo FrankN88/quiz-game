@@ -81,3 +81,27 @@ The website is designed to be responsive and accessible on all devices being at 
   14. be able to receive feedback from the users.
 
 ---
+
+## USER CENTERED DESIGN
+
+### **Strategy Plane**
+
+- #### User needs
+
+The main goal of this website is to convert visitors into active users so that the website can get as popular as possible.
+All users will be able to play the game. 
+Registered users will be able to see their previous scores and their progress in the game.
+The website will show a bright palette as well as minimalistic but aesthetically pleasing imagery to invite users to play.
+
+The steps a new user would ideally take when landing onto the website are the following:
+
+ - Explore the websites landing page, where the information will explain the user the reason to be of the site.
+ - Create a new account.
+ - Explore the additional features available to registered users.
+ - Play their game and see the results posted on the main page.
+ - Log in/out to check the progress.
+ - Check out the links in the footer for feedbacks.
+
+This will all be achieved through creating a clear and strong UI focusing on well structured content. Having a clear hierarchy will allow the user to navigate and use the functionality of the website without the need of instructions. Simplicity and UX friendly functionality will be the strongholds of the whole project. 
+
+---
