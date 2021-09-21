@@ -93,6 +93,11 @@ All users will be able to play the game.
 Registered users will be able to see their previous scores and their progress in the game.
 The website will show a bright palette as well as minimalistic but aesthetically pleasing imagery to invite users to play.
 
+- **Demographic:**
+- Anyone who wants to play a game online.
+- No specific age or background.
+- Whoever is interested in a culture quiz.
+
 The steps a new user would ideally take when landing onto the website are the following:
 
  - Explore the websites landing page, where the information will explain the user the reason to be of the site.
@@ -101,6 +106,18 @@ The steps a new user would ideally take when landing onto the website are the fo
  - Play their game and see the results posted on the main page.
  - Log in/out to check the progress.
  - Check out the links in the footer for feedbacks.
+
+The website needs to enable the **User** to:
+- Easy access the features of the website.
+- Register and log in if further interested.
+- Get in touch with the website owner and/or admin.
+- Give feedback.
+
+The website needs to enable the **Website owner and/or admin** to:
+- Develop an online presence .
+- Provide an easily navigable website for users.
+- Improve the website thanks to the contacts.
+- Use this website as a starting point for a bigger project.
 
 This will all be achieved through creating a clear and strong UI focusing on well structured content. Having a clear hierarchy will allow the user to navigate and use the functionality of the website without the need of instructions. Simplicity and UX friendly functionality will be the strongholds of the whole project. 
 
