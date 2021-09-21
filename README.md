@@ -33,7 +33,7 @@ The website is designed to be responsive and accessible on all devices being at 
 - Users Data
 
 4. [FEATURES](#features)
-- [Existing Features](#existing-features)
+- [Design Features](#design-features)
 - [Features left to implement](#features-left-to-implement)
 
 5. [TECHNOLOGIES USED](#technologies-used)
@@ -99,7 +99,6 @@ The website will show a bright palette as well as minimalistic but aesthetically
   - Whoever is interested in a culture quiz.
 
 The steps a new user would ideally take when landing onto the website are the following:
-
   - Explore the websites landing page, where the information will explain the user the reason to be of the site.
   - Create a new account.
   - Explore the additional features available to registered users.
@@ -146,11 +145,45 @@ The information architecture was organized in a fluid and clear way in order to 
 
 ---
 
-#### Skeleton 
+### Skeleton 
 Wireframe mockups were created in Figma Workspace [Click here for final wireframes](assets/final_wireframes).
 Several style changes were made in the final project compared to the inital wireframe on Figma. Those changes were mainly related to colours, font size, positioning on the page; all aimed at providing the best user experience and responsiveness.
 
 ---
+
+## DESIGN
+
+The design of the website was created to be as simple and harmonious as possible, not to distract the user with too many color schemes and trying to bring the focus onto the game itself.
+
+### **Color scheme**
+
+The colors used in this project are bright on a light background, to keep a minimalistic and tidy website, as well as keeping the color contrast the highest possible to facilitate the screen readers and make this site accessible to all. In addition to that also draw the attention of the user to the main parts.
+
+The colors chosen are combinations of: xxxxxx. Please check out the colour [Colour palette](xxxxxxx.png) 
+ <details><summary>Colour palette</summary>
+    <img src="link to the image">
+ </details>
+
+ ---
+
+### **Imagery**
+
+- xxxxxx
+
+---
+
+### **Logo**
+
+- The favicon was created using [Favicon.io](https://favicon.io/favicon-converter/) and the logo used to create it was created using an online application called [Freelogodesign](https://it.freelogodesign.org/). It represents a simple joystick with the "Quiz" word under.
+ <details><summary>Logo</summary>
+    <img src="docs/wireframes/logo.png">
+ </details>
+
+---
+
+
+
+
 
 
 
