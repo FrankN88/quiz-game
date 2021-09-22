@@ -217,8 +217,10 @@ def quiz():
 @app.route("/results", methods=["POST", "GET"])
 def results():
 
-    #Get id quiz from session
-    id_quiz_done = session['id_quiz']
+    #Check if id_quiz exists or exists last session
+    id_quiz_done = request.args.get('id_quiz')    
+    if id_quiz_done is None:
+        id_quiz_done = session['id_quiz']
 
     #If quiz session not exists -> start new quiz
     if id_quiz_done is None:
@@ -260,6 +262,10 @@ def results():
 # ============================================================== 
 @app.route("/all_results")
 def all_results():
+
+    #check if user are logged
+    if session.get("id_user") is None:
+        return redirect(url_for('login'))
     
     #get all quiz done by user
     results = []
