@@ -212,6 +212,40 @@ def quiz():
             return render_template("quiz.html",question = question, tot_question = len(questions))
 
 # ==============================================================
+# RESULT PAGE
+# ==============================================================
+@app.route("/results", methods=["POST", "GET"])
+def results():
+
+    #Get id quiz from session
+    id_quiz_done = session['id_quiz']
+
+    #get info from db of this quiz session
+    questions = list(db_questions.find())
+    tot_corrects = db_quiz_done.find_one({"_id": ObjectId(id_quiz_done)})['total_corrects']
+
+    #print results
+    results = []
+    for question in questions:
+        query = {"id_quiz_done": id_quiz_done, "id_question" : str(question['_id'])}
+        answer_done = db_answers_done.find_one(query)
+
+        obj = {
+            "question" : question['question'],
+            "answer1" : question['answer1'],
+            "answer2" : question['answer2'],
+            "answer3" : question['answer3'],
+            "answer4" : question['answer4'],
+            "correct" : question['correct'],
+            "answer_done" : answer_done['answer_number']
+        }
+        
+        results.append(obj)
+
+    #Show results of quiz
+    return render_template("results.html",results=results,tot_questions=len(questions),tot_corrects=tot_corrects)
+
+# ==============================================================
 # QUESTIONS PAGE (ONLY ADMIN)
 # ==============================================================
 @app.route("/questions", methods=["POST", "GET"])
