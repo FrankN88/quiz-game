@@ -346,7 +346,7 @@ def questions():
                 values = {'question' : question, 'answer1' : answer1, 'answer2' : answer2, 'answer3' : answer3, 'answer4' : answer4, 'correct' : correct}
                 db_questions.update_one(query, {"$set": values})
 
-                #Jump to login page whit message
+                #Jump to questions page whit message
                 message = "Question edited successfully";
                 session['message'] = message;
 
@@ -356,7 +356,7 @@ def questions():
                 query = {'question' : question, 'answer1' : answer1, 'answer2' : answer2, 'answer3' : answer3, 'answer4' : answer4, 'correct' : correct}
                 db_questions.insert_one(query)
 
-                #Jump to login page whit message
+                #Jump to questions page whit message
                 message = "Question created successfully";
                 session['message'] = message;
 
