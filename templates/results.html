@@ -4,6 +4,50 @@
             <div class="mt-2 mb-2 pt-2 pb-2">
                   <h2 class="text-center">Quiz results</h2>
                   <h5 class="text-center">Corrects {{tot_corrects}}/{{tot_questions}}:</h5>
+
+                  <table class="table table-striped table-sm mt-4">
+                        {%for result in results %}
+                        <tr>
+                              <td>
+                                    <strong>{{result['question']}}</strong>
+                                    
+                                    <div class="small 
+                                          {{ 'font-weight-bold' if result['answer_done'] == '1' else '' }} 
+                                          {{ 'text-success' if result['answer_done'] == '1' and result['correct'] == '1' else '' }}
+                                          {{ 'text-danger' if result['answer_done'] == '1' and result['correct'] != '1' else '' }}
+                                    ">
+                                          1) {{result['answer1']}}
+                                    </div>
+
+                                    <div class="small 
+                                          {{ 'font-weight-bold' if result['answer_done'] == '2' else '' }} 
+                                          {{ 'text-success' if result['answer_done'] == '2' and result['correct'] == '2' else '' }}
+                                          {{ 'text-danger' if result['answer_done'] == '2' and result['correct'] != '2' else '' }}
+                                    ">
+                                          2) {{result['answer2']}}
+                                    </div>
+
+                                    <div class="small 
+                                          {{ 'font-weight-bold' if result['answer_done'] == '3' else '' }} 
+                                          {{ 'text-success' if result['answer_done'] == '3' and result['correct'] == '3' else '' }}
+                                          {{ 'text-danger' if result['answer_done'] == '3' and result['correct'] != '3' else '' }}
+                                    ">
+                                          3) {{result['answer3']}}
+                                    </div>
+
+                                    <div class="small 
+                                          {{ 'font-weight-bold' if result['answer_done'] == '4' else '' }} 
+                                          {{ 'text-success' if result['answer_done'] == '4' and result['correct'] == '4' else '' }}
+                                          {{ 'text-danger' if result['answer_done'] == '4' and result['correct'] != '4' else '' }}
+                                    ">
+                                          4) {{result['answer4']}}
+                                    </div>
+                              </td> 
+                        </tr>
+                        {% endfor %}
+                  </table>
+
+                  
             </div>
       </div>
 
