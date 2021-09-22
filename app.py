@@ -398,3 +398,31 @@ def delete_question():
 
         #Redirect to questions page
         return redirect(url_for('questions'))
+
+# ==============================================================
+# USERS PAGE (ONLY ADMIN)
+# ==============================================================
+@app.route("/users", methods=["POST", "GET"])
+def users():
+
+    #BLOCK IF IS ADMIN
+    if session.get("level") != "admin":
+        return redirect(url_for('login'))
+
+    #Take values if is edit mode
+    id_user = request.args.get('id_user')
+
+    #GET MESSAGES AND ERRORS IF EXIST
+    message = session.get('message')
+    session['message'] = "";
+    error = session.get('error')
+    session['error'] = "";
+
+    #get list of users
+    users = list(db_users.find())
+
+    #Prepare fields
+    fields = {}
+
+    #render page
+    return render_template("users.html",users=users,tot=len(users),id_user=id_user,fields=fields,error=error,message=message)
