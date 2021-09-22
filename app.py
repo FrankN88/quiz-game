@@ -224,6 +224,12 @@ def results():
     if id_quiz_done is None:
         return redirect(url_for('quiz'))
 
+    #If push on "Try again" -> reset session
+    if request.args.get('try_again'):
+        session.pop('id_quiz', None)
+        session.pop('quiz_question', None)
+        return redirect(url_for('quiz'))
+
     #get info from db of this quiz session
     questions = list(db_questions.find())
     tot_corrects = db_quiz_done.find_one({"_id": ObjectId(id_quiz_done)})['total_corrects']
