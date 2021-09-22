@@ -72,8 +72,8 @@
         {% for user in users: %}
         <tr>
           <td style="vertical-align: middle;">{{user['username']}}</td>
-          <td><button type="button" class="btn btn-success">Edit</button></td>
-          <td><button type="button" class="btn btn-danger">Delete</button></td>
+          <td><a href="?id_user={{user['_id']}}"><button type="button" class="btn btn-success">Edit</button></a></td>
+          <td><a href="/delete_user?id_user={{user['_id']}}"><button type="button" class="btn btn-danger">Delete</button></a></td>
         </tr>
         {% endfor %}
       </table>
