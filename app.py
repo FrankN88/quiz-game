@@ -151,6 +151,12 @@ def quiz():
         #Get all questions
         questions = list(db_questions.find())
 
+        #Check if number of actual question is smoller than total questions
+        if session.get('quiz_question') >= len(questions):
+
+            #Go directli to results page
+            return redirect(url_for("results"))
+
         #Get the actual question number
         question = questions[session.get('quiz_question')]
 
