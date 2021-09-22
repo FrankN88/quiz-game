@@ -36,13 +36,22 @@
           <div class="input-group-prepend">
             <span class="input-group-text" style="width:120px">Password</span>
           </div>
-          <input type="password\" class="form-control" name="password" value="{{fields['password']}}">
+          <input type="password" class="form-control" name="password" value="{{fields['password']}}">
+        </div>
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <span class="input-group-text" style="width:120px">Level</span>
+          </div>
+          <select name="level" class="form-control">
+            <option {{ "selected" if fields["level"] == "user" else "" }} value="user">User</option>
+            <option {{ "selected" if fields["level"] == "admin" else "" }}  value="admin">Admin</option>
+          </select>
         </div>
         <button type="submit" class="btn btn-success w-100">Save user</button>
 
         {% if id_user %}
           <div class="small text-secondary text-center fst-italic mt-2">or</div>
-          <a href="/questions"><button type="button" class="btn btn-secondary mt-1 w-100">Create new one</button></a>
+          <a href="/users"><button type="button" class="btn btn-secondary mt-1 w-100">Create new one</button></a>
         {% endif %}
       </form>
 
