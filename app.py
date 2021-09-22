@@ -256,6 +256,25 @@ def results():
     return render_template("results.html",results=results,tot_questions=len(questions),tot_corrects=tot_corrects)
 
 # ==============================================================
+# ALL RESULT PAGE (ONLY LOGGED)
+# ============================================================== 
+@app.route("/all_results")
+def all_results():
+    
+    #get all quiz done by user
+    results = []
+    lists = list(db_quiz_done.find({"id_user" : session.get("id_user")}))
+    for res in lists:
+        obj = {
+            "id_quiz" : str(res['_id']),
+            "total_corrects" : res['total_corrects'],
+        }
+        results.append(obj)
+    
+    #print
+    return render_template("all_results.html",results=results)
+
+# ==============================================================
 # QUESTIONS PAGE (ONLY ADMIN)
 # ==============================================================
 @app.route("/questions", methods=["POST", "GET"])
