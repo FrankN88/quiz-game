@@ -220,6 +220,10 @@ def results():
     #Get id quiz from session
     id_quiz_done = session['id_quiz']
 
+    #If quiz session not exists -> start new quiz
+    if id_quiz_done is None:
+        return redirect(url_for('quiz'))
+
     #get info from db of this quiz session
     questions = list(db_questions.find())
     tot_corrects = db_quiz_done.find_one({"_id": ObjectId(id_quiz_done)})['total_corrects']
