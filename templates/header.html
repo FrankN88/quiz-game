@@ -35,6 +35,8 @@
     <header>
         <!-- app name -->
         <div>
+            <a href="/"><img src="static/images/logo.png"></a>
+
             {% if session.get("username") %}
                 Hi {{session.get("username")}}!
             {% else %}
