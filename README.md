@@ -44,6 +44,7 @@ The website is designed to be responsive and accessible on all devices being at 
 - [Testing document](TESTING.md)
 
 7. [DEPLOYMENT](#deployment)
+- [Mongo Database](mongo-database)
 - [Heroku](#heroku)
 - [Forking the repository](#forking-the-GitHub-repository)
 - [Making a local clone](#making-a-local-clone)
@@ -191,7 +192,7 @@ Please check out the colour Colour palette.
 
 - This model contains all fields stored in the database collections with their data type and mimics the structure of what is actually stored in the mongo database(mongodb). [DbDiagram.io](https://dbdiagram.io/home) has been used for this purpose.
 
-![Mongo DB Data Structure](docs/deployment/db_model_quiz.png)
+![Mongo DB Data Structure](docs/deployment/db/db_model_quiz.png)
 
 ---
 
@@ -515,6 +516,22 @@ Each page of the website features a consistent responsive navigational system:
 Testing information can be found in a separate testing :information_source: [file](TESTING.md "Link to testing file")
 
 ---
+
+## Deployment
+
+### Mongo Database
+Mongodb is the database used in the application:
+
+1. Create an account at mongodb.
+2. Create a database cluster.
+3. Select the cluster, and in the collections section create a database and create the necessary collections under the database:
+![Database](docs/deployment/db/database_example.png)
+4. In the database access, create a user and allow the user read/write access.
+5. In the network access tab, allow network access from the ip-address of the application connecting to the database.
+6. In the Databases section click Connect, and select connect your application.
+7. Note the MONGO_URI, MONGO_DBNAME and user, these parameters are used when deploying locally(env.py file) and deploying on the likes of heroku(config vars).
+
+### Heroku
 
 
 
