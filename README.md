@@ -46,8 +46,10 @@ The website is designed to be responsive and accessible on all devices being at 
 7. [DEPLOYMENT](#deployment)
 - [Mongo Database](mongo-database)
 - [Heroku](#heroku)
-- [Forking the repository](#forking-the-GitHub-repository)
-- [Making a local clone](#making-a-local-clone)
+- [Github](#github)
+  - [Deploying on GitHub Pages](#deploying-on-gitHub-pages)
+  - [Forking the repository](#forking-the-gitHub-repository)
+  - [Creating a Clone](#creating-a-clone)
 
 8. [CREDITS](#credits)
 
