@@ -551,13 +551,36 @@ To deploy this application to Heroku, run the following steps.
 13. This will trigger a deployment, once the deployment has been successful click on the "Open App" link to open the app.
 14. If you encounter any issues accessing the build logs is a good way to troubleshoot the issue.
 
+### Github
 
+#### Deploying on GitHub Pages
+To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
+1. Log into [GitHub](https://github.com/login "Link to GitHub login page") or [create an account](https://github.com/join "Link to GitHub create account page").
+2. Locate the [GitHub Repository](https://github.com/FrankN88/xxxxxxxx "Link to GitHub Repo").
+3. At the top of the repository, select Settings from the menu items.
+4. Scroll down the Settings page to the "GitHub Pages" section.
+5. Under "Source" click the drop-down menu labelled "None" and select "Master Branch".
+6. Upon selection, the page will automatically refresh meaning that the website is now deployed.
+7. Scroll back down to the "GitHub Pages" section to retrieve the deployed link.
+8. At the time of submitting this Milestone project, the Development Branch and Master Branch are identical.
 
+#### Forking the Repository
+By forking the GitHub Repository a copy of the original repository is made on the GitHub account. To view and/or to make  changes without affecting the original repository: 
+1. Log into [GitHub](https://github.com/login "Link to GitHub login page") or [create an account](https://github.com/join "Link to GitHub create account page").
+2. Locate the [GitHub Repository](https://github.com/FrankN88/xxxxxxxxxxx "Link to GitHub Repo").
+3. At the top of the repository, on the right side of the page, select "Fork".
+4. You should now have a copy of the original repository in your GitHub account.
 
+#### Creating a Clone
+How to run this project locally:
+1. Install the [GitPod Browser](https://www.gitpod.io/docs/browser-extension/ "Link to Gitpod Browser extension download") Extension for Chrome.
+2. After installation, restart the browser.
+3. Log into [GitHub](https://github.com/login/ "Link to GitHub login page") or [create an account](https://github.com/join "Link to GitHub create account page").
+4. Locate the [GitHub Repository](https://github.com/FrankN88/FrankN88/xxxxxxx "Link to GitHub Repo").
+5. Click the green "GitPod" button in the top right corner of the repository.
+This will trigger a new gitPod workspace to be created from the code in github where you can work locally. 
+Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process
 
-
-
-
-
+---
 
 
