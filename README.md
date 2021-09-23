@@ -61,27 +61,31 @@ The website is designed to be responsive and accessible on all devices being at 
 
 ### **User stories**
 
- #### As an anonymous user I want to:
-  1. Be able to navigate through the pages.
+ #### As an anonymous user/ first time visitor I want to:
+  1. Be able to easily navigate throughout the site to find content and contacts.
   2. Play the quiz game.
-  3. Get my feedback regarding the score
-  4. Not to be able to see my previous scores as they will not be recorded.
+  3. Get my feedback regarding the score.
+  4. Locate their social media links to see their followings on social media in order to be updated about their latest releases.
 
  #### As a registered user/ returning/ frequent visitor I want to:
   5. Be able to manage my own posts by editing and/or deleting them.
   6. Be able to play the game and navigate through the pages.
   7. Not to be allowed to remove any other scores except mine.
   8. Check out my previous scores and therefore my progress.
+  9. Find the best way to get in contact with the organisation with any question I may have.
+  10. Find the social media links so that I can join and interact with others in the community.
 
  #### As the admin I want to:
-  9. be able to delete any users scores.
-  10. be able to edit any users scores.
-  11. have unique access to all features.
+  11. be able to delete any users scores.
+  12. be able to edit any users scores.
+  13. have unique access to all features.
 
   #### As the website owner I want to:
-  12. increase the number of people playing the games therefore the popularity of the website.
-  13. be in touch with the users.
-  14. be able to receive feedback from the users.
+  14. increase the number of people playing the games therefore the popularity of the website.
+  15. be in touch with the users.
+  16. be able to receive feedback from the users.
+  17. Gain a better understanding of the audience by checking their feedback both via the social networks.
+  18. Use reviews to increase customer satisfaction.
 
 ---
 
