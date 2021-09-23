@@ -48,7 +48,7 @@ The website is designed to be responsive and accessible on all devices being at 
 - [Heroku](#heroku)
 - [Github](#github)
   - [Deploying on GitHub Pages](#deploying-on-gitHub-pages)
-  - [Forking the repository](#forking-the-gitHub-repository)
+  - [Forking the repository](#forking-the-repository)
   - [Creating a Clone](#creating-a-clone)
 
 8. [CREDITS](#credits)
@@ -582,6 +582,37 @@ How to run this project locally:
 5. Click the green "GitPod" button in the top right corner of the repository.
 This will trigger a new gitPod workspace to be created from the code in github where you can work locally. 
 Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process
+
+---
+
+## CREDITS
+
+### Content
+- Stack Overflow for guidance
+- Psychological properties of text colour in the README.md was found [here](http://www.colour-affects.co.uk/psychological-properties-of-colours)
+- [Bootstrap](https://getbootstrap.com/ "Link to BootStrap page") for the Boostrap features.
+
+### Media
+- Some Images come from my personal archives
+- All the other Images were downloaded from [Unsplash](https://unsplash.com/ "Link to Unsplash page").
+
+### Code
+The developer consulted multiple sites in order to better understand the code that they were trying to implement. The following sites were used on a more regular basis:
+- [Stack Overflow](https://stackoverflow.com/ "Link to Stack Overflow page")
+- [W3Schools](https://www.w3schools.com/ "Link to W3Schools page")
+- [Bootstrap](https://getbootstrap.com/ "Link to BootStrap page")
+- [MDN Web Docs](https://developer.mozilla.org/en-US/ "Link to MDN Web Docs")
+- [jQuery](https://jquery.com/ "Link to jQuery page")
+- [Flask](https://flask.palletsprojects.com/en/2.0.x/ "Link to Flask page")
+- [Python](https://www.python.org/ "Link to Python page")
+- [MongoDB](https://docs.mongodb.com/ "Link to MongoDB Docs")
+
+### Acknowledgements
+- My mentor Mo Shami for continuous helpful feedback.
+- Tutor support at Code Institute for their support.
+- My family for opinions and feedback.
+
+***
 
 ---
 
