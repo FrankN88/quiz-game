@@ -30,7 +30,7 @@ The website is designed to be responsive and accessible on all devices being at 
 - [Logo](#logo)
 
 3. [DATABASE MODEL](#database-model)
-- Users Data
+- [Database model features](#database-model-features)
 
 4. [FEATURES](#features)
 - [Design Features](#design-features)
@@ -183,6 +183,8 @@ Please check out the colour Colour palette.
 ---
 
 ## Database Model
+
+### Database model features
 
 - The website is a data-centric one with html, javascript, css used with the bootstrap framework as a frontend.
 - The backend consists of Python, flask and jinja templates with a database of a mongodb open-source document-oriented database.
