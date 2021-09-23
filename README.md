@@ -159,7 +159,8 @@ The design of the website was created to be as simple and harmonious as possible
 
 The colors used in this project are bright on a light background, to keep a minimalistic and tidy website, as well as keeping the color contrast the highest possible to facilitate the screen readers and make this site accessible to all. In addition to that also draw the attention of the user to the main parts.
 
-The colors chosen are combinations of: xxxxxx. Please check out the colour [Colour palette](xxxxxxx.png) 
+The colors chosen are combinations of: xxxxxx. 
+Please check out the colour Colour palette.
  <details><summary>Colour palette</summary>
     <img src="link to the image">
  </details>
@@ -178,6 +179,17 @@ The colors chosen are combinations of: xxxxxx. Please check out the colour [Colo
  <details><summary>Logo</summary>
     <img src="docs/wireframes/logo.png">
  </details>
+
+---
+
+## Database Model
+
+- The website is a data-centric one with html, javascript, css used with the bootstrap framework as a frontend.
+- The backend consists of Python, flask and jinja templates with a database of a mongodb open-source document-oriented database.
+
+- This model contains all fields stored in the database collections with their data type and mimics the structure of what is actually stored in the mongo database(mongodb). [DbDiagram.io](https://dbdiagram.io/home)
+
+![Mongo DB Data Structure](docs/deployment/db_model_quiz.png)
 
 ---
 
