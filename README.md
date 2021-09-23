@@ -187,7 +187,7 @@ Please check out the colour Colour palette.
 - The website is a data-centric one with html, javascript, css used with the bootstrap framework as a frontend.
 - The backend consists of Python, flask and jinja templates with a database of a mongodb open-source document-oriented database.
 
-- This model contains all fields stored in the database collections with their data type and mimics the structure of what is actually stored in the mongo database(mongodb). [DbDiagram.io](https://dbdiagram.io/home)
+- This model contains all fields stored in the database collections with their data type and mimics the structure of what is actually stored in the mongo database(mongodb). [DbDiagram.io](https://dbdiagram.io/home) has been used for this purpose.
 
 ![Mongo DB Data Structure](docs/deployment/db_model_quiz.png)
 
@@ -429,6 +429,87 @@ Each page of the website features a consistent responsive navigational system:
 - A personalized message to each user is displayed on log in.
 - The user will be able to choose among many subjects (maths, history, physics, chemistry etc) based on his/her inclination.
 - When logged in, the user will be redirected to their profile page with his personalised settings.
+
+---
+
+## TECHNOLOGIES USED
+
+### **Syntax**
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+- [Markdown](https://www.markdownguide.org/basic-syntax/)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+- [JQuery](https://jquery.com/)
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+---
+
+### Frameworks, Libraries & Programs
+
+- [Figma:](https://www.figma.com/login)
+  - Figma was used to create the [wireframes](put link to wireframes) during the design process.
+
+- [Font Awesome](https://fontawesome.com/)
+  - Used to include icons.
+
+- [Google Fonts](https://fonts.google.com/)
+  - Used to import the three fonts used throughout the site xxxxxxxx.
+
+- [GitHub](https://github.com/)
+  - Used to host the entire repository for the project.
+
+- [GitPod](https://www.gitpod.io/)
+  - The code editor used to build the entire project.
+
+- [TinyPNG](https://tinypng.com/)
+  - Used this to compress the images used on the website to make files smaller.
+
+- [Favicon](https://favicon.io/)
+  - Used to generate the websites favicon logo of various sizes for different devices.
+
+- [W3C Validator HTML](https://validator.w3.org/)
+  - Validator for HTML.
+
+- [W3C Validator CSS](https://jigsaw.w3.org/css-validator/)
+  - Validator for CSS.
+
+- [JSHint](https://jshint.com/)
+  - This is a tool used to detect errors or potential problems within Javascript code, used to test and validate all Javascript written for this project.
+
+- [Pylint](https://www.pylint.org/)
+  - Pylint is a source-code, bug and quality checker for the Python programming language.
+
+- [PyMongo](https://pymongo.readthedocs.io/en/stable/)
+  - PyMongo is the official MongoDB Python driver for MongoDB.
+
+- [Flask](https://flask.palletsprojects.com/en/2.0.x/)
+  - Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries.
+  - Flask requires the [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) template to work.
+
+- [Flask PyMongo](https://flask-pymongo.readthedocs.io/en/latest/)
+
+- [Heroku](https://id.heroku.com/login)
+  - Heroku is a cloud platform as a service (PaaS) supporting several programming languages.
+  - The Heroku network runs the customer's apps in virtual containers which execute on a reliable runtime environment.
+
+- [BrowserStack](https://www.browserstack.com/)
+  - Test the functionality and appearance of the project on all main browsers.
+
+- [Jinja](https://jinja.palletsprojects.com/en/3.0.x/)
+  - Jinja is a web template engine for the Python programming language. It allows writing code similar to Python syntax. Then the template is passed data to render the final document.
+  - Jinja templating is built into the [Flask](https://flask.palletsprojects.com/en/2.0.x/) library.
+
+- [W3Schools](https://www.w3schools.com/)
+  - To check demos and explanations.
+
+- [Stack overflow](https://stackoverflow.com/)
+  - To find answers to most common problems.
+
+---
+
+## Testing
+Testing information can be found in a separate testing :information_source: [file](TESTING.md "Link to testing file")
 
 ---
 
