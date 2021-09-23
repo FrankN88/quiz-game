@@ -488,6 +488,7 @@ Each page of the website features a consistent responsive navigational system:
   - Flask requires the [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) template to work.
 
 - [Flask PyMongo](https://flask-pymongo.readthedocs.io/en/latest/)
+  - Flask-PyMongo bridges Flask and PyMongo and provides some convenience helpers.
 
 - [Heroku](https://id.heroku.com/login)
   - Heroku is a cloud platform as a service (PaaS) supporting several programming languages.
