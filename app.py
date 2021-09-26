@@ -3,9 +3,8 @@ from flask_pymongo import PyMongo
 from bson import ObjectId
 import os
 
-# ==============================================================
+
 # Config access to MongoDB with .env file
-# ==============================================================
 app = Flask(__name__)
 
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
@@ -14,17 +13,15 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
-# ==============================================================
+
 # Get collection questions
-# ==============================================================
 db_users = mongo.db.users
 db_questions = mongo.db.questions
 db_quiz_done = mongo.db.quiz_done
 db_answers_done = mongo.db.answers_done
 
-# ==============================================================
+
 # HOME/LOGIN PAGE
-# ==============================================================
 @app.route("/", methods=["POST", "GET"])
 def login():
 
@@ -68,9 +65,8 @@ def login():
         #Simply open page
         return render_template("login.html")
 
-# ==============================================================
+
 # LOGOUT
-# ==============================================================
 @app.route("/logout")
 def logout():
     session.clear()
@@ -78,9 +74,8 @@ def logout():
     #return to login page
     return redirect(url_for('login'))
 
-# ==============================================================
+
 # REGISTRATION PAGE
-# ==============================================================
 @app.route("/registration", methods=["POST", "GET"])
 def registration():
 
@@ -126,9 +121,8 @@ def registration():
         return render_template("registration.html")
 
 
-# ==============================================================
+
 # QUIZ PAGE
-# ==============================================================
 @app.route("/quiz", methods=["POST", "GET"])
 def quiz():
 
@@ -211,9 +205,8 @@ def quiz():
             #Go to login page
             return render_template("quiz.html",question = question, tot_question = len(questions))
 
-# ==============================================================
+
 # RESULT PAGE
-# ==============================================================
 @app.route("/results", methods=["POST", "GET"])
 def results():
 
@@ -257,9 +250,8 @@ def results():
     #Show results of quiz
     return render_template("results.html",results=results,tot_questions=len(questions),tot_corrects=tot_corrects)
 
-# ==============================================================
+
 # ALL RESULT PAGE (ONLY LOGGED)
-# ============================================================== 
 @app.route("/all_results")
 def all_results():
 
@@ -280,9 +272,8 @@ def all_results():
     #print
     return render_template("all_results.html",results=results)
 
-# ==============================================================
+
 # QUESTIONS PAGE (ONLY ADMIN)
-# ==============================================================
 @app.route("/questions", methods=["POST", "GET"])
 def questions():
 
@@ -371,9 +362,8 @@ def questions():
         #Open page
         return render_template("questions.html",questions=questions,id_question=id_question,tot=len(questions),fields=fields,error=error,message=message)
 
-# ==============================================================
+
 # DELETE QUESTION PAGE
-# ==============================================================
 @app.route("/delete_question", methods=["POST", "GET"])
 def delete_question():
 
@@ -399,9 +389,8 @@ def delete_question():
         #Redirect to questions page
         return redirect(url_for('questions'))
 
-# ==============================================================
+
 # USERS PAGE (ONLY ADMIN)
-# ==============================================================
 @app.route("/users", methods=["POST", "GET"])
 def users():
 
