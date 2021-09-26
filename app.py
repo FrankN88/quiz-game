@@ -415,3 +415,29 @@ def users():
 
     #render page
     return render_template("users.html",users=users,tot=len(users),id_user=id_user,fields=fields,error=error,message=message)
+
+# DELETE USER
+@app.route("/delete_user", methods=["POST", "GET"])
+def delete_user():
+
+    #BLOCK IF IS ADMIN
+    if session.get("level") != "admin":
+        return redirect(url_for('login'))
+
+    #Get id question to delete record from db
+    id_user = request.args['id_user']
+    if id_user == "":
+
+        #Return page with error
+        error = "Error: ID not found"
+        session['error'] = error
+        return redirect(url_for('users'))
+
+    else:
+
+        #Delete record
+        query = { "_id": ObjectId(id_user) }
+        db_users.remove(query)
+
+        #Redirect to questions page
+        return redirect(url_for('users'))
