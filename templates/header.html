@@ -47,24 +47,24 @@
             {% endif %}
         </div>
 
-        <div class="ml-auto">
+        <div class="ml-auto menu">
             <!-- main menu -->
-            <a href="/quiz"><button type="button" class="btn btn-primary text-light mr-1"><i class="fas fa-gamepad mr-2"></i>Quiz</button></a>
+            <a href="/quiz"><button type="button" class="btn btn-primary text-light mr-1"><i class="fas fa-gamepad"></i><span class="ml-2">Quiz</span></button></a>
             
             {% if session.get("username") %}
                 <!-- only for user logged -->
 
                 <!-- only for admins -->
-                <a href="/questions"><button type="button" class="btn btn-secondary text-light mr-1"><i class="fas fa-question mr-2"></i>Manage questions</button></a>
-                <a href="/users"><button type="button" class="btn btn-secondary text-light mr-1"><i class="fas fa-users mr-2"></i>Manage users</button></a>
+                <a href="/questions"><button type="button" class="btn btn-secondary text-light mr-1"><i class="fas fa-question"></i><span class="ml-2">Manage questions</span></button></a>
+                <a href="/users"><button type="button" class="btn btn-secondary text-light mr-1"><i class="fas fa-users"></i><span class="ml-2">Manage users</span></button></a>
 
                 <!-- all users logged -->
-                <a href="/logout"><button type="button" class="btn btn-danger text-light mr-1"><i class="fas fa-sign-out-alt mr-2"></i>Logout</button></a>
+                <a href="/logout"><button type="button" class="btn btn-danger text-light mr-1"><i class="fas fa-sign-out-alt"></i><span class="ml-2">Logout</span></button></a>
 
             {% else %}
                 <!-- only for guests -->
-                <a href="/"><button type="button" class="btn btn-success text-light mr-1"><i class="fas fa-user mr-2"></i>Login</button></a>
-                <a href="/registration"><button type="button" class="btn btn-secondary text-light"><i class="fas fa-list-ul mr-2"></i>Registration</button></a>
+                <a href="/"><button type="button" class="btn btn-success text-light mr-1"><i class="fas fa-user"></i><span class="ml-2">Login</span></button></a>
+                <a href="/registration"><button type="button" class="btn btn-secondary text-light"><i class="fas fa-list-ul"></i><span class="ml-2">Registration</span></button></a>
 
             {% endif %}
         </div>
