@@ -87,3 +87,14 @@ form h2{
     background: #dc3545;
     color: #fff;
 }
+
+/*=====================================================
+# RESPONSIVE
+=====================================================*/
+@media screen and (max-width: 768px) {
+
+    header .menu button span{
+        display: none !important;
+    }
+
+}
