@@ -1,7 +1,9 @@
+import os
 from flask import Flask, redirect, url_for, render_template, request, session
 from flask_pymongo import PyMongo
 from bson import ObjectId
-import os
+if os.path.exists("env.py"):
+    import env
 
 # Config access to MongoDB with .env file
 app = Flask(__name__)
@@ -491,3 +493,8 @@ def delete_user():
 
         #Redirect to questions page
         return redirect(url_for('users'))
+
+if __name__ == "__main__":
+    app.run(host=os.environ.get("IP"),
+            port=int(os.environ.get("PORT")),
+            debug=False)
