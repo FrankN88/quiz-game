@@ -363,7 +363,7 @@ def questions():
         return render_template("questions.html",questions=questions,id_question=id_question,tot=len(questions),fields=fields,error=error,message=message)
 
 
-# DELETE QUESTION PAGE
+# DELETE QUESTION
 @app.route("/delete_question", methods=["POST", "GET"])
 def delete_question():
 
@@ -398,20 +398,72 @@ def users():
     if session.get("level") != "admin":
         return redirect(url_for('login'))
 
-    #Take values if is edit mode
-    id_user = request.args.get('id_user')
-
     #GET MESSAGES AND ERRORS IF EXIST
     message = session.get('message')
     session['message'] = "";
     error = session.get('error')
     session['error'] = "";
 
-    #get list of users
-    users = list(db_users.find())
-
     #Prepare fields
     fields = {}
+
+    #Take values if is edit mode
+    id_user = request.args.get('id_user')
+    if(id_user):
+
+        # Get fields from db
+        query = { "_id": ObjectId(id_user) }
+        result = db_users.find_one(query)
+        
+        # Get fields from Database
+        fields = {
+            'username' : result['username'],
+            'password' : result['password'],
+            'level' : result['level']
+        }
+
+    # Click on button "Save question"
+    if request.method == "POST":
+
+        username = request.form['username']
+        password = request.form['password']
+        level = request.form['level']
+
+        if id_user == "" or username == "" or password == "" or level == "":
+
+            #Return page with error
+            error = "Error: All fields are required"
+            session['error'] = error
+            return redirect(url_for('users'))
+
+        else:
+
+            #Get id user if you want to edit an existing one
+            if id_user:
+
+                #Edit user
+                query = {"_id": ObjectId(id_user)}
+                values = {'username' : username, 'password' : password, 'level' : level}
+                db_users.update_one(query, {"$set": values})
+
+                #Jump to users page whit message
+                message = "User edited successfully"
+                session['message'] = message
+
+            else:
+
+                #Adding new user
+                query = {'username' : username, 'password' : password, 'level' : level}
+                db_users.insert_one(query)
+
+                #Jump to users page whit message
+                message = "User created successfully"
+                session['message'] = message
+
+            return redirect(url_for('users'))
+
+    #get list of users
+    users = list(db_users.find())
 
     #render page
     return render_template("users.html",users=users,tot=len(users),id_user=id_user,fields=fields,error=error,message=message)
