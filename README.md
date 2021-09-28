@@ -164,7 +164,7 @@ The design of the website was created to be as simple and harmonious as possible
 
 ### **Color scheme**
 
-The colors used in this project are presented on a light background, to keep a minimalistic and tidy website, as well as keeping the color contrast the highest possible to facilitate the screen readers and make this site accessible to all. In addition to that there are also some brighter features thought specifically to draw the attention of the user to the main parts.
+The colours used in this project are presented on a light background, to keep a minimalistic and tidy website, as well as keeping the color contrast the highest possible to facilitate the screen readers and make this site accessible to all. In addition to that there are also some brighter features thought specifically to draw the attention of the user to the main parts.
  
 Please check out the colour Colour palette.
  <details><summary>Colour palette</summary>
@@ -173,16 +173,15 @@ Please check out the colour Colour palette.
 
 ---
 
-### **Tipography**
+### **Typography**
 
-- Helvetica
-
+- The selected font for the whole project is [Helvetica](https://en.wikipedia.org/wiki/Helvetica)
 
 ---
 
 ### **Imagery**
 
-- xxxxxx
+- For this specific project imagery has been kept very minimalist in order to concentrate the work on the functionality of the app. Images have been selected from [Unsplash](https://unsplash.com/ "Link to Unsplash page").
 
 ---
 
