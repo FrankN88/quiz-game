@@ -1,13 +1,15 @@
-/*=======================================================
-# BODY
-=======================================================*/
+/*
+    BODY
+    General style for all pages and elements
+*/
 body{
     font-family: "Helvetica";
 }
 
-/*=======================================================
-# HEADER
-=======================================================*/
+/*
+    HEADER
+    Top bar of the all site pages
+*/
 header{
     display: flex;
     align-items: center;
@@ -20,9 +22,10 @@ header img{
     height: 40px;
 }
 
-/*=====================================================
-# HOME
-=====================================================*/
+/*
+    HOME
+    The first page
+*/
 .logo-home i{
     font-size: 80px;
     color: #ed8f44;
@@ -79,9 +82,10 @@ header img{
     background-image: url(../images/home-login.jpg);
 }
 
-/*=====================================================
-# FOOTER
-=====================================================*/
+/*
+    FOOTER
+    The last element, present in every page
+*/
 footer hr{
     background: #fff;
 }
@@ -98,9 +102,10 @@ footer a:hover{
     color: #ed8f44;
 }
 
-/*=======================================================
-# FORM
-=======================================================*/
+/*
+    FORM
+    General rules for all forms
+*/
 form{
     display: block;
     background: #f8f8f8;
@@ -115,9 +120,9 @@ form h2{
     text-align: center;
 }
 
-/*=======================================================
-# ADMIN QUESTIONS
-=======================================================*/
+/*
+    ADMIN PAGES
+*/
 .admin_container form{
     background: transparent;
     border: none;
@@ -138,9 +143,10 @@ form h2{
     margin-bottom: 10px;
 }
 
-/*=====================================================
-# QUIZ PAGE
-=====================================================*/
+/*
+    QUIZ PAGE
+    Style relative only for question page
+*/
 .form_question h2, .form_question h5{
     text-align: center;
 }
@@ -173,9 +179,10 @@ form h2{
     color: #fff;
 }
 
-/*=====================================================
-# RESPONSIVE
-=====================================================*/
+/*
+    RESPONSIVE
+    Hide elements when width is minus than 768px
+*/
 @media screen and (max-width: 768px) {
 
     header .menu button span{
