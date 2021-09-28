@@ -2,7 +2,7 @@
 
 ![Image of the mockup of the live website](image.png)
 
-### [View live project here](https://xxxxxxx.herokuapp.com/)
+### [View live project here](https://quiz-test-01.herokuapp.com/)
 ### [View the testing information here - (TESTING.md) ](TESTING.md)
 
 ## Overview
@@ -164,15 +164,21 @@ The design of the website was created to be as simple and harmonious as possible
 
 ### **Color scheme**
 
-The colors used in this project are bright on a light background, to keep a minimalistic and tidy website, as well as keeping the color contrast the highest possible to facilitate the screen readers and make this site accessible to all. In addition to that also draw the attention of the user to the main parts.
-
-The colors chosen are combinations of: xxxxxx. 
+The colors used in this project are presented on a light background, to keep a minimalistic and tidy website, as well as keeping the color contrast the highest possible to facilitate the screen readers and make this site accessible to all. In addition to that there are also some brighter features thought specifically to draw the attention of the user to the main parts.
+ 
 Please check out the colour Colour palette.
  <details><summary>Colour palette</summary>
-    <img src="link to the image">
+    <img src="docs/wireframes/colour_palette.png">
  </details>
 
- ---
+---
+
+### **Tipography**
+
+- Helvetica
+
+
+---
 
 ### **Imagery**
 
