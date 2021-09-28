@@ -165,6 +165,10 @@ def quiz():
 
     else:
 
+        # Get inputs from user if exist
+        next_question = request.args.get('next');
+        answer = request.args.get('ans')
+
         #Get all questions
         questions = list(db_questions.find())
 
@@ -177,8 +181,19 @@ def quiz():
         #Get the actual question number
         question = questions[session.get('quiz_question')]
 
-        answer = request.args.get('ans')
-        if(answer):
+        if next_question is None:
+            # If there is already an answer, use it and don't change it with a new one
+            query = {"id_quiz_done":session['id_quiz'], "id_question": str(question["_id"])}
+            answer_db = db_answers_done.find_one(query)
+            if answer_db:
+                answer = answer_db['answer_number']
+                if question['correct'] == answer:
+                    response = 'correct'
+                else:
+                    response = 'wrong'
+                return render_template("quiz.html",question = question, tot_question = len(questions), answer = answer, response = response)
+
+        if answer:
             #Check if there is an answer
 
             #save choice in db
@@ -204,9 +219,7 @@ def quiz():
                 #anser is wrong
                 return render_template("quiz.html",question = question, tot_question = len(questions), answer = answer, response = 'wrong')
         
-
-        next_question = request.args.get('next')
-        if(next_question):
+        if next_question:
             #Go to the next question
 
             #go to the next one
@@ -326,7 +339,7 @@ def questions():
     fields = {}
 
     id_question = request.args.get('id_question')
-    if(id_question):
+    if id_question:
         #Take values if is edit mode
 
         # Get fields from db
@@ -447,7 +460,7 @@ def users():
     fields = {}
 
     id_user = request.args.get('id_user')
-    if(id_user):
+    if id_user:
         #Take values if is edit mode
 
         # Get fields from db
