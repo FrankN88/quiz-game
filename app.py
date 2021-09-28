@@ -26,6 +26,15 @@ db_answers_done = mongo.db.answers_done
 
 
 @app.route("/", methods=["POST", "GET"])
+def home():
+    """
+    Home page
+    """
+    
+    return render_template("home.html")
+
+
+@app.route("/login", methods=["POST", "GET"])
 def login():
     """
     Login page with access
