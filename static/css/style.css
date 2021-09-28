@@ -21,6 +21,66 @@ header img{
 }
 
 /*=====================================================
+# HOME
+=====================================================*/
+.logo-home i{
+    font-size: 80px;
+    color: #ed8f44;
+}
+
+.link-quiz, .link-login{
+    height: 300px;
+    width: 100%;
+    background: #ccc;
+    display: block;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 4px solid #fff;
+}
+
+.link-quiz:hover, .link-login:hover{
+    border-color: #ed8f44;
+    color: #ed8f44;
+}
+
+.link-quiz:hover .background, .link-login:hover .background{
+    opacity: .5;
+}   
+
+.link-quiz span, .link-login span{
+    position: relative;
+    color: #fff;
+    font-size: 40px;
+    z-index: 2;
+}
+
+.link-quiz:hover span, .link-login:hover span{
+    color: #ed8f44;
+}
+
+.link-quiz .background, .link-login .background{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .6;
+}
+
+.link-quiz{
+    background-image: url(../images/home-game.jpg);
+}
+
+.link-login{
+    background-image: url(../images/home-login.jpg);
+}
+
+/*=====================================================
 # FOOTER
 =====================================================*/
 footer hr{
