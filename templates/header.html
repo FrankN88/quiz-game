@@ -54,9 +54,11 @@
             {% if session.get("username") %}
                 <!-- only for user logged -->
 
-                <!-- only for admins -->
-                <a href="/questions"><button type="button" class="btn btn-secondary text-light mr-1"><i class="fas fa-question"></i><span class="ml-2">Manage questions</span></button></a>
-                <a href="/users"><button type="button" class="btn btn-secondary text-light mr-1"><i class="fas fa-users"></i><span class="ml-2">Manage users</span></button></a>
+                {% if session.get("level") == "admin" %}
+                    <!-- only for admins -->
+                    <a href="/questions"><button type="button" class="btn btn-secondary text-light mr-1"><i class="fas fa-question"></i><span class="ml-2">Manage questions</span></button></a>
+                    <a href="/users"><button type="button" class="btn btn-secondary text-light mr-1"><i class="fas fa-users"></i><span class="ml-2">Manage users</span></button></a>
+                {% endif %}
 
                 <!-- all users logged -->
                 <a href="/logout"><button type="button" class="btn btn-danger text-light mr-1"><i class="fas fa-sign-out-alt"></i><span class="ml-2">Logout</span></button></a>
