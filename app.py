@@ -276,6 +276,13 @@ def results():
     #Show results of quiz
     return render_template("results.html",results=results,tot_questions=len(questions),tot_corrects=tot_corrects)
 
+@app.route("/404")
+def page404():
+    """
+    Page 404
+    """
+    return render_template("404.html")
+
 
 @app.route("/all_results")
 def all_results():
