@@ -265,7 +265,7 @@ Manual testing was conducted on the following elements of the [404 Page](404.htm
 
 Page | Result | Test Detail/Screenshot
 ------------ | ------------- | -------------
-home.html | Passed, No errors found | [Results](docs/testing/validators/html_home_validation.png)
+home.html | Passed, No errors found | [Results](docs/testing/validators/html_404_validation.png)
 login.html | Passed, No errors found | [Results](docs/testing/validators/html_login_validation.png)
 registration.html | Passed, No errors found | [Results](docs/testing/validators/html_registration_validation.png)
 404.html | Passed, No errors found | [Results](docs/testing/validators/html_404_validation.png)
