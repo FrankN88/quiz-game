@@ -265,12 +265,10 @@ Manual testing was conducted on the following elements of the [404 Page](404.htm
 
 Page | Result | Test Detail/Screenshot
 ------------ | ------------- | -------------
-XXXX.html | Passed, No errors found | [Results](XXXX)
-XXXX.html | Passed, No errors found | [Results](XXXX)
-XXXX.html | Passed, No errors found | [Results](XXXX)
-XXXX.html | Passed, No errors found | [Results](XXXX)
-XXXX.html | Passed, No errors found | [Results](XXXX)
-404.html | Passed, No errors found | [Results](XXXX)
+home.html | Passed, No errors found | [Results](docs/testing/validators/html_home_validation.png)
+login.html | Passed, No errors found | [Results](docs/testing/validators/html_login_validation.png)
+registration.html | Passed, No errors found | [Results](docs/testing/validators/html_registration_validation.png)
+404.html | Passed, No errors found | [Results](docs/testing/validators/html_404_validation.png)
 
 <br>
 
@@ -279,7 +277,7 @@ XXXX.html | Passed, No errors found | [Results](XXXX)
 
 Page | Result | Test Detail/Screenshot
 ------------ | ------------- | -------------
-style.css | Passed, No errors found | [Results](XXXX)
+style.css | Passed, No errors found | [Results](docs/testing/validators/css_validation.png)
 
 <br>
 
@@ -288,19 +286,18 @@ style.css | Passed, No errors found | [Results](XXXX)
 
 Page | Result | Test Detail/Screenshot
 ------------ | ------------- | -------------
-XXXX.js | 0 errors | [Results](XXXX)
-XXXX.js | 0 errors | [Results](XXXX)
-XXXX.js | 0 errors | [Results](XXXX)
-XXXX.js | 0 errors | [Results](XXXX)
-XXXX.js | 0 errors | [Results](XXXX)
-XXXX.js | 0 errors | [Results](XXXX)
+script.js | 0 errors | [Results](docs/testing/validators/js_validation.png)
+
+<br>
 
 ### PYlint
 - [PYlint](https://www.pylint.org/) was used to validate the `PYTHON` code used.
 
 Page | Result | Test Detail/Screenshot
 ------------ | ------------- | -------------
-app.py | 0 errors | [Results](XXXX)
+app.py | 0 errors | [Results](docs/testing/validators/pylint_validation.png)
+
+<br>
 
 ### Browser Validation
 - **Microsoft Edge**: Website and user stories work as expected. 
@@ -308,16 +305,16 @@ app.py | 0 errors | [Results](XXXX)
 - **Safari**: Website and user stories work as expected.
 - **Firefox**: Website and user stories work as expected. 
 
+<br>
+
 ### Lighthouse Auditing
 - I used [Lighthouse](https://developers.google.com/web/tools/lighthouse) to test the performance, seo, best practices and accessability of the site
 
 Page | Test Detail/Screenshot
 ------------ | -------------
-index.html | [Results](XXXX)
-about.html | [Results](XXXX)
-people.html | [Results](XXXX)
-projects.html | [Results](XXXX)
-publications.html | [Results](XXXX)
+home.html | [Results](XXXX)
+login.html | [Results](XXXX)
+registration.html | [Results](XXXX)
 404.html | [Results](XXXX)
 
 <br>
@@ -327,12 +324,10 @@ publications.html | [Results](XXXX)
 
 Page | Result | Test Detail/Screenshot
 ------------ | ------------- | -------------
-XXXX.html | 0 errors and 0 contrast errors| [Results](XXXX)
-XXXX.html | 0 errors and 0 contrast errors| [Results](XXXX)
-XXXX.html | 0 errors and 0 contrast errors| [Results](XXXX)
-XXXX.html | 0 errors and 0 contrast errors| [Results](XXXX)
-XXXX.html | 0 errors and 0 contrast errors| [Results](XXXX)
-XXXX.html | 0 errors and 0 contrast errors| [Results](XXXX)
+home.html | 0 errors and 0 contrast errors| [Results](XXXX)
+login.html | 0 errors and 0 contrast errors| [Results](XXXX)
+registration.html | 0 errors and 0 contrast errors| [Results](XXXX)
+404.html | 0 errors and 0 contrast errors| [Results](XXXX)
 
 <br>
 

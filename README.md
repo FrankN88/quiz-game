@@ -1,6 +1,6 @@
 <h1 align="center">The Quiz Game :game_die: | Milestone :three: Project </h1>
 
-![Image of the mockup of the live website](image.png)
+![Image of the mockup of the live website](docs/wireframes/mockup.png)
 
 ### [View live project here](https://quiz-test-01.herokuapp.com/)
 ### [View the testing information here - (TESTING.md) ](TESTING.md)
