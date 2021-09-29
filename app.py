@@ -332,6 +332,7 @@ def all_results():
         obj = {
             "id_quiz" : str(res['_id']),
             "total_corrects" : res['total_corrects'],
+            "created_at" : res['created_at']
         }
         results.append(obj)
     
