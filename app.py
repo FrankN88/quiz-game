@@ -489,7 +489,8 @@ def users():
         fields = {
             'username' : result['username'],
             'password' : result['password'],
-            'level' : result['level']
+            'level' : result['level'],
+            'created_at' : result['created_at']
         }
 
     if request.method == "POST":
@@ -523,7 +524,12 @@ def users():
             else:
 
                 #Adding new user
-                query = {'username' : username, 'password' : password, 'level' : level}
+                query = {
+                    'username' : username, 
+                    'password' : password, 
+                    'level' : level,
+                    'created_at' : now()
+                }
                 db_users.insert_one(query)
 
                 #Jump to users page whit message
