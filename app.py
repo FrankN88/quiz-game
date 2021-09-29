@@ -2,6 +2,7 @@ import os
 from flask import Flask, redirect, url_for, render_template, request, session
 from flask_pymongo import PyMongo
 from bson import ObjectId
+from datetime import datetime
 if os.path.exists("env.py"):
     import env
 
@@ -548,6 +549,13 @@ def delete_user():
 
         #Redirect to questions page
         return redirect(url_for('users'))
+
+
+def now():
+    """
+    Function to get actual datetime
+    """
+    return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 
 if __name__ == "__main__":
