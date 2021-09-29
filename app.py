@@ -134,7 +134,7 @@ def registration():
             db_users.insert_one(new_user)
 
             #Jump to login page whit message
-            message = "User created successfully, now you can log in";
+            message = "User created successfully, now you can log in"
             return render_template("registration.html",message=message)
     else:
 
@@ -166,7 +166,7 @@ def quiz():
     else:
 
         # Get inputs from user if exist
-        next_question = request.args.get('next');
+        next_question = request.args.get('next')
         answer = request.args.get('ans')
 
         #Get all questions
@@ -331,9 +331,9 @@ def questions():
 
     #GET MESSAGE AND ERRORS IF EXIST
     message = session.get('message')
-    session['message'] = "";
+    session['message'] = ""
     error = session.get('error')
-    session['error'] = "";
+    session['error'] = ""
 
     #Prepare fields
     fields = {}
@@ -372,7 +372,7 @@ def questions():
 
             #Return page with error
             error = "Error: All fields are required"
-            session['error'] = error;
+            session['error'] = error
             return redirect(url_for('questions'))
 
         else:
@@ -386,8 +386,8 @@ def questions():
                 db_questions.update_one(query, {"$set": values})
 
                 #Jump to questions page whit message
-                message = "Question edited successfully";
-                session['message'] = message;
+                message = "Question edited successfully"
+                session['message'] = message
 
             else:
 
@@ -396,8 +396,8 @@ def questions():
                 db_questions.insert_one(query)
 
                 #Jump to questions page whit message
-                message = "Question created successfully";
-                session['message'] = message;
+                message = "Question created successfully"
+                session['message'] = message
 
             return redirect(url_for('questions'))
 
@@ -427,7 +427,7 @@ def delete_question():
 
         #Return page with error
         error = "Error: ID not found"
-        session['error'] = error;
+        session['error'] = error
         return redirect(url_for('questions'))
 
     else:
@@ -452,9 +452,9 @@ def users():
 
     #GET MESSAGES AND ERRORS IF EXIST
     message = session.get('message')
-    session['message'] = "";
+    session['message'] = ""
     error = session.get('error')
-    session['error'] = "";
+    session['error'] = ""
 
     #Prepare fields
     fields = {}
