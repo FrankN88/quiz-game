@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
     <!-- metadata -->
     <meta charset="UTF-8">
@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
     <!-- fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
     
     <!-- style css -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
@@ -38,7 +38,7 @@
     <header>
         <!-- app name -->
         <div>
-            <a href="/"><img src="static/images/logo.png"></a>
+            <a href="/"><img alt="Logo" src="static/images/logo.png"></a>
 
             {% if session.get("username") %}
                 Hi {{session.get("username")}}!
@@ -56,17 +56,27 @@
 
                 {% if session.get("level") == "admin" %}
                     <!-- only for admins -->
-                    <a href="/questions"><button type="button" class="btn btn-secondary text-light mr-1"><i class="fas fa-question"></i><span class="ml-2">Manage questions</span></button></a>
-                    <a href="/users"><button type="button" class="btn btn-secondary text-light mr-1"><i class="fas fa-users"></i><span class="ml-2">Manage users</span></button></a>
+                    <a href="/questions">
+                        <button type="button" class="btn btn-secondary text-light mr-1"><i class="fas fa-question"></i><span class="ml-2">Manage questions</span></button>
+                    </a>
+                    <a href="/users">
+                        <button type="button" class="btn btn-secondary text-light mr-1"><i class="fas fa-users"></i><span class="ml-2">Manage users</span></button>
+                    </a>
                 {% endif %}
 
                 <!-- all users logged -->
-                <a href="/logout"><button type="button" class="btn btn-danger text-light mr-1"><i class="fas fa-sign-out-alt"></i><span class="ml-2">Logout</span></button></a>
+                <a href="/logout">
+                    <button type="button" class="btn btn-danger text-light mr-1"><i class="fas fa-sign-out-alt"></i><span class="ml-2">Logout</span></button>
+                </a>
 
             {% else %}
                 <!-- only for guests -->
-                <a href="/login"><button type="button" class="btn btn-success text-light mr-1"><i class="fas fa-user"></i><span class="ml-2">Login</span></button></a>
-                <a href="/registration"><button type="button" class="btn btn-secondary text-light"><i class="fas fa-list-ul"></i><span class="ml-2">Registration</span></button></a>
+                <a href="/login">
+                    <button type="button" class="btn btn-success text-light mr-1"><i class="fas fa-user"></i><span class="ml-2">Login</span></button>
+                </a>
+                <a href="/registration">
+                    <button type="button" class="btn btn-secondary text-light"><i class="fas fa-list-ul"></i><span class="ml-2">Registration</span></button>
+                </a>
 
             {% endif %}
         </div>
