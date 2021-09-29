@@ -49,33 +49,41 @@
 
         <div class="ml-auto menu">
             <!-- main menu -->
-            <a href="/quiz"><button type="button" class="btn btn-primary text-light mr-1"><i class="fas fa-gamepad"></i><span class="ml-2">Quiz</span></button></a>
+            <a href="/quiz" class="btn btn-primary text-light mr-1">
+                <i class="fas fa-gamepad"></i>
+                <span class="ml-2">Quiz</span>
+            </a>
             
             {% if session.get("username") %}
                 <!-- only for user logged -->
 
                 {% if session.get("level") == "admin" %}
                     <!-- only for admins -->
-                    <a href="/questions">
-                        <button type="button" class="btn btn-secondary text-light mr-1"><i class="fas fa-question"></i><span class="ml-2">Manage questions</span></button>
+                    <a href="/questions" class="btn btn-secondary text-light mr-1">
+                        <i class="fas fa-question"></i>
+                        <span class="ml-2">Manage questions</span>
                     </a>
-                    <a href="/users">
-                        <button type="button" class="btn btn-secondary text-light mr-1"><i class="fas fa-users"></i><span class="ml-2">Manage users</span></button>
+                    <a href="/users" class="btn btn-secondary text-light mr-1">
+                        <i class="fas fa-users"></i>
+                        <span class="ml-2">Manage users</span>
                     </a>
                 {% endif %}
 
                 <!-- all users logged -->
-                <a href="/logout">
-                    <button type="button" class="btn btn-danger text-light mr-1"><i class="fas fa-sign-out-alt"></i><span class="ml-2">Logout</span></button>
+                <a href="/logout" class="btn btn-danger text-light mr-1">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span class="ml-2">Logout</span>
                 </a>
 
             {% else %}
                 <!-- only for guests -->
-                <a href="/login">
-                    <button type="button" class="btn btn-success text-light mr-1"><i class="fas fa-user"></i><span class="ml-2">Login</span></button>
+                <a href="/login" class="btn btn-success text-light mr-1">
+                    <i class="fas fa-user"></i>
+                    <span class="ml-2">Login</span>
                 </a>
-                <a href="/registration">
-                    <button type="button" class="btn btn-secondary text-light"><i class="fas fa-list-ul"></i><span class="ml-2">Registration</span></button>
+                <a href="/registration" class="btn btn-secondary text-light">
+                    <i class="fas fa-list-ul"></i>
+                    <span class="ml-2">Registration</span>
                 </a>
 
             {% endif %}
