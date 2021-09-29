@@ -185,7 +185,7 @@ form h2{
 */
 @media screen and (max-width: 768px) {
 
-    header .menu button span{
+    header .menu a span{
         display: none !important;
     }
 
