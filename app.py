@@ -131,7 +131,12 @@ def registration():
         
         else:
             #Create new record in DB
-            new_user = {'username' : username, 'password' : password, 'level' : level}
+            new_user = {
+                'username' : username, 
+                'password' : password, 
+                'level' : level,
+                'created_at' : now()
+            }
             db_users.insert_one(new_user)
 
             #Jump to login page whit message
@@ -154,7 +159,11 @@ def quiz():
         #If not exist quiz session -> create new one
 
         #Create new quiz session in db and get the id
-        query = {'id_user' : session.get("id_user"), 'total_corrects' : 0}
+        query = {
+            'id_user' : session.get("id_user"), 
+            'total_corrects' : 0,
+            'created_at' : now()
+        }
         id_quiz = str(db_quiz_done.insert_one(query).inserted_id)
 
         #Create session for actual quiz starting from the first question
@@ -184,7 +193,10 @@ def quiz():
 
         if next_question is None:
             # If there is already an answer, use it and don't change it with a new one
-            query = {"id_quiz_done":session['id_quiz'], "id_question": str(question["_id"])}
+            query = {
+                "id_quiz_done":session['id_quiz'],
+                "id_question": str(question["_id"])
+            }
             answer_db = db_answers_done.find_one(query)
             if answer_db:
                 answer = answer_db['answer_number']
@@ -198,7 +210,12 @@ def quiz():
             #Check if there is an answer
 
             #save choice in db
-            query = { 'id_quiz_done' : session['id_quiz'], 'id_question' : str(question['_id']), 'answer_number' : answer }
+            query = { 
+                'id_quiz_done' : session['id_quiz'], 
+                'id_question' : str(question['_id']), 
+                'answer_number' : answer,
+                'created_at' : now()
+            }
             db_answers_done.insert_one(query)
 
             if question['correct'] == answer:
