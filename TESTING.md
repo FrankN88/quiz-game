@@ -265,7 +265,7 @@ Manual testing was conducted on the following elements of the [404 Page](404.htm
 
 Page | Result | Test Detail/Screenshot
 ------------ | ------------- | -------------
-home.html | Passed, No errors found | [Results](docs/testing/validators/html_404_validation.png)
+home.html | Passed, No errors found | [Results](docs/testing/validators/html_home_validation.png)
 login.html | Passed, No errors found | [Results](docs/testing/validators/html_login_validation.png)
 registration.html | Passed, No errors found | [Results](docs/testing/validators/html_registration_validation.png)
 404.html | Passed, No errors found | [Results](docs/testing/validators/html_404_validation.png)
@@ -288,6 +288,8 @@ Page | Result | Test Detail/Screenshot
 ------------ | ------------- | -------------
 script.js | 0 errors | [Results](docs/testing/validators/js_validation.png)
 
+<br>
+
 ### PYlint
 - [PYlint](https://www.pylint.org/) was used to validate the `PYTHON` code used.
 
@@ -295,11 +297,15 @@ Page | Result | Test Detail/Screenshot
 ------------ | ------------- | -------------
 app.py | 0 errors | [Results](docs/testing/validators/pylint_validation.png)
 
+<br>
+
 ### Browser Validation
 - **Microsoft Edge**: Website and user stories work as expected. 
 - **Google Chrome**: Website and user stories work as expected. 
 - **Safari**: Website and user stories work as expected.
 - **Firefox**: Website and user stories work as expected. 
+
+<br>
 
 ### Lighthouse Auditing
 - I used [Lighthouse](https://developers.google.com/web/tools/lighthouse) to test the performance, seo, best practices and accessability of the site
