@@ -233,22 +233,20 @@ Each page of the website features a consistent responsive navigational system:
 
 <br>
 
-#### Toggler
-- On smaller screens, the navigation bar collapses into a **toggler** icon whereby clicking it will reveal the links to the other pages.
+#### Navigation bar on smaller devices
+- On smaller screens, the two main buttons (Play and Login) reduce their size in a responsive way and self position at the top right next to the registration one.
 <ul>
     <li><strong>User stories covered by this feature:</strong>  
     </li>
-    <li><strong>x</strong> - x
+    <li><strong>1</strong> - Be able to easily navigate throughout the site to find content and contacts.
     </li>
-    <li><strong>x</strong> - x
+    <li><strong>6</strong> - Be able to play the game and navigate through the pages.
     </li>
-    <li><strong>D</strong> - x
-    </li>
-    <li><strong>x</strong> - x
+    <li><strong>16</strong> - Make the website as accessible and responsive as possible..
     </li>
 </ul>
-  <details><summary>Toggle btn</summary>
-    <img src="add link">
+  <details><summary>Navbar on small devices</summary>
+    <img src="docs/testing/validators/ux_stories/mobile.png">
   </details>
 
 <br>
