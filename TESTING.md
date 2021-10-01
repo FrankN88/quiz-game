@@ -140,7 +140,7 @@
            <img src="assets/images/testing_images/ux_stories/collage_site_owner_goal2.png">
            </details>
 
-     16. be able to receive feedback from the users.
+     16. Make the website as accessible and responsive as possible.
 
          1. xxxxxxx
            <details><summary>Evidence</summary>

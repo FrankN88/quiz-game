@@ -76,14 +76,14 @@ The website is designed to be responsive and accessible on all devices being at 
   10. Find the social media links so that I can join and interact with others in the community.
 
  #### As the admin I want to:
-  11. be able to delete any users scores.
-  12. be able to edit any users scores.
-  13. have unique access to all features.
+  11. Be able to delete any users scores.
+  12. Be able to edit any users scores.
+  13. Have unique access to all features.
 
   #### As the website owner I want to:
-  14. increase the number of people playing the games therefore the popularity of the website.
-  15. be in touch with the users.
-  16. be able to receive feedback from the users.
+  14. Increase the number of people playing the games therefore the popularity of the website.
+  15. Be in touch with the users.
+  16. Make the website as accessible and responsive as possible..
   17. Gain a better understanding of the audience by checking their feedback both via the social networks.
   18. Use reviews to increase customer satisfaction.
 
@@ -220,15 +220,15 @@ Each page of the website features a consistent responsive navigational system:
 <ul>
     <li><strong>User stories covered by this feature:</strong>  
     </li>
-    <li><strong>x</strong> - x
+    <li><strong>1</strong> - Be able to easily navigate throughout the site to find content and contacts.
     </li>
-    <li><strong>x</strong> - x
+    <li><strong>2</strong> - Play the quiz game.
     </li>
-    <li><strong>x</strong> - x
+    <li><strong>16</strong> - Make the website as accessible and responsive as possible.
     </li>
 </ul>
   <details><summary>Header</summary>
-    <img src="add link">
+    <img src="docs/testing/validators/ux_stories/back_homepage_logo.gif">
   </details>
 
 <br>
