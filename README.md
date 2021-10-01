@@ -148,7 +148,8 @@ This will all be achieved through creating a clear and strong UI focusing on wel
 ### Structure
 
 The information architecture was organized in a fluid and clear way in order to ensure that users could navigate through the site with ease and efficiency.
-![Site Map](add_image_structure)
+
+![Site Map](docs/wireframes/structure.png)
 
 ---
 
