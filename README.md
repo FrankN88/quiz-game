@@ -83,7 +83,7 @@ The website is designed to be responsive and accessible on all devices being at 
   #### As the website owner I want to:
   14. Increase the number of people playing the games therefore the popularity of the website.
   15. Be in touch with the users.
-  16. Make the website as accessible and responsive as possible..
+  16. Make the website as accessible and responsive as possible.
   17. Gain a better understanding of the audience by checking their feedback both via the social networks.
   18. Use reviews to increase customer satisfaction.
 
@@ -279,24 +279,18 @@ Each page of the website features a consistent responsive navigational system:
 
 <br>
 
-#### Mailto/Callto
-- In the footer, there are respectively a **Mailto** and a **Callto** embedded in the email and number.
+#### Mailto
+- In the footer, there is a **Mailto** embedded in the email. Hovering over the email will trigger hover effect.
 <ul>
     <li><strong>User stories covered by this feature:</strong>  
     </li>
-    <li><strong>x</strong> - x
+    <li><strong>9</strong> - Find the best way to get in contact with the organisation with any question I may have.
     </li>
-    <li><strong>x</strong> - x
-    </li>
-    <li><strong>x</strong> - x
-    </li>
-    <li><strong>x</strong> - x
-    </li>
-    <li><strong>x</strong> - x
+    <li><strong>15</strong> - Be in touch with the users.
     </li>
 </ul>
-  <details><summary>Mailto/Callto</summary>
-    <img src="add link">
+  <details><summary>Mailto</summary>
+    <img src="docs/testing/validators/ux_stories/mailto.gif">
   </details>
 
 <br>
