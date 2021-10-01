@@ -216,7 +216,7 @@ Each page of the website features a consistent responsive navigational system:
 <br>
 
 #### Header
-- The **Header** contains a conventionally placed **logo** at the top left of the page (clicking this will redirect users back to the home page) and **navigation bar** at the top right of the page.
+- The **Header** contains a conventionally placed **logo** at the top left of the page (clicking this will redirect users back to the home page) and **navigation bar** at the top right of the page. Hovering over the buttons in the navbar will trigger hover effect.
 <ul>
     <li><strong>User stories covered by this feature:</strong>  
     </li>
@@ -312,7 +312,7 @@ Each page of the website features a consistent responsive navigational system:
 <br>
 
 <dl>
-  <dt><a href="index.html" target="_blank" alt="Quiz game Home Page">Home Page</a></dt>
+  <dt><a href="home.html" target="_blank" alt="Quiz game Home Page">Home Page</a></dt>
      <ul>
          <li><strong>User stories covered by this feature:</strong>  
       </li>
@@ -343,7 +343,7 @@ Each page of the website features a consistent responsive navigational system:
 
   <br>
 
-  <dt><a href="x.html" target="_blank" alt="x Page">x</a></dt>
+  <dt><a href="login.html" target="_blank" alt="login Page">Login page</a></dt>
      <ul>
          <li><strong>User stories covered by this feature:</strong>  
       </li>
@@ -374,7 +374,7 @@ Each page of the website features a consistent responsive navigational system:
 
   <br>
 
-  <dt><a href="x.html" target="_blank" alt="x Page">x Page</a></dt>
+  <dt><a href="registration.html" target="_blank" alt="registration Page">Registration Page</a></dt>
      <ul>
          <li><strong>User stories covered by this feature:</strong>  
       </li>
@@ -420,9 +420,9 @@ Each page of the website features a consistent responsive navigational system:
      <ul>
           <li><strong>Navbar</strong> - Occupies 100% of the page width, from the left to the right, while being viewed on all devices. It Includes the standard links to the other pages.
           </li>
-          <li><strong>Title</strong> - It shows that the user is on page 404.
+          <li><strong>Line 1</strong> - It shows that the user is on page 404.
           </li>
-          <li><strong>Title 2</strong> - Standard line for a page 404, inviting the user to click on the links to go back to a page of the website.
+          <li><strong>Line 2</strong> - Standard line for a page 404, inviting the user to click on the links to go back to a page of the website.
           </li>
           <li><strong>Footer</strong> - Standard footer with the links as in the other pages.
           </li>
