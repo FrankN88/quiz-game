@@ -296,17 +296,17 @@ Each page of the website features a consistent responsive navigational system:
 <br>
 
 #### Back to the top button
-- **Back to the top button**  - Those <strong>buttons</strong> :arrow_up: are present in the footer so that the user can comfortably click them to be redirected to the top of the page. This feature improves the quality of navigation, especially if using smartphones.
+- **Back to the top button**  - This <strong>button</strong> :arrow_up: is present in the footer so that the user can comfortably click them to be redirected to the top of the page. This feature improves the quality of navigation, especially if using smartphones.
 <ul>
     <li><strong>User stories covered by this feature:</strong>  
     </li>
-    <li><strong>x</strong> - x
+    <li><strong>1</strong> - Be able to easily navigate throughout the site to find content and contacts.
     </li>
-    <li><strong>x</strong> - x
+    <li><strong>16</strong> - Make the website as accessible and responsive as possible.
     </li>
 </ul>
   <details><summary>Btn back to the top</summary>
-    <img src="add link">
+    <img src="docs/testing/validators/ux_stories/button_up.gif">
   </details>
 
 <br>
