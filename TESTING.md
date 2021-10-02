@@ -201,8 +201,8 @@ Manual testing was conducted on the following pages in order to assess responsiv
     <img src="assets/images/testing_images/ux_stories/footer_out_link.gif">
   </details>
 
-### XXXX Page
-Manual testing was conducted on the following elements of the [XXXX Page](XXXX.html):
+### Home Page
+Manual testing was conducted on the following elements of the [Home Page](home.html):
 
  - All the elements are responsive (header, footer, carousel, cards, jumbotrons, cookies div)
  - The Navbar turns into a toggler icon in smaller devices
@@ -210,8 +210,8 @@ Manual testing was conducted on the following elements of the [XXXX Page](XXXX.h
     <img src="">
   </details>
  
-### XXXX Page
-Manual testing was conducted on the following elements of the [XXXX Page](XXXX.html):
+### Login Page
+Manual testing was conducted on the following elements of the [Login Page](login.html):
 
  - All the elements are responsive
  - The form maintain its functionality in all devices 
@@ -220,32 +220,13 @@ Manual testing was conducted on the following elements of the [XXXX Page](XXXX.h
     <img src="XXXX">
   </details>
 
-### xxxxx Page
-Manual testing was conducted on the following elements of the [XXXX Page](XXXX.html):
+### Registration Page
+Manual testing was conducted on the following elements of the [Registration Page](registration.html):
 
  - All the elements are responsive (header, footer, jumbotron, titles, cards, dynamic gallery)
  - The cards align vertically in small devices
  - The Navbar turns into a toggler icon in smaller devices
    <details><summary>XXXX</summary>
-    <img src="XXXX">
-  </details>
-
-### XXXX Page
-Manual testing was conducted on the following elements of the [Projects Page](XXXX.html):
-
- - All the elements are responsive (header, footer, titles, jumbotron, clock, quiz, met app)
- - Clock, quiz and met app maintain their functionality in small devices.
- - The Navbar turns into a toggler icon in smaller devices
-   <details><summary>XXXX</summary>
-    <img src="XXXX">
-  </details>
-
-### xxxx Page
-Manual testing was conducted on the following elements of the [XXXX Page](XXXX.html):
-
- - All the elements are responsive (header, footer, titles, jumbotron, images, text, progress bars)
- - The Navbar turns into a toggler icon in smaller devices
-   <details><summary>XXXX Page</summary>
     <img src="XXXX">
   </details>
 
