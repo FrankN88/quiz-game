@@ -42,31 +42,31 @@ def login():
     if request.method == "POST":
         # Click on button "Create account"
 
-        #Get vars from page
+        # Get vars from page
         username = request.form['username']
         password = request.form['password']
 
         user = db_users.find_one({'username':username,'password':password})
         if user:
-            #Check if user exists -> Open session and go to quiz
+            # Check if user exists -> Open session and go to quiz
 
-            #Create session for user by username
+            # Create session for user by username
             session['id_user'] = str(user['_id'])
             session['username'] = user['username']
             session['level'] = user['level']
 
             if user['level'] == "admin":
-                #Check level of this user - Jump to page for create questions
+                # Check level of this user - Jump to page for create questions
                 return redirect(url_for('questions'))
 
-            #Jump to page Quiz
+            # Jump to page Quiz
             return redirect(url_for('quiz'))
 
-        #Return error in login page
+        # Return error in login page
         error = "Error: incorrect username or password"
         return render_template("login.html",error=error)
 
-    #Simply open page
+    # Simply open page
     return render_template("login.html")
 
 
@@ -101,19 +101,19 @@ def registration():
         level = "user"
 
         if password != password2:
-            #Check if password1 and password2 are equals - Return error in registration page
+            # Check if password1 and password2 are equals - Return error in registration page
             error = "Error: Passwords do not match"
             return render_template("registration.html",error=error)
 
-        #Check if user exists -> Return Error
+        # Check if user exists -> Return Error
         user_exists = db_users.find_one({'username':username})
         if user_exists:
 
-            #Return error in registration page
+            # Return error in registration page
             error = "Error: this username alredy exists"
             return render_template("registration.html",error=error)
 
-        #Create new record in DB
+        # Create new record in DB
         new_user = {
             'username' : username,
             'password' : password,
@@ -122,11 +122,11 @@ def registration():
         }
         db_users.insert_one(new_user)
 
-        #Jump to login page whit message
+        # Jump to login page whit message
         message = "User created successfully, now you can log in"
         return render_template("registration.html",message=message)
 
-    #Simply open page
+    # Simply open page
     return render_template("registration.html")
 
 
@@ -137,9 +137,9 @@ def quiz():
     """
 
     if session.get("id_quiz") is None:
-        #If not exist quiz session -> create new one
+        # If not exist quiz session -> create new one
 
-        #Create new quiz session in db and get the id
+        # Create new quiz session in db and get the id
         query = {
             'id_user' : session.get("id_user"),
             'total_corrects' : 0,
@@ -147,27 +147,27 @@ def quiz():
         }
         id_quiz = str(db_quiz_done.insert_one(query).inserted_id)
 
-        #Create session for actual quiz starting from the first question
+        # Create session for actual quiz starting from the first question
         session['id_quiz'] = id_quiz
         session['quiz_question'] = 0
 
-        #Go to quiz page
+        # Go to quiz page
         return redirect(url_for('quiz'))
 
     # Get inputs from user if exist
     next_question = request.args.get('next')
     answer = request.args.get('ans')
 
-    #Get all questions
+    # Get all questions
     list_questions = list(db_questions.find())
 
-    #Check if number of actual question is smoller than total questions
+    # Check if number of actual question is smoller than total questions
     if session.get('quiz_question') >= len(list_questions):
 
-        #Go directli to results page
+        # Go directly to results page
         return redirect(url_for("results"))
 
-    #Get the actual question number
+    # Get the actual question number
     question = list_questions[session.get('quiz_question')]
 
     if next_question is None:
@@ -190,9 +190,9 @@ def quiz():
                 response = response)
 
     if answer:
-        #Check if there is an answer
+        # Check if there is an answer
 
-        #save choice in db
+        # save choice in db
         query = {
             'id_quiz_done' : session['id_quiz'],
             'id_question' : str(question['_id']),
@@ -202,17 +202,17 @@ def quiz():
         db_answers_done.insert_one(query)
 
         if question['correct'] == answer:
-            #check if the answer is correct
+            # check if the answer is correct
 
-            #get info from db of this quiz session
+            # get info from db of this quiz session
             query = {"_id": ObjectId(session['id_quiz'])}
             quiz_db = db_quiz_done.find_one(query)
 
-            #increment correct from total
+            # increment correct from total
             values = {'total_corrects' : quiz_db['total_corrects']+1}
             db_quiz_done.update_one(query, {"$set": values})
 
-            #answer is correct
+            # answer is correct
             return render_template("quiz.html",
                 question = question,
                 tot_question = len(list_questions),
@@ -220,7 +220,7 @@ def quiz():
                 response = 'correct')
 
 
-        #anser is wrong
+        # answer is wrong
         return render_template("quiz.html",
             question = question,
             tot_question = len(list_questions),
@@ -228,21 +228,21 @@ def quiz():
             response = 'wrong')
 
     if next_question:
-        #Go to the next question
+        # Go to the next question
 
-        #go to the next one
+        # go to the next one
         session['quiz_question'] = session.get("quiz_question")+1
 
         if session['quiz_question'] >= len(list_questions):
-            #check if you have another question
+            # check if you have another question
 
-            #show the result page
+            # show the result page
             return redirect(url_for("results"))
 
-        #go to the next question
+        # go to the next question
         return redirect(url_for('quiz'))
 
-    #Go to login page
+    # Go to login page
     return render_template(
         "quiz.html",
         question = question,
@@ -257,24 +257,24 @@ def results():
 
     id_quiz_done = request.args.get('id_quiz')
     if id_quiz_done is None:
-        #Check if id_quiz exists or exists last session
+        # Check if id_quiz exists or exists last session
         id_quiz_done = session['id_quiz']
 
     if id_quiz_done is None:
-        #If quiz session not exists -> start new quiz
+        # If quiz session does not exist -> start new quiz
         return redirect(url_for('quiz'))
 
     if request.args.get('try_again'):
-        #If push on "Try again" -> reset session
+        # If push on "Try again" -> reset session
         session.pop('id_quiz', None)
         session.pop('quiz_question', None)
         return redirect(url_for('quiz'))
 
-    #get info from db of this quiz session
+    # get info from db of this quiz session
     questions_list = list(db_questions.find())
     tot_corrects = db_quiz_done.find_one({"_id": ObjectId(id_quiz_done)})['total_corrects']
 
-    #print results
+    # print results
     result = []
     for question in questions_list:
         query = {"id_quiz_done": id_quiz_done, "id_question" : str(question['_id'])}
@@ -293,7 +293,7 @@ def results():
 
         result.append(obj)
 
-    #Show results of quiz
+    # Show results of quiz
     return render_template("results.html",
         results=result,
         tot_questions=len(questions_list),
@@ -314,10 +314,10 @@ def all_results():
     """
 
     if session.get("id_user") is None:
-        #check if user are logged
+        # check if user are logged
         return redirect(url_for('login'))
 
-    #get all quiz done by user
+    # get all quiz done by user
     result = []
     lists = list(db_quiz_done.find({"id_user" : session.get("id_user")}))
     for res in lists:
@@ -328,11 +328,11 @@ def all_results():
         }
         result.append(obj)
 
-    #print
+    # print
     return render_template("all_results.html",results=result)
 
 
-# QUESTIONS PAGE (ONLY ADMIN)
+# Questions page (only for admin)
 @app.route("/questions", methods=["POST", "GET"])
 def questions():
     """
@@ -340,21 +340,21 @@ def questions():
     """
 
     if session.get("level") != "admin":
-        # BLOCK IF IS ADMIN
+        # Block if it's admin
         return redirect(url_for('login'))
 
-    #GET MESSAGE AND ERRORS IF EXIST
+    # Get message and errors
     message = session.get('message')
     session['message'] = ""
     error = session.get('error')
     session['error'] = ""
 
-    #Prepare fields
+    # Prepare fields
     fields = {}
 
     id_question = request.args.get('id_question')
     if id_question:
-        #Take values if is edit mode
+        # Take values if is edit mode
 
         # Get fields from db
         query = { "_id": ObjectId(id_question) }
@@ -373,7 +373,7 @@ def questions():
     if request.method == "POST":
         # Click on button "Save question"
 
-        #Get all fields from post
+        # Get all fields from post
         question = request.form['question']
         answer1 = request.form['answer1']
         answer2 = request.form['answer2']
@@ -387,17 +387,17 @@ def questions():
             or answer3 == ""
             or answer4 == ""
             or correct == ""):
-            #Check if all fields are filled
+            # Check if all fields are filled
 
-            #Return page with error
+            # Return page with error
             error = "Error: All fields are required"
             session['error'] = error
             return redirect(url_for('questions'))
 
         if id_question:
-            #Get id question if you want to edit an existing one
+            # Get id question if you want to edit an existing one
 
-            #Edit question
+            # Edit question
             query = {"_id": ObjectId(id_question)}
             values = {
                 'question' : question,
@@ -409,13 +409,13 @@ def questions():
             }
             db_questions.update_one(query, {"$set": values})
 
-            #Jump to questions page whit message
+            # Jump to questions page whit message
             message = "Question edited successfully"
             session['message'] = message
 
         else:
 
-            #Adding new question
+            # Adding new question
             query = {
                 'question' : question,
                 'answer1' : answer1,
@@ -426,7 +426,7 @@ def questions():
             }
             db_questions.insert_one(query)
 
-            #Jump to questions page whit message
+            # Jump to questions page whit message
             message = "Question created successfully"
             session['message'] = message
 
@@ -434,10 +434,10 @@ def questions():
 
     # Simply open page
 
-    #Get all questions
+    # Get all questions
     questions_list = list(db_questions.find())
 
-    #Open page
+    # Open page
     return render_template(
         "questions.html",
         questions=questions_list,
@@ -455,23 +455,23 @@ def delete_question():
     """
 
     if session.get("level") != "admin":
-        #BLOCK IF IS ADMIN
+        # Block if admin
         return redirect(url_for('login'))
 
     id_question = request.args['id_question']
     if id_question == "":
-        #Get id question to delete record from db
+        # Get id question to delete record from db
 
-        #Return page with error
+        # Return page with error
         error = "Error: ID not found"
         session['error'] = error
         return redirect(url_for('questions'))
 
-    #Delete record
+    # Delete record
     query = { "_id": ObjectId(id_question) }
     db_questions.remove(query)
 
-    #Redirect to questions page
+    # Redirect to questions page
     return redirect(url_for('questions'))
 
 
@@ -482,21 +482,21 @@ def users():
     """
 
     if session.get("level") != "admin":
-        #BLOCK IF IS ADMIN
+        # Block if admin
         return redirect(url_for('login'))
 
-    #GET MESSAGES AND ERRORS IF EXIST
+    # Get messages and errors
     message = session.get('message')
     session['message'] = ""
     error = session.get('error')
     session['error'] = ""
 
-    #Prepare fields
+    # Prepare fields
     fields = {}
 
     id_user = request.args.get('id_user')
     if id_user:
-        #Take values if is edit mode
+        # Take values if is edit mode
 
         # Get fields from db
         query = { "_id": ObjectId(id_user) }
@@ -519,26 +519,26 @@ def users():
 
         if id_user == "" or username == "" or password == "" or level == "":
 
-            #Return page with error
+            # Return page with error
             error = "Error: All fields are required"
             session['error'] = error
             return redirect(url_for('users'))
 
         if id_user:
-            #Get id user if you want to edit an existing one
+            # Get id user if you want to edit an existing one
 
-            #Edit user
+            # Edit user
             query = {"_id": ObjectId(id_user)}
             values = {'username' : username, 'password' : password, 'level' : level}
             db_users.update_one(query, {"$set": values})
 
-            #Jump to users page whit message
+            # Jump to users page whit message
             message = "User edited successfully"
             session['message'] = message
 
         else:
 
-            #Adding new user
+            # Adding new user
             query = {
                 'username' : username,
                 'password' : password,
@@ -547,16 +547,16 @@ def users():
             }
             db_users.insert_one(query)
 
-            #Jump to users page whit message
+            # Jump to users page with message
             message = "User created successfully"
             session['message'] = message
 
         return redirect(url_for('users'))
 
-    #get list of users
+    # get list of users
     users_list = list(db_users.find())
 
-    #render page
+    # render page
     return render_template(
         "users.html",
         users=users_list,
@@ -574,23 +574,23 @@ def delete_user():
     """
 
     if session.get("level") != "admin":
-        #BLOCK IF IS ADMIN
+        # Block if admin
         return redirect(url_for('login'))
 
     id_user = request.args['id_user']
     if id_user == "":
-        #Get id question to delete record from db
+        # Get id question to delete record from db
 
-        #Return page with error
+        # Return page with error
         error = "Error: ID not found"
         session['error'] = error
         return redirect(url_for('users'))
 
-    #Delete record
+    # Delete record
     query = { "_id": ObjectId(id_user) }
     db_users.remove(query)
 
-    #Redirect to questions page
+    # Redirect to questions page
     return redirect(url_for('users'))
 
 
