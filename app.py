@@ -560,7 +560,7 @@ def users():
     return render_template(
         "users.html",
         users=users_list,
-        tot=len(users),
+        tot=len(users_list),
         id_user=id_user,
         fields=fields,
         error=error,
