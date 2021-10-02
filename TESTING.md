@@ -331,4 +331,16 @@ registration.html | 0 errors and 0 contrast errors| [Results](XXXX)
 
 <br>
 
+### Bugs found during the testing phase
+
+Bug no. | Bug description |  Bug fix |
+------------ | ------------- | ------------- | 
+1 | The biggest trouble i had was trying to work out why the app (successfully deployed) on Heroku would not launch| after several days of consulting the specific documentation i was suggested to go and check the settings. I neglected to add: PORT 5000 and IP 0.0.0.0
+2 | Semicolons left in the app.py by mistake | They have been promptly removed as they were giving error warnings.
+3 | The buttons in the navbar would be all disorganized in the mobile view| Problem solved withn CSS.
+4 | External links would not open in another tab | Problem solved by adding target="_blank" attribute to the anchor tags.
+5 | x | x
+
+<br>
+
 ***
