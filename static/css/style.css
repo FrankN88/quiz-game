@@ -180,6 +180,26 @@ form h2{
 }
 
 /*
+    SCROLL TO TOP
+*/
+.scroll_to_top{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #343a40;
+    color: #ed8f44;
+    border: 2px solid #ed8f44;
+    border-radius: 100%;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    line-height: 36px;
+    text-align: center;
+}
+
+
+/*
     RESPONSIVE
     Hide elements when width is minus than 768px
 */
