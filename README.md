@@ -316,24 +316,36 @@ Each page of the website features a consistent responsive navigational system:
      <ul>
          <li><strong>User stories covered by this feature:</strong>  
       </li>
-          <li><strong>x</strong> - x
+          <li><strong>1</strong> - Be able to easily navigate throughout the site to find content and contacts.
       </li>
-          <li><strong>x</strong> - x
+          <li><strong>2</strong> - Play the quiz game.
       </li>
-          <li><strong>x</strong> - x
+          <li><strong>4</strong> - Locate their social media links to see their followings on social media in order to be updated about their latest releases.
       </li>
-          <li><strong>x</strong> - x
+          <li><strong>6</strong> - Be able to play the game and navigate through the pages.
+      </li>
+      </li>
+          <li><strong>9</strong> - Find the best way to get in contact with the organisation with any question I may have.
+      </li>
+      </li>
+          <li><strong>10</strong> - Find the social media links so that I can join and interact with others in the community.
+      </li>
+      <li><strong>14</strong> - Increase the number of people playing the games therefore the popularity of the website.
+      </li>
+      <li><strong>15</strong> - Be in touch with the users.
+      </li>
+      <li><strong>16</strong> - Make the website as accessible and responsive as possible.
       </li>
      </ul>
+     <li><strong>17</strong> - Gain a better understanding of the audience by checking their feedback both via the social networks.
+     </li>
+     <li><strong>18</strong> - Use reviews to increase customer satisfaction.
+     </li>
   <dd>The Home Page consists of the following elements:
      <ul>
-          <li><strong>x</strong> - x
+          <li><strong>Page</strong> - Possibility to play quiz game as an anonymous user.
           </li>
-          <li><strong>x</strong> - x
-          </li>
-          <li><strong>x</strong> - x
-          </li>
-          <li><strong>x</strong> - x
+          <li><strong>Page</strong> - Possibility to log in and play the game as a registered user with more benefits.
           </li>
      </ul>
         <details><summary>Home</summary>
