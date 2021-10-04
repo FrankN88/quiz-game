@@ -348,7 +348,7 @@ Each page of the website features a consistent responsive navigational system:
           </li>
      </ul>
         <details><summary>Home</summary>
-        <img src="add link">
+        <img src="docs/wireframes/home_devices.png">
         </details>
   </dd>
 
