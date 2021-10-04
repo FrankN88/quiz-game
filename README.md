@@ -358,28 +358,40 @@ Each page of the website features a consistent responsive navigational system:
      <ul>
          <li><strong>User stories covered by this feature:</strong>  
       </li>
-          <li><strong>x</strong> - x
+          <li><strong>1</strong> - Be able to easily navigate throughout the site to find content and contacts.
       </li>
-          <li><strong>x</strong> - x
+          <li><strong>2</strong> - Play the quiz game.
       </li>
-          <li><strong>x</strong> - x
+          <li><strong>5</strong> - Be able to manage my own posts by editing and/or deleting them.
       </li>
-          <li><strong>x</strong> - x
+          <li><strong>6</strong> - Be able to play the game and navigate through the pages.
       </li>
-          <li><strong>x</strong> - x
+          <li><strong>8</strong> - Check out my previous scores and therefore my progress.
+      </li>
+      </li>
+          <li><strong>11</strong> - Be able to delete any users scores.
+      </li>
+      </li>
+          <li><strong>12</strong> - Be able to edit any users scores.
+      </li>
+      </li>
+          <li><strong>13</strong> - Have unique access to all features.
+      </li>
+      </li>
+          <li><strong>16</strong> - Make the website as accessible and responsive as possible.
       </li>
      </ul>
 
-  <dd>The x page consists of the following elements:
+  <dd>The Login page consists of the following elements:
      <ul>
-          <li><strong>x</strong> - x
+          <li><strong>Login</strong> - Allows registered users to log in and play.
           </li>
-          <li><strong>x</strong> - x
+          <li><strong>Anonymous user</strong> - Allows the user who does not want to register to keep playing anyway by clicking on the appropriate button. The ideal situation would be to have as many registered users as possible but it is always good to allow choice to those who do not want to register
           </li>
-          <li><strong>x</strong> - x
+          <li><strong>Registration</strong> - It opens the registration page.
           </li>
      </ul>
-         <details><summary>x</summary>
+         <details><summary>Login</summary>
          <img src="assets/images/testing_images/pages/people.png">
          </details>
   </dd>
@@ -390,27 +402,27 @@ Each page of the website features a consistent responsive navigational system:
      <ul>
          <li><strong>User stories covered by this feature:</strong>  
       </li>
-          <li><strong>x</strong> - x
+          <li><strong>5</strong> - Be able to manage my own posts by editing and/or deleting them.
       </li>
-          <li><strong>x</strong> - x
+          <li><strong>6</strong> - Be able to play the game and navigate through the pages.
       </li>
-          <li><strong>x</strong> - x
+          <li><strong>7</strong> - Not to be allowed to remove any other scores except mine.
       </li>
-          <li><strong>x</strong> - x
+          <li><strong>8</strong> - Check out my previous scores and therefore my progress.
       </li>
-          <li><strong>x</strong> - x
+          <li><strong>16</strong> - Make the website as accessible and responsive as possible.
       </li>
      </ul>
 
-  <dd>The projects page consists of the following elements:
+  <dd>The Registration page consists of the following elements:
      <ul>
-          <li><strong>x</strong> - x
+          <li><strong>Username</strong> - Put your username.
           </li>
-          <li><strong>x</strong> - x
+          <li><strong>Password</strong> - Create a password.
           </li>
-          <li><strong>x</strong> - x
+          <li><strong>Repeat Password</strong> - Repeat the password.
           </li>
-          <li><strong>x</strong> - x
+          <li><strong>Create Account</strong> - Click onto "Create Account".
           </li>
      </ul>
          <details><summary>x</summary>
@@ -424,25 +436,21 @@ Each page of the website features a consistent responsive navigational system:
      <ul>
          <li><strong>User stories covered by this feature:</strong>  
       </li>
-          <li><strong>x</strong> - x
+          <li><strong>1</strong> - Be able to easily navigate throughout the site to find content and contacts.
       </li>
-          <li><strong>x</strong> - x
+          <li><strong>16</strong> - Make the website as accessible and responsive as possible.
       </li>
      </ul>
 
   <dd>The 404 page consists of the following elements:
      <ul>
-          <li><strong>Navbar</strong> - Occupies 100% of the page width, from the left to the right, while being viewed on all devices. It Includes the standard links to the other pages.
-          </li>
           <li><strong>Line 1</strong> - It shows that the user is on page 404.
           </li>
           <li><strong>Line 2</strong> - Standard line for a page 404, inviting the user to click on the links to go back to a page of the website.
           </li>
-          <li><strong>Footer</strong> - Standard footer with the links as in the other pages.
-          </li>
      </ul>
          <details><summary>404</summary>
-         <img src="assets/images/testing_images/pages/404.png">
+         <img src="link">
          </details>
   </dd>
   </dl>
