@@ -314,33 +314,31 @@ Each page of the website features a consistent responsive navigational system:
 <dl>
   <dt><a href="home.html" target="_blank" alt="Quiz game Home Page">Home Page</a></dt>
      <ul>
-         <li><strong>User stories covered by this feature:</strong>  
-      </li>
-          <li><strong>1</strong> - Be able to easily navigate throughout the site to find content and contacts.
-      </li>
-          <li><strong>2</strong> - Play the quiz game.
-      </li>
-          <li><strong>4</strong> - Locate their social media links to see their followings on social media in order to be updated about their latest releases.
-      </li>
-          <li><strong>6</strong> - Be able to play the game and navigate through the pages.
-      </li>
-      </li>
-          <li><strong>9</strong> - Find the best way to get in contact with the organisation with any question I may have.
-      </li>
-      </li>
-          <li><strong>10</strong> - Find the social media links so that I can join and interact with others in the community.
-      </li>
-      <li><strong>14</strong> - Increase the number of people playing the games therefore the popularity of the website.
-      </li>
-      <li><strong>15</strong> - Be in touch with the users.
-      </li>
-      <li><strong>16</strong> - Make the website as accessible and responsive as possible.
-      </li>
-      </ul>
-      <li><strong>17</strong> - Gain a better understanding of the audience by checking their feedback both via the social networks.
-      </li>
-      <li><strong>18</strong> - Use reviews to increase customer satisfaction.
-      </li>
+        <li><strong>User stories covered by this feature:</strong>  
+        </li>
+        <li><strong>1</strong> - Be able to easily navigate throughout the site to find content and contacts.
+        </li>
+        <li><strong>2</strong> - Play the quiz game.
+        </li>
+        <li><strong>4</strong> - Locate their social media links to see their followings on social media in order to be updated about their latest releases.
+        </li>
+        <li><strong>6</strong> - Be able to play the game and navigate through the pages.
+        </li>
+        <li><strong>9</strong> - Find the best way to get in contact with the organisation with any question I may have.
+        </li>
+        <li><strong>10</strong> - Find the social media links so that I can join and interact with others in the community.
+        </li>
+        <li><strong>14</strong> - Increase the number of people playing the games therefore the popularity of the website.
+        </li>
+        <li><strong>15</strong> - Be in touch with the users.
+        </li>
+        <li><strong>16</strong> - Make the website as accessible and responsive as possible.
+        </li>
+        <li><strong>17</strong> - Gain a better understanding of the audience by checking their feedback both via the social networks.
+        </li>
+        <li><strong>18</strong> - Use reviews to increase customer satisfaction.
+        </li>
+     </ul>
 
   <dd>The Home Page consists of the following elements:
      <ul>
