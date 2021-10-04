@@ -341,6 +341,7 @@ Each page of the website features a consistent responsive navigational system:
      </li>
      <li><strong>18</strong> - Use reviews to increase customer satisfaction.
      </li>
+
   <dd>The Home Page consists of the following elements:
      <ul>
           <li><strong>Page</strong> - Possibility to play quiz game as an anonymous user.
@@ -370,6 +371,7 @@ Each page of the website features a consistent responsive navigational system:
           <li><strong>x</strong> - x
       </li>
      </ul>
+
   <dd>The x page consists of the following elements:
      <ul>
           <li><strong>x</strong> - x
@@ -401,6 +403,7 @@ Each page of the website features a consistent responsive navigational system:
           <li><strong>x</strong> - x
       </li>
      </ul>
+
   <dd>The projects page consists of the following elements:
      <ul>
           <li><strong>x</strong> - x
@@ -428,6 +431,7 @@ Each page of the website features a consistent responsive navigational system:
           <li><strong>x</strong> - x
       </li>
      </ul>
+     
   <dd>The 404 page consists of the following elements:
      <ul>
           <li><strong>Navbar</strong> - Occupies 100% of the page width, from the left to the right, while being viewed on all devices. It Includes the standard links to the other pages.
