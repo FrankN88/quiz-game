@@ -336,11 +336,11 @@ Each page of the website features a consistent responsive navigational system:
       </li>
       <li><strong>16</strong> - Make the website as accessible and responsive as possible.
       </li>
-     </ul>
-     <li><strong>17</strong> - Gain a better understanding of the audience by checking their feedback both via the social networks.
-     </li>
-     <li><strong>18</strong> - Use reviews to increase customer satisfaction.
-     </li>
+      </ul>
+      <li><strong>17</strong> - Gain a better understanding of the audience by checking their feedback both via the social networks.
+      </li>
+      <li><strong>18</strong> - Use reviews to increase customer satisfaction.
+      </li>
 
   <dd>The Home Page consists of the following elements:
      <ul>
@@ -431,7 +431,7 @@ Each page of the website features a consistent responsive navigational system:
           <li><strong>x</strong> - x
       </li>
      </ul>
-     
+
   <dd>The 404 page consists of the following elements:
      <ul>
           <li><strong>Navbar</strong> - Occupies 100% of the page width, from the left to the right, while being viewed on all devices. It Includes the standard links to the other pages.
