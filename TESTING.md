@@ -10,89 +10,81 @@
 
     1. Be able to easily navigate throughout the site to find content and contacts.
 
-        1. Upon entering the site, users are automatically greeted with a clean and easily readable sticky navigation bar to go to the page of their choice. Underneath, there is an introductory jumbotron.
-           <details><summary>Navbar</summary>
+        1. Upon entering the site, users are automatically greeted with a clean and easily readable sticky navigation bar to go to the page of their choice.
+           <details><summary>Evidence</summary>
            <img src="assets/images/testing_images/ux_stories/navbar.png">
            </details>
-        2. The main features are immediately shown with a carousel and cards.
-           <details><summary>Carousel/Cards</summary>
+        2. The main features are immediately shown with two cards in the middle of the page.
+           <details><summary>Evidence</summary>
            <img src="assets/images/testing_images/ux_stories/carousel_card.png">
            </details>
-        3. The user has several options: click the link that redirects to the "people page", one of the links in the navbar or scroll down, where cards will show the main features of the website. 
-           <details><summary>Call to action btn</summary>
+        3. At the bottom of the page there is a footer with the links to the social networks and contacts. 
+           <details><summary>Evidence</summary>
            <img src="assets/images/testing_images/ux_stories/btn_home.png">
            </details>
 
     2. Play the quiz game.
 
-        1. xxxxx. 
-           <details><summary>Navbar features</summary>
+        1. One card (Play) allows the user to play immediately the quiz game. 
+           <details><summary>Evidence</summary>
            <img src="assets/images/testing_images/ux_stories/link_hover_decoration.gif">
            </details>
-        2. xxxx.
-           <details><summary>Btn back to the top</summary>
+        2. Another card allows the user to login.
+           <details><summary>Evidence</summary>
            <img src="assets/images/testing_images/ux_stories/btn_up_footer.gif">
            </details>
 
     3. Get my feedback regarding the score.
 
-        1. xxxxx.
-           <details><summary>Footer links</summary>
+        1. The anonymous user will get the score immediately after the game whilst the logged in user will be able to see more data and details regarding the current score and previous ones.
+           <details><summary>Evidence</summary>
            <img src="assets/images/testing_images/ux_stories/footer_links_responsive.png">
            </details>
 
     4. Locate their social media links to see their followings on social media in order to be updated about their latest releases.
 
-        1. The social media links are located in the footer together with the group's contacts.
-           <details><summary>Footer links</summary>
+        1. The social media links are located in the footer together with contact.
+           <details><summary>Evidence</summary>
            <img src="assets/images/testing_images/ux_stories/footer_links_responsive.png">
            </details>
 
 -   #### Registered user/ returning/ frequent visitor goals
 
-    5. Be able to manage my own posts by editing and/or deleting them.
+    5. Be able to visualise my own posts.
 
-        1. xxxxx.
-           <details><summary>Publications updates</summary>
+        1. The logged in user is able to see the history of the scores with dates.
+           <details><summary>Evidence</summary>
            <img src="assets/images/testing_images/ux_stories/publications.gif">
            </details>
-        2. xxxxx.
-           <details><summary>Staff description</summary>
-           <img src="assets/images/testing_images/ux_stories/staff_cards.png">
-           </details>
 
-    6. Be able to play the game and navigate through the pages..
+    6. Be able to play the game and navigate through the pages.
 
-        1. xxxxx.
-           <details><summary>Contacts</summary>
+        1. The links/buttons are easy to spot and click.
+           <details><summary>Evidence</summary>
            <img src="assets/images/testing_images/ux_stories/footer.png">
-           </details>
-        2. xxxxx.
-           <details><summary>Form</summary>
-           <img src="assets/images/testing_images/ux_stories/form.png">
            </details>
 
     7. Not to be allowed to remove any other scores except mine.
-        1. xxxxx.
-           <details><summary>Social media position</summary>
+        1. The logged in user can only delete his/her score.
+           <details><summary>Evidence</summary>
            <img src="assets/images/testing_images/ux_stories/footer.png">
            </details>
 
-    8. Check out my previous scores and therefore my progress..
-        1. xxxxx.
-           <details><summary>Social media position</summary>
+    8. Check out my previous scores and therefore my progress.
+        1. The logged in user can visualise his/her previous scores.
+           <details><summary>Evidence</summary>
            <img src="assets/images/testing_images/ux_stories/footer.png">
            </details>
 
-    9. CFind the best way to get in contact with the organisation with any question I may have.
-        1. xxxxx.
-           <details><summary>Social media position</summary>
+    9. Find the best way to get in contact with the organisation with any question I may have.
+        1. Link and contact in the footer.
+           <details><summary>Evidence</summary>
            <img src="assets/images/testing_images/ux_stories/footer.png">
            </details>
     
     10. Find the social media links so that I can join and interact with others in the community.
-        1. xxxxx.
-           <details><summary>Social media position</summary>
+        1. ink and contact in the footer.
+           <details><summary>Evidence</summary>
            <img src="assets/images/testing_images/ux_stories/footer.png">
            </details>
        
@@ -101,48 +93,44 @@
 
     11. be able to delete any users scores.
 
-        1. xxxxx
-           <details><summary>xxxxx</summary>
+        1. The admin can delete any user.
+           <details><summary>Evidence</summary>
            <img src="assets/images/testing_images/ux_stories/navbar.png">
            </details>
 
-    12. be able to edit any users scores.
+    12. be able to edit any question.
 
-        1. xxxxx.
-           <details><summary>xxxx</summary>
+        1. The admin can edit any question.
+           <details><summary>Evidence</summary>
            <img src="assets/images/testing_images/ux_stories/publications.gif">
            </details>
 
     13. have unique access to all features.
 
-        1. xxxx
-           <details><summary>Mailto</summary>
+        1. The admin is the only one who can access all features.
+           <details><summary>Evidence</summary>
            <img src="assets/images/testing_images/ux_stories/mailto.gif">
-           </details>
-        2. xxxxx
-           <details><summary>Filling the form</summary>
-           <img src="assets/images/testing_images/ux_stories/form.png">
            </details>
 
 -   #### Site Owner Goals, Testing
 
      14. increase the number of people playing the games therefore the popularity of the website.
 
-         1. xxxxx
+         1. Through the appealing design of the page.
            <details><summary>Evidence</summary>
            <img src="assets/images/testing_images/ux_stories/collage_site_owner_goal1.png">
            </details>
 
      15. be in touch with the users.
 
-         1. xxxxx
+         1. Through the links in the footer and contact.
            <details><summary>Evidence</summary>
            <img src="assets/images/testing_images/ux_stories/collage_site_owner_goal2.png">
            </details>
 
      16. Make the website as accessible and responsive as possible.
 
-         1. xxxxxxx
+         1. The website is responsive on any device and is designed according to the most important UX principles.
            <details><summary>Evidence</summary>
            <img src="assets/images/testing_images/ux_stories/collage_site_owner_goal3.png">
            </details>
@@ -156,7 +144,7 @@
 
      18. Use reviews to increase customer satisfaction.
 
-         1. Possible via regular updates (press releases, newsletter and constant update of the site pages) that connected to the social medias interactions give the owner a trend of its audience.
+         1. Possible via regular updates (FB,Twitter,email) that connected to the social medias interactions give the owner a trend of its audience.
            <details><summary>Evidence</summary>
            <img src="assets/images/testing_images/ux_stories/collage_site_owner_goal5.png">
            </details>

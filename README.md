@@ -68,7 +68,7 @@ The website is designed to be responsive and accessible on all devices being at 
   4. Locate their social media links to see their followings on social media in order to be updated about their latest releases.
 
  #### As a registered user/ returning/ frequent visitor I want to:
-  5. Be able to manage my own posts by editing and/or deleting them.
+  5. Be able to manage my own posts.
   6. Be able to play the game and navigate through the pages.
   7. Not to be allowed to remove any other scores except mine.
   8. Check out my previous scores and therefore my progress.
@@ -77,7 +77,7 @@ The website is designed to be responsive and accessible on all devices being at 
 
  #### As the admin I want to:
   11. Be able to delete any users scores.
-  12. Be able to edit any users scores.
+  12. Be able to edit any question.
   13. Have unique access to all features.
 
   #### As the website owner I want to:
