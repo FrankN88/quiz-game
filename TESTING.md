@@ -267,7 +267,8 @@ style.css | Passed, No errors found | [Results](docs/testing/validators/css_vali
 
 Page | Result | Test Detail/Screenshot
 ------------ | ------------- | -------------
-script.js | 0 errors | [Results](docs/testing/validators/js_validation.png)
+script.js | 0 errors | [Results](docs/testing/validators/script_js.png)
+admin.js | 0 errors | [Results](docs/testing/validators/admin_js.png)
 
 <br>
 
