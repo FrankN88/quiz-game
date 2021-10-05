@@ -85,7 +85,12 @@
             3) {{questions[i].answer3}}<br>
             4) {{questions[i].answer4}}<br>
             <i>The correct answer is nr.: <strong>{{questions[i].correct}}</strong></i>
-            <div class="mt-1"><a href="/questions?id_question={{questions[i]._id}}"><button type="button" class="btn btn-success btn-sm mr-1">Edit</button></a><a href="/delete_question?id_question={{questions[i]._id}}"><button type="button" class="btn btn-danger btn-sm">Delete</button></a></div>
+            <div class="mt-1">
+              <a href="/questions?id_question={{questions[i]._id}}">
+                <button type="button" class="btn btn-success btn-sm mr-1">Edit</button>
+              </a>
+              <button onclick="delete_question('{{questions[i]._id}}')" type="button" class="btn btn-danger btn-sm">Delete</button>
+            </div>
         </div>
         {% endfor %}
       </div>
@@ -93,5 +98,12 @@
     </div>
   
   </div>
+
+  <script type="text/javascript">
+    function delete_question(id){
+      if(!confirm("Delete this element?")) return;
+      window.open("/delete_question?id_question="+id,"_self");
+    }
+  </script>
 
 {% include 'footer.html' %}
