@@ -426,7 +426,7 @@ Each page of the website features a consistent responsive navigational system:
           </li>
      </ul>
          <details><summary>x</summary>
-         <img src="assets/images/testing_images/pages/projects.png">
+         <img src="docs/wireframes/registration_devices.png">
          </details>
   </dd>
 
