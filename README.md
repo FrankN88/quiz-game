@@ -392,7 +392,7 @@ Each page of the website features a consistent responsive navigational system:
           </li>
      </ul>
          <details><summary>Login</summary>
-         <img src="assets/images/testing_images/pages/people.png">
+         <img src="docs/wireframes/login_devices.png">
          </details>
   </dd>
 

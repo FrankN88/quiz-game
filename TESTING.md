@@ -301,18 +301,6 @@ registration.html | [Results](XXXX)
 
 <br>
 
-### Wave Accessibility
-- [Wave accessibility](https://wave.webaim.org/) was used to test the websites accessibility
-
-Page | Result | Test Detail/Screenshot
------------- | ------------- | -------------
-home.html | 0 errors and 0 contrast errors| [Results](XXXX)
-login.html | 0 errors and 0 contrast errors| [Results](XXXX)
-registration.html | 0 errors and 0 contrast errors| [Results](XXXX)
-404.html | 0 errors and 0 contrast errors| [Results](XXXX)
-
-<br>
-
 ### Bugs found during the testing phase
 
 Bug no. | Bug description |  Bug fix |
