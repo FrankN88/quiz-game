@@ -4,6 +4,10 @@
 */
 body{
     font-family: "Helvetica";
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+    min-height: 100vh;
 }
 
 /*
@@ -86,6 +90,10 @@ header img{
     FOOTER
     The last element, present in every page
 */
+footer{
+    margin-top: auto;
+}
+
 footer hr{
     background: #fff;
 }
