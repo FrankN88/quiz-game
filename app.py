@@ -100,6 +100,16 @@ def registration():
         password2 = request.form['password2']
         level = "user"
 
+        if (username == ""
+            or password == ""
+            or password2 == ""):
+            # Check if all fields are filled
+
+            # Return page with error
+            error = "Error: All fields are required"
+            session['error'] = error
+            return render_template("registration.html",error=error)
+
         if password != password2:
             # Check if password1 and password2 are equals - Return error in registration page
             error = "Error: Passwords do not match"
