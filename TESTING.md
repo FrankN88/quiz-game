@@ -320,11 +320,12 @@ Bug no. | Bug description |  Bug fix |
 2 | Semicolons left in the app.py by mistake | They have been promptly removed as they were giving error warnings.
 3 | The buttons in the navbar would be all disorganized in the mobile view| Problem solved withn CSS.
 4 | External links would not open in another tab | Problem solved by adding target="_blank" attribute to the anchor tags.
-5 | Filed required | During the registration process even an empty form was accepted. I had to add "required" so that the user would not get a positive feedback for registration unless filling all of the necessary fields.
+5 | Field required | During the registration process even an empty form was accepted. I had to add "required" so that the user would not get a positive feedback for registration unless filling all of the necessary fields.
 6 | User Cancellation | The Admin has the possibility to delete the registered user. Initially there was no warning when deleting a user. Now the admin will receive a warning message before proceeding.
-7 | x | x
+7 | Footer out of place in Ipad view | At the end i have noticed that the footer of all the pages except the home page would not go down in the Tablet view. I have resolved that using the Flex property.
 8 | x | x
 9 | x | x
+10 | x | x
 
 <br>
 
