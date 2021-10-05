@@ -61,5 +61,10 @@
     
     <!-- script js -->
     <script src="/static/js/script.js"></script>
+
+    {% if session.get("level") == "admin" %}
+        <script src="/static/js/admin.js"></script>
+    {% endif %}
+
 </body>
 </html>
