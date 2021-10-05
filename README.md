@@ -425,7 +425,7 @@ Each page of the website features a consistent responsive navigational system:
           <li><strong>Create Account</strong> - Click onto "Create Account".
           </li>
      </ul>
-         <details><summary>x</summary>
+         <details><summary>Registration</summary>
          <img src="docs/wireframes/registration_devices.png">
          </details>
   </dd>
@@ -450,7 +450,7 @@ Each page of the website features a consistent responsive navigational system:
           </li>
      </ul>
          <details><summary>404</summary>
-         <img src="link">
+         <img src="docs/wireframes/404_devices.png">
          </details>
   </dd>
   </dl>
