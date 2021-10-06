@@ -38,14 +38,14 @@
 
         1. The anonymous user will get the score immediately after the game whilst the registered user will be able to see more data and details regarding the current score and previous ones.
            <details><summary>Evidence</summary>
-           <img src="">
+           <img src="docs/testing/validators/ux_stories/registered_and_anonymous.png">
            </details>
 
     4. Locate their social media links to see their followings on social media in order to be updated about their latest releases.
 
         1. The social media links are located in the footer together with contact.
            <details><summary>Evidence</summary>
-           <img src="">
+           <img src="docs/testing/validators/ux_stories/hover_footer_links.gif">
            </details>
 
 -   #### Registered user/ returning/ frequent visitor goals
