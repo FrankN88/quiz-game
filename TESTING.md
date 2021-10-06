@@ -36,7 +36,7 @@
 
     3. Get my feedback regarding the score.
 
-        1. The anonymous user will get the score immediately after the game whilst the logged in user will be able to see more data and details regarding the current score and previous ones.
+        1. The anonymous user will get the score immediately after the game whilst the registered user will be able to see more data and details regarding the current score and previous ones.
            <details><summary>Evidence</summary>
            <img src="assets/images/testing_images/ux_stories/footer_links_responsive.png">
            </details>
@@ -52,7 +52,7 @@
 
     5. Be able to visualise my own posts.
 
-        1. The logged in user is able to see the history of the scores with dates.
+        1. The registered user is able to see the history of the scores with exact dates.
            <details><summary>Evidence</summary>
            <img src="assets/images/testing_images/ux_stories/publications.gif">
            </details>
@@ -64,14 +64,14 @@
            <img src="assets/images/testing_images/ux_stories/footer.png">
            </details>
 
-    7. Not to be allowed to remove any other scores except mine.
-        1. The logged in user can only delete his/her score.
+    7. Not to be allowed to remove any score (functionality only for admin).
+        1. The logged in user can only visualise his/her score.
            <details><summary>Evidence</summary>
            <img src="assets/images/testing_images/ux_stories/footer.png">
            </details>
 
     8. Check out my previous scores and therefore my progress.
-        1. The logged in user can visualise his/her previous scores.
+        1. The registered user can visualise his/her previous scores.
            <details><summary>Evidence</summary>
            <img src="assets/images/testing_images/ux_stories/footer.png">
            </details>
@@ -83,7 +83,7 @@
            </details>
     
     10. Find the social media links so that I can join and interact with others in the community.
-        1. ink and contact in the footer.
+        1. Link and contact in the footer.
            <details><summary>Evidence</summary>
            <img src="assets/images/testing_images/ux_stories/footer.png">
            </details>
@@ -179,21 +179,16 @@ Manual testing was conducted on the following pages in order to assess responsiv
     <img src="assets/images/testing_images/ux_stories/back_home_page.gif">
   </details>
 
-- Hovering over email and phone number in the footer will trigger `hover` effect and clicking on them will redirect you to the email (mailto) or initialise the call (callto - if using a mobile device - ).
+- Hovering over the email in the footer will trigger `hover` effect and clicking on them will redirect you to the email (mailto).
   <details><summary>Mailto/Callto</summary>
     <img src="assets/images/testing_images/ux_stories/callto_mailto.gif">
-  </details>
-
-- Clicking on the univesity logo in the footer will redirect you to the university homepage and clicking on the address will open the location in GoogleMaps.
-  <details><summary>Footer external links</summary>
-    <img src="assets/images/testing_images/ux_stories/footer_out_link.gif">
   </details>
 
 ### Home Page
 Manual testing was conducted on the following elements of the [Home Page](home.html):
 
- - All the elements are responsive (header, footer, carousel, cards, jumbotrons, cookies div)
- - The Navbar turns into a toggler icon in smaller devices
+ - All the elements are responsive (header, footer, cards).
+ - The buttons in the Navbar turns into smaller buttons ordered in the same way.
    <details><summary>Home Page</summary>
     <img src="">
   </details>
@@ -201,28 +196,26 @@ Manual testing was conducted on the following elements of the [Home Page](home.h
 ### Login Page
 Manual testing was conducted on the following elements of the [Login Page](login.html):
 
- - All the elements are responsive
- - The form maintain its functionality in all devices 
- - The Navbar turns into a toggler icon in smaller devices
-   <details><summary>About page</summary>
+ - All the elements are responsive (header, footer, central window).
+ - The buttons in the Navbar turns into smaller buttons ordered in the same way.
+   <details><summary>Login page</summary>
     <img src="XXXX">
   </details>
 
 ### Registration Page
 Manual testing was conducted on the following elements of the [Registration Page](registration.html):
 
- - All the elements are responsive (header, footer, jumbotron, titles, cards, dynamic gallery)
- - The cards align vertically in small devices
- - The Navbar turns into a toggler icon in smaller devices
-   <details><summary>XXXX</summary>
+ - All the elements are responsive (header, footer, central window).
+ - The buttons in the Navbar turns into smaller buttons ordered in the same way.
+   <details><summary>Registration page</summary>
     <img src="XXXX">
   </details>
 
 ### 404 Page
 Manual testing was conducted on the following elements of the [404 Page](404.html):
 
- - All the elements are responsive (header, footer, text)
- - The Navbar turns into a toggler icon in smaller devices
+ - All the elements are responsive (header, footer, text).
+ - The buttons in the Navbar turns into smaller buttons ordered in the same way.
    <details><summary>404 Page</summary>
     <img src="assets/images/testing_images/ux_stories/gif_404_responsive.gif">
    </details>

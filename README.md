@@ -70,7 +70,7 @@ The website is designed to be responsive and accessible on all devices being at 
  #### As a registered user/ returning/ frequent visitor I want to:
   5. Be able to manage my own posts.
   6. Be able to play the game and navigate through the pages.
-  7. Not to be allowed to remove any other scores except mine.
+  7. Not to be allowed to remove any score (functionality only for admin).
   8. Check out my previous scores and therefore my progress.
   9. Find the best way to get in contact with the organisation with any question I may have.
   10. Find the social media links so that I can join and interact with others in the community.
