@@ -12,40 +12,40 @@
 
         1. Upon entering the site, users are automatically greeted with a clean and easily readable sticky navigation bar to go to the page of their choice.
            <details><summary>Evidence</summary>
-           <img src="assets/images/testing_images/ux_stories/navbar.png">
+           <img src="docs/testing/validators/ux_stories/navbar.png">
            </details>
         2. The main features are immediately shown with two cards in the middle of the page.
            <details><summary>Evidence</summary>
-           <img src="assets/images/testing_images/ux_stories/carousel_card.png">
+           <img src="docs/testing/validators/ux_stories/cards.png">
            </details>
         3. At the bottom of the page there is a footer with the links to the social networks and contacts. 
            <details><summary>Evidence</summary>
-           <img src="assets/images/testing_images/ux_stories/btn_home.png">
+           <img src="docs/testing/validators/ux_stories/footer.png">
            </details>
 
     2. Play the quiz game.
 
         1. One card (Play) allows the user to play immediately the quiz game. 
            <details><summary>Evidence</summary>
-           <img src="assets/images/testing_images/ux_stories/link_hover_decoration.gif">
+           <img src="">
            </details>
         2. Another card allows the user to login.
            <details><summary>Evidence</summary>
-           <img src="assets/images/testing_images/ux_stories/btn_up_footer.gif">
+           <img src="">
            </details>
 
     3. Get my feedback regarding the score.
 
         1. The anonymous user will get the score immediately after the game whilst the registered user will be able to see more data and details regarding the current score and previous ones.
            <details><summary>Evidence</summary>
-           <img src="assets/images/testing_images/ux_stories/footer_links_responsive.png">
+           <img src="">
            </details>
 
     4. Locate their social media links to see their followings on social media in order to be updated about their latest releases.
 
         1. The social media links are located in the footer together with contact.
            <details><summary>Evidence</summary>
-           <img src="assets/images/testing_images/ux_stories/footer_links_responsive.png">
+           <img src="">
            </details>
 
 -   #### Registered user/ returning/ frequent visitor goals
@@ -54,38 +54,38 @@
 
         1. The registered user is able to see the history of the scores with exact dates.
            <details><summary>Evidence</summary>
-           <img src="assets/images/testing_images/ux_stories/publications.gif">
+           <img src="">
            </details>
 
     6. Be able to play the game and navigate through the pages.
 
         1. The links/buttons are easy to spot and click.
            <details><summary>Evidence</summary>
-           <img src="assets/images/testing_images/ux_stories/footer.png">
+           <img src="">
            </details>
 
     7. Not to be allowed to remove any score (functionality only for admin).
         1. The logged in user can only visualise his/her score.
            <details><summary>Evidence</summary>
-           <img src="assets/images/testing_images/ux_stories/footer.png">
+           <img src="">
            </details>
 
     8. Check out my previous scores and therefore my progress.
         1. The registered user can visualise his/her previous scores.
            <details><summary>Evidence</summary>
-           <img src="assets/images/testing_images/ux_stories/footer.png">
+           <img src="">
            </details>
 
     9. Find the best way to get in contact with the organisation with any question I may have.
         1. Link and contact in the footer.
            <details><summary>Evidence</summary>
-           <img src="assets/images/testing_images/ux_stories/footer.png">
+           <img src="">
            </details>
     
     10. Find the social media links so that I can join and interact with others in the community.
         1. Link and contact in the footer.
            <details><summary>Evidence</summary>
-           <img src="assets/images/testing_images/ux_stories/footer.png">
+           <img src="">
            </details>
        
 
@@ -95,21 +95,21 @@
 
         1. The admin can delete any user.
            <details><summary>Evidence</summary>
-           <img src="assets/images/testing_images/ux_stories/navbar.png">
+           <img src="">
            </details>
 
     12. be able to edit any question.
 
         1. The admin can edit any question.
            <details><summary>Evidence</summary>
-           <img src="assets/images/testing_images/ux_stories/publications.gif">
+           <img src="">
            </details>
 
     13. have unique access to all features.
 
         1. The admin is the only one who can access all features.
            <details><summary>Evidence</summary>
-           <img src="assets/images/testing_images/ux_stories/mailto.gif">
+           <img src="">
            </details>
 
 -   #### Site Owner Goals, Testing
@@ -118,35 +118,35 @@
 
          1. Through the appealing design of the page.
            <details><summary>Evidence</summary>
-           <img src="assets/images/testing_images/ux_stories/collage_site_owner_goal1.png">
+           <img src="">
            </details>
 
      15. be in touch with the users.
 
          1. Through the links in the footer and contact.
            <details><summary>Evidence</summary>
-           <img src="assets/images/testing_images/ux_stories/collage_site_owner_goal2.png">
+           <img src="">
            </details>
 
      16. Make the website as accessible and responsive as possible.
 
          1. The website is responsive on any device and is designed according to the most important UX principles.
            <details><summary>Evidence</summary>
-           <img src="assets/images/testing_images/ux_stories/collage_site_owner_goal3.png">
+           <img src="">
            </details>
 
      17. Gain a better understanding of the audience by checking their feedback both via the website and social networks.
 
          1. Possible via the reviews from ther social medias connected to the page.
            <details><summary>Evidence</summary>
-           <img src="assets/images/testing_images/ux_stories/collage_site_owner_goal4.png">
+           <img src="">
            </details>
 
      18. Use reviews to increase customer satisfaction.
 
          1. Possible via regular updates (FB,Twitter,email) that connected to the social medias interactions give the owner a trend of its audience.
            <details><summary>Evidence</summary>
-           <img src="assets/images/testing_images/ux_stories/collage_site_owner_goal5.png">
+           <img src="">
            </details>
 
 ## User testing 
