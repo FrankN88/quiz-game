@@ -166,22 +166,22 @@ Manual testing was conducted on the following pages in order to assess responsiv
 
 - Hovering over the Navbar will trigger `hover` effect. The page the user is in it is clearly visible by the text decoration.
   <details><summary>Navbar hover</summary>
-    <img src="assets/images/testing_images/ux_stories/link_hover_decoration.gif">
+    <img src="adocs/testing/validators/ux_stories/hover_navbar.gif">
   </details>
 
 - Hovering over Social links will trigger `hover` effect and clicking on them will open a new tab. 
   <details><summary>Hover and open new tab</summary>
-    <img src="assets/images/testing_images/ux_stories/hover_click_social.gif">
+    <img src="docs/testing/validators/ux_stories/hover_footer_links.gif">
   </details>
 
 - Clicking on the logo will take you back to the home page or refresh it.
   <details><summary>Click logo to return to home page</summary>
-    <img src="assets/images/testing_images/ux_stories/back_home_page.gif">
+    <img src="adocs/testing/validators/ux_stories/back_homepage_logo.gif">
   </details>
 
 - Hovering over the email in the footer will trigger `hover` effect and clicking on them will redirect you to the email (mailto).
   <details><summary>Mailto/Callto</summary>
-    <img src="assets/images/testing_images/ux_stories/callto_mailto.gif">
+    <img src="docs/testing/validators/ux_stories/mailto.gif">
   </details>
 
 ### Home Page
