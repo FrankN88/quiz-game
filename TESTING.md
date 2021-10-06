@@ -179,7 +179,7 @@ Manual testing was conducted on the following pages in order to assess responsiv
   </details>
 
 - Hovering over the email in the footer will trigger `hover` effect and clicking on them will redirect you to the email (mailto).
-  <details><summary>Mailto/Callto</summary>
+  <details><summary>Mailto</summary>
     <img src="docs/testing/validators/ux_stories/mailto.gif">
   </details>
 
@@ -189,7 +189,7 @@ Manual testing was conducted on the following elements of the [Home Page](home.h
  - All the elements are responsive (header, footer, cards).
  - The buttons in the Navbar turns into smaller buttons ordered in the same way.
    <details><summary>Home Page</summary>
-    <img src="">
+    <img src="docs/testing/validators/ux_stories/home_responsiveness.gif">
   </details>
  
 ### Login Page
