@@ -274,10 +274,10 @@ app.py | 0 errors | [Results](docs/testing/validators/pylint_validation.png)
 
 Page | Test Detail/Screenshot
 ------------ | -------------
-home.html | [Results](XXXX)
-login.html | [Results](XXXX)
-registration.html | [Results](XXXX)
-404.html | [Results](XXXX)
+home.html | [Results](docs/testing/validators/home_lighthouse.png)
+login.html | [Results](docs/testing/validators/login_lighthouse.png)
+registration.html | [Results](docs/testing/validators/registration_lighthouse.png)
+404.html | [Results](docs/testing/validators/404_lighthouse.png)
 
 <br>
 
