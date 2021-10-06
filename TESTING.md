@@ -27,11 +27,11 @@
 
         1. One card (Play) allows the user to play immediately the quiz game. 
            <details><summary>Evidence</summary>
-           <img src="">
+           <img src="docs/testing/validators/ux_stories/play_card.png">
            </details>
-        2. Another card allows the user to login.
+        2. The other card allows the user to login.
            <details><summary>Evidence</summary>
-           <img src="">
+           <img src="docs/testing/validators/ux_stories/login_card.png">
            </details>
 
     3. Get my feedback regarding the score.
