@@ -198,7 +198,7 @@ Manual testing was conducted on the following elements of the [Login Page](login
  - All the elements are responsive (header, footer, central window).
  - The buttons in the Navbar turns into smaller buttons ordered in the same way.
    <details><summary>Login page</summary>
-    <img src="XXXX">
+    <img src="docs/testing/validators/ux_stories/login_responsiveness.gif">
   </details>
 
 ### Registration Page
