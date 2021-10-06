@@ -262,7 +262,8 @@ app.py | 0 errors | [Results](docs/testing/validators/pylint_validation.png)
 <br>
 
 ### Browser Validation
-- I have used [Lambda Test](https://www.lambdatest.com/) for cross-browser testing among the major browsers. [Click here to check browser tseting](docs/testing/browser_testing)
+- I have used [Lambda Test](https://www.lambdatest.com/) for cross-browser testing among the major browsers. 
+- [Click here to check browser testing](docs/testing/browser_testing)
 
 - **Microsoft Edge**: Website and user stories work as expected. 
 - **Google Chrome**: Website and user stories work as expected. 
