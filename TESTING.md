@@ -118,35 +118,35 @@
 
          1. Through the appealing design of the page.
            <details><summary>Evidence</summary>
-           <img src="">
+           <img src="docs/testing/validators/ux_stories/home.gif">
            </details>
 
      15. be in touch with the users.
 
          1. Through the links in the footer and contact.
            <details><summary>Evidence</summary>
-           <img src="">
+           <img src="docs/testing/validators/ux_stories/footer.png">
            </details>
 
      16. Make the website as accessible and responsive as possible.
 
          1. The website is responsive on any device and is designed according to the most important UX principles.
            <details><summary>Evidence</summary>
-           <img src="">
+           <img src="docs/testing/validators/ux_stories/home.gif">
            </details>
 
      17. Gain a better understanding of the audience by checking their feedback both via the website and social networks.
 
          1. Possible via the reviews from ther social medias connected to the page.
            <details><summary>Evidence</summary>
-           <img src="">
+           <img src="docs/testing/validators/ux_stories/footer.png">
            </details>
 
      18. Use reviews to increase customer satisfaction.
 
          1. Possible via regular updates (FB,Twitter,email) that connected to the social medias interactions give the owner a trend of its audience.
            <details><summary>Evidence</summary>
-           <img src="">
+           <img src="docs/testing/validators/ux_stories/footer.png">
            </details>
 
 ## User testing 
@@ -156,8 +156,7 @@ It was through this testing that the following changes were made:
 - Assessing the combinations of colours and the related contrast.
 - Fonts choice looking smart and not invasive.
 - Improving the overall images quality compared to the initial framework idea.
-- Overall balance in the positioning and sizing of images in the pages. 
-- Dedicating a whole page to the publications with the related links.
+- Overall balance in the positioning and sizing of elements in the pages.
 
 ## Manual Testing  :wrench:
 
