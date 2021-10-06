@@ -21,7 +21,7 @@ The website is designed to be responsive and accessible on all devices being at 
     - [User needs](#user-needs)
   - [Scope](#scope)
   - [Structure](#structure)
-  - [Skeleton](#Skeleton)
+  - [Skeleton and Wireframes](#Skeleton)
 
 2. [DESIGN](#design)
 - [Color scheme](#color-scheme)
@@ -153,7 +153,7 @@ The information architecture was organized in a fluid and clear way in order to 
 
 ---
 
-### Skeleton 
+### Skeleton and Wireframes
 Wireframe mockups were created in Figma Workspace [Click here for final wireframes](docs/wireframes/final_wireframes).
 The mobile view is intentionally made disproportionate to show how the full page might look on a mobile screen.
 Several style changes were made in the final project compared to the inital wireframe on Figma. Those changes were mainly related to colours, font size, positioning on the page; all aimed at providing the best user experience and responsiveness.
