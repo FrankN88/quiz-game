@@ -54,38 +54,38 @@
 
         1. The registered user is able to see the history of the scores with exact dates.
            <details><summary>Evidence</summary>
-           <img src="">
+           <img src="docs/testing/validators/ux_stories/score_dates.png">
            </details>
 
     6. Be able to play the game and navigate through the pages.
 
         1. The links/buttons are easy to spot and click.
            <details><summary>Evidence</summary>
-           <img src="">
+           <img src="docs/testing/validators/ux_stories/cards.png">
            </details>
 
     7. Not to be allowed to remove any score (functionality only for admin).
         1. The logged in user can only visualise his/her score.
            <details><summary>Evidence</summary>
-           <img src="">
+           <img src="docs/testing/validators/ux_stories/score_dates.png">
            </details>
 
     8. Check out my previous scores and therefore my progress.
         1. The registered user can visualise his/her previous scores.
-           <details><summary>Evidence</summary>
-           <img src="">
+           <details><summary></summary>
+           <img src="docs/testing/validators/ux_stories/score_dates.png">
            </details>
 
     9. Find the best way to get in contact with the organisation with any question I may have.
         1. Link and contact in the footer.
            <details><summary>Evidence</summary>
-           <img src="">
+           <img src="docs/testing/validators/ux_stories/footer.png">
            </details>
     
     10. Find the social media links so that I can join and interact with others in the community.
         1. Link and contact in the footer.
            <details><summary>Evidence</summary>
-           <img src="">
+           <img src="docs/testing/validators/ux_stories/footer.png">
            </details>
        
 
@@ -93,23 +93,23 @@
 
     11. be able to delete any users scores.
 
-        1. The admin can delete any user.
+        1. The admin can delete any user | The admin will receive a warning message before deleting.
            <details><summary>Evidence</summary>
-           <img src="">
+           <img src="docs/testing/validators/ux_stories/delete_user.gif">
            </details>
 
     12. be able to edit any question.
 
         1. The admin can edit any question.
            <details><summary>Evidence</summary>
-           <img src="">
+           <img src="docs/testing/validators/ux_stories/edit_questions.png">
            </details>
 
     13. have unique access to all features.
 
         1. The admin is the only one who can access all features.
            <details><summary>Evidence</summary>
-           <img src="">
+           <img src="docs/testing/validators/ux_stories/admin_power.png">
            </details>
 
 -   #### Site Owner Goals, Testing
