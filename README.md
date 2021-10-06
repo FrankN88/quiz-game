@@ -21,7 +21,7 @@ The website is designed to be responsive and accessible on all devices being at 
     - [User needs](#user-needs)
   - [Scope](#scope)
   - [Structure](#structure)
-  - [Skeleton and Wireframes](#Skeleton)
+  - [Skeleton and Wireframes](#Skeleton-and-Wireframes)
 
 2. [DESIGN](#design)
 - [Color scheme](#color-scheme)
