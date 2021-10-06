@@ -207,7 +207,7 @@ Manual testing was conducted on the following elements of the [Registration Page
  - All the elements are responsive (header, footer, central window).
  - The buttons in the Navbar turns into smaller buttons ordered in the same way.
    <details><summary>Registration page</summary>
-    <img src="XXXX">
+    <img src="docs/testing/validators/ux_stories/registration_responsiveness.gif">
   </details>
 
 ### 404 Page
@@ -216,7 +216,7 @@ Manual testing was conducted on the following elements of the [404 Page](404.htm
  - All the elements are responsive (header, footer, text).
  - The buttons in the Navbar turns into smaller buttons ordered in the same way.
    <details><summary>404 Page</summary>
-    <img src="assets/images/testing_images/ux_stories/gif_404_responsive.gif">
+    <img src="docs/testing/validators/ux_stories/404_responsiveness.gif">
    </details>
 
 ## Automated Testing  :wrench:
