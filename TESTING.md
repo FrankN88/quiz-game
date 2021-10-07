@@ -310,7 +310,7 @@ Bug no. | Bug description |  Bug fix |
 
  - <strong>Reading - </strong> The admin can easily read any change that as been made as the application fives feedback after any action. The registered user can see his current scores, older scores and dates. The anonymous user can only see the feedback of the game.
    <details><summary>Evidence</summary>
-    <img src="">
+    <img src="docs/testing/crud/crud_read.png">
   </details>
 
  - <strong>Updating - </strong> The "Updating" function is present in two parts. The admin can update current questions/answers and as well update the status of the user. A user can become admin if necessary or vice versa. This is a positive thing in case the admin needs more help with the maintenance of the website.
