@@ -288,7 +288,12 @@ def results():
     result = []
     for question in questions_list:
         query = {"id_quiz_done": id_quiz_done, "id_question" : str(question['_id'])}
-        answer_done = db_answers_done.find_one(query)
+        
+        # If there are no answers to the questions, enter zero
+        answer_done = 0
+        answer_db = db_answers_done.find_one(query)
+        if answer_db:
+            answer_done = answer_db['answer_number']
 
         # This is the final object shown to the user
         obj = {
@@ -298,7 +303,7 @@ def results():
             "answer3" : question['answer3'],
             "answer4" : question['answer4'],
             "correct" : question['correct'],
-            "answer_done" : answer_done['answer_number']
+            "answer_done" : answer_done
         }
 
         result.append(obj)
