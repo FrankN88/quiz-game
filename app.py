@@ -339,7 +339,7 @@ def all_results():
         result.append(obj)
 
     # print
-    return render_template("all_results.html",results=result)
+    return render_template("all_results.html",results=result, tot_results=len(result))
 
 
 # Questions page (only for admin)
