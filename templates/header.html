@@ -40,11 +40,13 @@
         <div>
             <a href="/"><img alt="Logo" src="static/images/logo.png"></a>
 
-            {% if session.get("username") %}
-                Hi {{session.get("username")}}!
-            {% else %}
-                Hi Guest!
-            {% endif %}
+            <span class="user_info">
+                {% if session.get("username") %}
+                    Hi {{session.get("username")}}!
+                {% else %}
+                    Hi Guest!
+                {% endif %}
+            </span>
         </div>
 
         <div class="ml-auto menu">
