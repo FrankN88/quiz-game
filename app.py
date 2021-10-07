@@ -195,7 +195,7 @@ def quiz():
                 response = 'wrong'
             return render_template("quiz.html",
                 question = question,
-                tot_question = len(questions),
+                tot_question = len(list_questions),
                 answer = answer,
                 response = response)
 
