@@ -303,24 +303,24 @@ Bug no. | Bug description |  Bug fix |
 
 ### CRUD Features (Creation, Reading, Updating and Deleting)
 
- - <strong>Creation:</strong>
+ - <strong>Creation - </strong>
    <details><summary>Evidence</summary>
-    <img src="docs/testing/validators/ux_stories/home_responsiveness.gif">
+    <img src="">
   </details>
 
- - <strong>Reading:</strong>
+ - <strong>Reading - </strong>
    <details><summary>Evidence</summary>
-    <img src="docs/testing/validators/ux_stories/home_responsiveness.gif">
+    <img src="">
   </details>
 
- - <strong>Updating:</strong>
+ - <strong>Updating - </strong>
    <details><summary>Evidence</summary>
-    <img src="docs/testing/validators/ux_stories/home_responsiveness.gif">
+    <img src="">
   </details>
 
- - <strong>Deleting:</strong>
+ - <strong>Deleting - </strong>
    <details><summary>Evidence</summary>
-    <img src="docs/testing/validators/ux_stories/home_responsiveness.gif">
+    <img src="">
   </details>
 
 ***
