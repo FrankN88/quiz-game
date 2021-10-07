@@ -288,15 +288,15 @@ registration.html | [Results](docs/testing/validators/registration_lighthouse.pn
 
 Bug no. | Bug description |  Bug fix |
 ------------ | ------------- | ------------- | 
-1 | The biggest trouble i had was trying to work out why the app (successfully deployed) on Heroku would not launch| after several days of consulting the specific documentation i was suggested to go and check the settings. I neglected to add: PORT 5000 and IP 0.0.0.0
+1 | The biggest trouble i had was trying to work out why the app (successfully deployed) on Heroku would not launch| After several days of consulting the specific documentation i was suggested to go and check the settings. I neglected to add: PORT 5000 and IP 0.0.0.0
 2 | Semicolons left in the app.py by mistake | They have been promptly removed as they were giving error warnings.
-3 | The buttons in the navbar would be all disorganized in the mobile view| Problem solved withn CSS.
+3 | The buttons in the navbar would be all disorganized in the mobile view | Problem solved withn CSS.
 4 | External links would not open in another tab | Problem solved by adding target="_blank" attribute to the anchor tags.
 5 | Field required | During the registration process even an empty form was accepted. I had to add "required" so that the user would not get a positive feedback for registration unless filling all of the necessary fields.
 6 | User Cancellation | The Admin has the possibility to delete the registered user. Initially there was no warning when deleting a user. Now the admin will receive a warning message before proceeding.
 7 | Footer out of place in Ipad view | At the end i have noticed that the footer of all the pages except the home page would not go down in the Tablet view. I have resolved that using the Flex property.
-8 | x | x
-9 | x | x
+8 | The registered user could see his scores (current and old) only after playing | I have added a button in the header that connects to the scores part so that the user does not feel lost on the page.
+9 | The app would crash if the user, playing the game, would click twice on any button of the game window | I have promptly corrected that error that i did not spot until the end.
 10 | x | x
 
 <br>
