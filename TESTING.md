@@ -301,14 +301,14 @@ Bug no. | Bug description |  Bug fix |
 
 <br>
 
-### CRUD Features (Creation, Reading, Updating and Deleting)
+### CRUD Features (Creation, Reading, Updating and Deleting) evidence
 
  - <strong>Creation - </strong> The "Creation" function is present in two parts. The admin can create new questions in the "Manage Questions" section as well as creating new users in the "Manage Users" section.
    <details><summary>Evidence</summary>
     <img src="docs/testing/crud/crud_create.png">
   </details>
 
- - <strong>Reading - </strong>
+ - <strong>Reading - </strong> The admin can easily read any change that as been made as the application fives feedback after any action. The registered user can see his current scores, older scores and dates. The anonymous user can only see the feedback of the game.
    <details><summary>Evidence</summary>
     <img src="">
   </details>
@@ -331,6 +331,11 @@ Bug no. | Bug description |  Bug fix |
  - <strong>Already existing username - </strong> If the username already exists, the user is advised.
    <details><summary>Evidence</summary>
     <img src="docs/testing/other_features/existing_user.png">
+  </details>
+
+ - <strong>Welcome message - </strong> The registered user can see his name on the page.
+   <details><summary>Evidence</summary>
+    <img src="docs/testing/crud/personalised_message.png">
   </details>
 
 ***
