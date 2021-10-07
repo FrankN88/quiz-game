@@ -228,11 +228,13 @@ def quiz():
             db_quiz_done.update_one(query, {"$set": values})
 
             # answer is correct
-            return render_template("quiz.html",
+            return render_template(
+                "quiz.html",
                 question = question,
                 tot_question = len(list_questions),
                 answer = answer,
-                response = 'correct')
+                response = 'correct'
+                )
 
 
         # answer is wrong
