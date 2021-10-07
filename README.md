@@ -545,6 +545,9 @@ Each page of the website features a consistent responsive navigational system:
 - [Stack overflow](https://stackoverflow.com/)
   - To find answers to most common problems.
 
+- [Lambda Test](https://www.lambdatest.com/)
+  - For cross-browser testing among the major browsers.
+
 ---
 
 ## Testing
