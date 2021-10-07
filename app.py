@@ -218,8 +218,13 @@ def quiz():
             query = {"_id": ObjectId(session['id_quiz'])}
             quiz_db = db_quiz_done.find_one(query)
 
+            # If there are no correct, set to zero
+            total_corrects = 0
+            if quiz_db:
+                total_corrects = quiz_db['total_corrects']
+
             # increment correct from total
-            values = {'total_corrects' : quiz_db['total_corrects']+1}
+            values = {'total_corrects' : total_corrects+1}
             db_quiz_done.update_one(query, {"$set": values})
 
             # answer is correct
