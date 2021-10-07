@@ -335,7 +335,12 @@ Bug no. | Bug description |  Bug fix |
 
  - <strong>Welcome message - </strong> The registered user can see his name on the page.
    <details><summary>Evidence</summary>
-    <img src="docs/testing/crud/personalised_message.png">
+    <img src="docs/testing/other_features/personalised_message.png">
+  </details>
+
+ - <strong>Hover effect - </strong> Both the admin and any user always trigger a hover effect that helps with clicling onto the right button.
+   <details><summary>Evidence</summary>
+    <img src="docs/testing/other_features/hover_admin.gif">
   </details>
 
 ***
