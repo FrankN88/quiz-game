@@ -303,9 +303,9 @@ Bug no. | Bug description |  Bug fix |
 
 ### CRUD Features (Creation, Reading, Updating and Deleting)
 
- - <strong>Creation - </strong>
+ - <strong>Creation - </strong> The "Creation" function is present in two parts. The admin can create new questions in the "Manage Questions" section as well as creating new users in the "Manage Users" section.
    <details><summary>Evidence</summary>
-    <img src="">
+    <img src="docs/testing/crud/crud_create.png">
   </details>
 
  - <strong>Reading - </strong>
@@ -318,9 +318,10 @@ Bug no. | Bug description |  Bug fix |
     <img src="">
   </details>
 
- - <strong>Deleting - </strong>
+ - <strong>Deleting - </strong> The "Deleting" function is present in two parts. The admin can delete any question in the "Manage Questions" section and delete users in the "Manage Users" section. 
+ Before deleting any user or question the Admin will receive a warning message advising him of the action. This way the admin will not cancel anything or anyone accidentally. As ad defensive action too, the delete button will change colour when the cursor is over it; it will activate the `Hover` function so that the admin knows exactly which button he/she is about to click.
    <details><summary>Evidence</summary>
-    <img src="">
+    <img src="docs/testing/crud/crud_delete.png">
   </details>
 
 ***
