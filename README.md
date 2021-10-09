@@ -44,7 +44,7 @@ The website is designed to be responsive and accessible on all devices being at 
 - [Testing document](TESTING.md)
 
 7. [DEPLOYMENT](#deployment)
-- [Mongo Database](mongo-database)
+- [Mongo Database](#mongo-database)
 - [Heroku](#heroku)
 - [Github](#github)
   - [Deploying on GitHub Pages](#deploying-on-gitHub-pages)
