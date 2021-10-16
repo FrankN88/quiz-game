@@ -298,7 +298,8 @@ def results():
     # print results
     result = []
     for question in questions_list:
-        query = {"id_quiz_done": id_quiz_done, "id_question": str(question["_id"])}
+        query = {"id_quiz_done": id_quiz_done,
+                 "id_question": str(question["_id"])}
 
         # If there are no answers to the questions, enter zero
         answer_done = 0
@@ -358,7 +359,8 @@ def all_results():
         result.append(obj)
 
     # print
-    return render_template("all_results.html", results=result, tot_results=len(result))
+    return render_template("all_results.html",
+                           results=result, tot_results=len(result))
 
 
 # Questions page (only for admin)
@@ -411,12 +413,12 @@ def questions():
         correct = request.form["correct"]
 
         if (
-            question == ""
-            or answer1 == ""
-            or answer2 == ""
-            or answer3 == ""
-            or answer4 == ""
-            or correct == ""
+            question == "" or
+            answer1 == "" or
+            answer2 == "" or
+            answer3 == "" or
+            answer4 == "" or
+            correct == ""
         ):
             # Check if all fields are filled
 
@@ -561,7 +563,9 @@ def users():
 
             # Edit user
             query = {"_id": ObjectId(id_user)}
-            values = {"username": username, "password": password, "level": level}
+            values = {"username": username,
+                      "password": password,
+                      "level": level}
             db_users.update_one(query, {"$set": values})
 
             # Jump to users page whit message
@@ -635,4 +639,5 @@ def now():
 
 
 if __name__ == "__main__":
-    app.run(host=os.environ.get("IP"), port=int(os.environ.get("PORT")), debug=False)
+    app.run(host=os.environ.get("IP"),
+            port=int(os.environ.get("PORT")), debug=False)
