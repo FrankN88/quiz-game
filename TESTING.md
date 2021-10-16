@@ -261,6 +261,15 @@ app.py | 0 errors | [Results](docs/testing/validators/pylint_validation.png)
 
 <br>
 
+### PEP8 Online Check
+- [PEP8 Online](http://pep8online.com/) was used to analyse the `PYTHON` file.
+
+Page | Result | Test Detail/Screenshot
+------------ | ------------- | -------------
+app.py | 0 errors | [Results](docs/testing/validators/pep8_online.png)
+
+<br>
+
 ### Browser Validation
 - I have used [Lambda Test](https://www.lambdatest.com/) for cross-browser testing among the major browsers. 
 - [Click here to check browser testing](docs/testing/browser_testing)
