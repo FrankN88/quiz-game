@@ -460,13 +460,9 @@ Each page of the website features a consistent responsive navigational system:
 
 ### Features left to implement
 
-- The option for users to personalize their profile with images.
 - The option for users to delete their account from the database.
-- The option to have a few super users.
 - A contact form built in to submit requests.
-- A personalized message to each user is displayed on log in.
 - The user will be able to choose among many subjects (maths, history, physics, chemistry etc) based on his/her inclination.
-- When logged in, the user will be redirected to their profile page with his personalised settings.
 
 ---
 
