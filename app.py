@@ -442,7 +442,29 @@ def show_image(bucket,id_user):
 
     # Return URL of the image
     return url
-    
+
+
+# Delete your image profile
+@app.route("/delete_image_profile")
+def delete_image_profile():
+
+    if session.get("id_user") is None:
+        # check if user are logged
+        return redirect(url_for("login"))
+
+    # get full name of the image
+    namefile = session.get("id_user")+".jpg"
+
+    # delete image from bucket
+    s3_client = boto3.client('s3')
+    response = s3_client.delete_object(
+        Bucket=s3_bucket_name,
+        Key=namefile
+    )
+
+    # return to edit profile page
+    return redirect(url_for("edit_profile"))
+
 
 # Questions page (only for admin)
 @app.route("/questions", methods=["POST", "GET"])
