@@ -327,7 +327,7 @@ Bug no. | Bug description |  Bug fix |
     <img src="docs/testing/crud/crud_edit.png">
    </details>
 
-  - User <strong>Updating - </strong> function: the logged in user can update his/her profile image. Once the new picture is uploaded, it will automatically replace the previous one.
+ - User <strong>Updating - </strong> function: the logged in user can update his/her profile image. Once the new picture is uploaded, it will automatically replace the previous one.
    <details><summary>Evidence</summary>
     <img src="docs/testing/crud/image_crud_functions.png">
    </details>
@@ -339,7 +339,7 @@ Bug no. | Bug description |  Bug fix |
     <img src="docs/testing/crud/crud_delete.png">
    </details>
 
-- User <strong>Deleting - </strong> function: the logged in user can delete his/her profile image.
+ - User <strong>Deleting - </strong> function: the logged in user can delete his/her profile image.
    <details><summary>Evidence</summary>
     <img src="docs/testing/crud/image_crud_functions.png">
    </details>
@@ -363,4 +363,8 @@ Bug no. | Bug description |  Bug fix |
     <img src="docs/testing/other_features/hover_admin.gif">
   </details>
 
+ - <strong>Adding profile image - </strong> The logged in user can add the profile image to his/her page.
+   <details><summary>Evidence</summary>
+    <img src="docs/testing/crud/image_crud_functions.png">
+  </details>
 ***
