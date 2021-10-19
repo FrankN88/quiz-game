@@ -385,8 +385,36 @@ def edit_profile():
         # check if user are logged
         return redirect(url_for("login"))
 
+    # get image if is present
+    contents = show_image(s3_bucket_name,session.get("id_user"))
+
+    # upload file
+    if request.method == "POST":
+        image = request.files['file']
+
+        # check if extension is jpg
+        fileinfo = image.filename.split('.')
+        extension = fileinfo[len(fileinfo)-1]
+        if extension != "jpg":
+            error = "Only jpg images are allowed"
+            return render_template("edit_profile.html", image="", error=error)
+
+        # rename the file with user id
+        filename = session.get("id_user")+'.'+extension
+        image_file = secure_filename(filename)
+
+        # upload image on AWS Bucket
+        try:
+            s3 = boto3.resource('s3')
+            s3.Bucket(s3_bucket_name).put_object(Key=image_file, Body=image)
+        except ClientError:
+            raise Exception("Exception when uploading the image to AWS S3 bucket")
+
+        # return to edit profile page
+        return redirect(url_for("edit_profile"))
+
     # print
-    return render_template("edit_profile.html")
+    return render_template("edit_profile.html", image=contents)
 
 
 # Questions page (only for admin)
