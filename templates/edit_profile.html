@@ -1,0 +1,35 @@
+{% include 'header.html' %}
+
+      <form method="post" class="page_edit_profile" action="#" enctype="multipart/form-data">
+      
+            <h2 class="text-center">Edit your profile image</h2>
+
+            {% if error %}
+              <div class="alert alert-danger" role="alert">
+                {{ error }}
+              </div>
+            {% endif %}
+
+            {% if image %}
+                  <img src={{ image }} style="width: 250px; margin:0px auto; display:block">
+                  <button type="button" onclick="delete_image_profile()" class="btn btn-danger w-100 mt-2">Delete image</button>
+                  <hr>
+            {% endif %}
+            
+            <div class="small text-info mt-3">Upload your file here:</div>
+            <input type="file" name="file">
+            <div class="small text-danger">Only jpg images are allowed</div>
+            <hr>
+            <button class="btn btn-primary w-100 mt-2">Upload file</button>
+
+      </form>
+
+
+      <script type="text/javascript">
+            function delete_image_profile(){
+                  if(!confirm("Delete this image?")) return;
+                  window.open('/delete_image_profile','_self');
+            }
+      </script>
+
+{% include 'footer.html' %}
