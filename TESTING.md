@@ -306,7 +306,7 @@ Bug no. | Bug description |  Bug fix |
 7 | Footer out of place in Ipad view | At the end i have noticed that the footer of all the pages except the home page would not go down in the Tablet view. I have resolved that using the Flex property.
 8 | The registered user could see his scores (current and old) only after playing | I have added a button in the header that connects to the scores part so that the user does not feel lost on the page.
 9 | The app would crash if the user, playing the game, would click twice on any button of the game window | I have promptly corrected that error that i did not spot until the end.
-10 | x | x
+10 | app.py code issues| A fair amount of time has been spent at the end of the project to make the PY code fully PEP8 compliant.
 
 <br>
 
