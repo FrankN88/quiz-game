@@ -374,6 +374,21 @@ def all_results():
                            results=result, tot_results=len(result))
 
 
+# Edit profile page (only for logged user)
+@app.route("/edit_profile", methods=["POST", "GET"])
+def edit_profile():
+    """
+    In this page you can edit your image
+    """
+
+    if session.get("id_user") is None:
+        # check if user are logged
+        return redirect(url_for("login"))
+
+    # print
+    return render_template("edit_profile.html")
+
+
 # Questions page (only for admin)
 @app.route("/questions", methods=["POST", "GET"])
 def questions():
