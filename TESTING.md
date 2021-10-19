@@ -293,6 +293,14 @@ registration.html | [Results](docs/testing/validators/registration_lighthouse.pn
 
 <br>
 
+### AWS Testing
+- The image uploaded by the logged in user in the app has been successfully added in the S3 bucket.
+   <details><summary>Evidence</summary>
+    <img src="docs/deployment/aws/aws_image_uploaded.png">
+   </details>
+
+<br>
+
 ### Bugs found during the testing phase
 
 Bug no. | Bug description |  Bug fix |
