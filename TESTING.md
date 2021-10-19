@@ -329,12 +329,12 @@ Bug no. | Bug description |  Bug fix |
 
  - <strong>Deleting - </strong> The "Deleting" function is present in three parts. The admin can delete any question in the "Manage Questions" section and delete users in the "Manage Users" section; the logged in user can delete his/her profile image. 
  Before deleting any user or question the Admin will receive a warning message advising him of the action. This way the admin will not cancel anything or anyone accidentally. As ad defensive action too, the delete button will change colour when the cursor is over it; it will activate the `Hover` function so that the admin knows exactly which button he/she is about to click.
-   <details><summary>Evidence</summary>
+   - <details><summary>Evidence</summary>
     <img src="docs/testing/crud/crud_delete.png">
-  </details>
-   <details><summary>Evidence 2</summary>
+   </details>
+   - <details><summary>Evidence 2</summary>
     <img src="docs/testing/crud/image_crud_functions.png">
-  </details>
+   </details>
 
 <br>
 
