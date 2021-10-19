@@ -46,6 +46,7 @@ The website is designed to be responsive and accessible on all devices being at 
 7. [DEPLOYMENT](#deployment)
 - [Mongo Database](#mongo-database)
 - [Heroku](#heroku)
+- [Amazon Web Services](#amazon-web-services)
 - [Github](#github)
   - [Deploying on GitHub Pages](#deploying-on-gitHub-pages)
   - [Forking the repository](#forking-the-repository)
@@ -584,6 +585,20 @@ To deploy this application to Heroku, run the following steps.
 ![Deploy](docs/deployment/heroku/manual_deploy.png)
 13. This will trigger a deployment, once the deployment has been successful click on the "Open App" link to open the app.
 14. If you encounter any issues accessing the build logs is a good way to troubleshoot the issue.
+
+### Amazon Web Services
+
+1. Create an account at aws.amazon.com
+2. Open the IAM application and create a new user.
+3. Set the Amazon S3 for the user and note the users AWS ACCESS and SECRET keys.
+4. Open the S3 application and create a new bucket. For the purpose of this application the bucket name is myquizgame.
+![Bucket](docs/deployment/aws/bucket.png)
+5. Consult the [AWS documentation](https://aws.amazon.com/s3/ "Link to AWS Docs") to set it up according to your needs.
+6. The s3 bucket is now updated to be accessed by your application.
+7. In the app.py route update the variables s3_bucket_name and s3_bucket_url with the correct information that you have set up, for example:
+<br>
+<code>s3_bucket_name = "myquizgame"</code><br>
+<code>s3_bucket_url = "https://myquizgame.s3.eu-west-1.amazonaws.com/" </code>
 
 ### Github
 
