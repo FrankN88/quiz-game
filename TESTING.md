@@ -325,13 +325,20 @@ Bug no. | Bug description |  Bug fix |
  - <strong>Updating - </strong> The "Updating" function is present in three parts. The admin can update current questions/answers and as well update the status of the user. A user can become admin if necessary or vice versa. This is a positive thing in case the admin needs more help with the maintenance of the website. In addition to that the logged in user can update his/her profile picture.
    - <details><summary>Evidence</summary>
     <img src="docs/testing/crud/crud_edit.png">
+   </details>
+  - User <strong>Updating - </strong> function: the logged in user can update his/her profile image. Once the new picture is uploaded, it will automatically replace the previous one.
+   - <details><summary>Evidence</summary>
     <img src="docs/testing/crud/image_crud_functions.png">
    </details>
 
- - <strong>Deleting - </strong> The "Deleting" function is present in three parts. The admin can delete any question in the "Manage Questions" section and delete users in the "Manage Users" section; the logged in user can delete his/her profile image. 
+
+ - <strong>Deleting - </strong> The "Deleting" function is present in three parts. The admin can delete any question in the "Manage Questions" section and delete users in the "Manage Users" section. 
  Before deleting any user or question the Admin will receive a warning message advising him of the action. This way the admin will not cancel anything or anyone accidentally. As ad defensive action too, the delete button will change colour when the cursor is over it; it will activate the `Hover` function so that the admin knows exactly which button he/she is about to click.
    - <details><summary>Evidence</summary>
     <img src="docs/testing/crud/crud_delete.png">
+   </details>
+- User <strong>Deleting - </strong> function: the logged in user can delete his/her profile image.
+   - <details><summary>Evidence</summary>
     <img src="docs/testing/crud/image_crud_functions.png">
    </details>
 
