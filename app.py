@@ -2,12 +2,23 @@
 Import modules
 """
 import os
+import boto3
+from botocore.exceptions import ClientError
 from datetime import datetime
 from flask import Flask, redirect, url_for, render_template, request, session
 from flask_pymongo import PyMongo
+from werkzeug.utils import secure_filename
 from bson import ObjectId
 
 app = Flask(__name__)
+
+# AWS S3 variables
+s3_bucket_name = "myquizgame"
+s3_bucket_url = "https://myquizgame.s3.eu-west-1.amazonaws.com/"
+client = boto3.client('s3',
+                      aws_access_key_id=os.environ.get("AWS_ACCESS_KEY_ID"),
+                      aws_secret_access_key=os.environ.get
+                      ("AWS_SECRET_ACCESS_KEY"))
 
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
