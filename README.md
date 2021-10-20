@@ -464,6 +464,7 @@ Each page of the website features a consistent responsive navigational system:
 - The option for users to delete their account from the database.
 - A contact form built in to submit requests.
 - The user will be able to choose among many subjects (maths, history, physics, chemistry etc) based on his/her inclination.
+- The part where the logged in user uploads his/her image can be further developed into a proper profile page.
 
 ---
 

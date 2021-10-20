@@ -371,8 +371,9 @@ Bug no. | Bug description |  Bug fix |
     <img src="docs/testing/other_features/hover_admin.gif">
   </details>
 
- - <strong>Adding profile image - </strong> The logged in user can add the profile image to his/her page.
+ - <strong>Adding profile image - </strong> The logged in user can add the profile image to his/her page. A the moment it is a simple page where the image gets uploaded, just to show the functionality for learning purposes. In the future could be developed into a proper profile page.
    <details><summary>Evidence</summary>
     <img src="docs/testing/crud/image_crud_functions.png">
   </details>
+  
 ***
