@@ -386,7 +386,7 @@ def edit_profile():
         return redirect(url_for("login"))
 
     # get image if is present
-    contents = show_image(s3_bucket_name,session.get("id_user"))
+    contents = show_image(s3_bucket_name, session.get("id_user"))
 
     # upload file
     if request.method == "POST":
@@ -408,7 +408,8 @@ def edit_profile():
             s3 = boto3.resource('s3')
             s3.Bucket(s3_bucket_name).put_object(Key=image_file, Body=image)
         except ClientError:
-            raise Exception("Exception when uploading the image to AWS S3 bucket")
+            raise Exception("Exception when uploading"
+                            "the image to AWS S3 bucket")
 
         # return to edit profile page
         return redirect(url_for("edit_profile"))
@@ -426,13 +427,13 @@ def upload_file(file_name, bucket):
 
 
 # Show image in bucket on AWS
-def show_image(bucket,id_user):
+def show_image(bucket, id_user):
     s3_client = boto3.client('s3')
     url = ""
-    
+
     try:
         for item in s3_client.list_objects(Bucket=bucket)['Contents']:
-            presigned_url = s3_client.generate_presigned_url('get_object', Params = {'Bucket': bucket, 'Key': item['Key']}, ExpiresIn = 100)
+            presigned_url = s3_client.generate_presigned_url('get_object', Params={'Bucket': bucket, 'Key': item['Key']}, ExpiresIn=100)
 
             if presigned_url.find(id_user) != -1:
                 url = presigned_url
