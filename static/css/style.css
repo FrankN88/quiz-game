@@ -1,7 +1,5 @@
-/*
-    BODY
-    General style for all pages and elements
-*/
+
+/* --- Body --- */
 body{
     font-family: "Helvetica";
     flex-direction: column;
@@ -10,10 +8,7 @@ body{
     min-height: 100vh;
 }
 
-/*
-    HEADER
-    Top bar of the all site pages
-*/
+/* --- Header --- */
 header{
     display: flex;
     align-items: center;
@@ -26,10 +21,7 @@ header img{
     height: 40px;
 }
 
-/*
-    HOME
-    The first page
-*/
+/* --- Home --- */
 .logo-home i{
     font-size: 80px;
     color: #ed8f44;
@@ -86,10 +78,7 @@ header img{
     background-image: url(../images/home-login.jpg);
 }
 
-/*
-    FOOTER
-    The last element, present in every page
-*/
+/* --- Footer --- */
 footer{
     margin-top: auto;
 }
@@ -110,10 +99,7 @@ footer a:hover{
     color: #ed8f44;
 }
 
-/*
-    FORM
-    General rules for all forms
-*/
+/* --- Form --- */
 form{
     display: block;
     background: #f8f8f8;
@@ -128,9 +114,7 @@ form h2{
     text-align: center;
 }
 
-/*
-    ADMIN PAGES
-*/
+/* --- Admin Pages --- */
 .admin_container form{
     background: transparent;
     border: none;
@@ -151,10 +135,7 @@ form h2{
     margin-bottom: 10px;
 }
 
-/*
-    QUIZ PAGE
-    Style relative only for question page
-*/
+/* --- Quiz Page --- */
 .form_question h2, .form_question h5{
     text-align: center;
 }
@@ -187,9 +168,7 @@ form h2{
     color: #fff;
 }
 
-/*
-    SCROLL TO TOP
-*/
+/* --- Button up --- */
 .scroll_to_top{
     display: none;
     position: fixed;
@@ -206,11 +185,7 @@ form h2{
     text-align: center;
 }
 
-
-/*
-    RESPONSIVE
-    Hide elements when width is minus than 768px
-*/
+/* --- RESPONSIVE | Hide elements when width is less than 768px --- */
 @media screen and (max-width: 768px) {
 
     header .menu a span, header .user_info{
