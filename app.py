@@ -431,8 +431,13 @@ def upload_file(file_name: str, bucket: str):
     return response
 
 
-# Show image in bucket on AWS
-def show_image(bucket, id_user):
+def show_image(bucket:str, id_user:str) -> str:
+    """
+    In this function you can upload
+    @param bucket: string
+    @param id_user: string
+    @return: string
+    """
     s3_client = boto3.client('s3')
     url = ""
 
@@ -455,7 +460,9 @@ def show_image(bucket, id_user):
 # Delete your image profile
 @app.route("/delete_image_profile")
 def delete_image_profile():
-
+    """
+    In this function delete your profile image
+    """
     if session.get("id_user") is None:
         # check if user are logged
         return redirect(url_for("login"))
