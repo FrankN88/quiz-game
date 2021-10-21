@@ -433,7 +433,11 @@ def show_image(bucket, id_user):
 
     try:
         for item in s3_client.list_objects(Bucket=bucket)['Contents']:
-            presigned_url = s3_client.generate_presigned_url('get_object', Params={'Bucket': bucket, 'Key': item['Key']}, ExpiresIn=100)
+            presigned_url = s3_client.generate_presigned_url(
+                'get_object',
+                 Params={'Bucket': bucket, 'Key': item['Key']},
+                 ExpiresIn=100
+                 )
 
             if presigned_url.find(id_user) != -1:
                 url = presigned_url
