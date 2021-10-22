@@ -8,7 +8,7 @@
 ## Overview
 
 This website is aimed for people who want to play a quizgame as a diversion during their chilling time.
-The website is designed to be responsive and accessible on all devices being at the same time simple but pleasant.
+The website is designed to be responsive and accessible on all devices; being at the same time simple but pleasant.
 
 ---
 
