@@ -58,7 +58,7 @@
            </details>
         2. The registered user is able upload his/her profile image.
            <details><summary>Evidence</summary>
-           <img src="ddocs/testing/crud/image_crud_functions.png">
+           <img src="docs/testing/crud/image_crud_functions.png">
            </details>
 
     6. Be able to play the game and navigate through the pages.
