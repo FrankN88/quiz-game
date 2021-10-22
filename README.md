@@ -98,19 +98,20 @@ The website is designed to be responsive and accessible on all devices; being at
 
 The main goal of this website is to convert visitors into active users so that the website can get as popular as possible.
 All users will be able to play the game. 
-Registered users will be able to see their previous scores and their progress in the game.
+Registered users will be able to see their previous scores, their progress in the game and upload a profile image.
 The website will show a bright palette as well as minimalistic but aesthetically pleasing imagery to invite users to play.
 
 - **Demographic:**
   - Anyone who wants to play a game online.
   - No specific age or background.
-  - Whoever is interested in a culture quiz.
+  - Whoever is interested in an educational style quiz.
 
 The steps a new user would ideally take when landing onto the website are the following:
   - Explore the websites landing page, where the information will explain the user the reason to be of the site.
   - Create a new account.
   - Explore the additional features available to registered users.
   - Play their game and see the results posted on the main page.
+  - Upload a profile image.
   - Log in/out to check the progress.
   - Check out the links in the footer for feedbacks.
 
@@ -136,13 +137,15 @@ This will all be achieved through creating a clear and strong UI focusing on wel
   - Minimal but functional and appealing homepage .
   - Navigation links clearly visible on the top of the website.
   - Responsive navigation bar.
-  - Only allow registered users to create and manage their own account.
+  - Only allow registered users to create and manage their own accounts.
   - Only allow registered users to check out their previous scores.
+  - Only allow registered users to upload their profile picture.
 
 - **Lower priority features that may not be included in the initial release of the website:**
-  - The ability for logged in users to search the websites database.
+  - The ability for logged in users to search the website database.
   - Search bar on the navigation bar so the users have fast access to their scores.
   - Contact section to send an email to the Admin directly from the website.
+  - A full personalised profile page.
 
 ---
 
@@ -157,7 +160,7 @@ The information architecture was organized in a fluid and clear way in order to 
 ### Skeleton and Wireframes
 Wireframe mockups were created in Figma Workspace [Click here for final wireframes](docs/wireframes/final_wireframes).
 The mobile view is intentionally made disproportionate to show how the full page might look on a mobile screen.
-Several style changes were made in the final project compared to the inital wireframe on Figma. Those changes were mainly related to colours, font size, positioning on the page; all aimed at providing the best user experience and responsiveness.
+Several style changes were made in the final project compared to the inital wireframe on [Figma](https://www.figma.com/ "Link to Figma page"). Those changes were mainly related to colours, font size, positioning on the page; all aimed at providing the best user experience and responsiveness.
 
 ---
 
