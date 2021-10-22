@@ -29,7 +29,7 @@
            <details><summary>Evidence</summary>
            <img src="docs/testing/validators/ux_stories/play_card.png">
            </details>
-        2. The other card allows the user to login.
+        2. The other card (Login) allows the user to login.
            <details><summary>Evidence</summary>
            <img src="docs/testing/validators/ux_stories/login_card.png">
            </details>
@@ -50,11 +50,15 @@
 
 -   #### Registered user/ returning/ frequent visitor goals
 
-    5. Be able to visualise my own posts.
+    5. Be able to manage my own posts and upload the profile image.
 
         1. The registered user is able to see the history of the scores with exact dates.
            <details><summary>Evidence</summary>
            <img src="docs/testing/validators/ux_stories/score_dates.png">
+           </details>
+        2. The registered user is able upload his/her profile image.
+           <details><summary>Evidence</summary>
+           <img src="ddocs/testing/crud/image_crud_functions.png">
            </details>
 
     6. Be able to play the game and navigate through the pages.
@@ -375,5 +379,17 @@ Bug no. | Bug description |  Bug fix |
    <details><summary>Evidence</summary>
     <img src="docs/testing/crud/image_crud_functions.png">
   </details>
-  
+
+### Security Features Considered
+
+#### General
+- Use of environment variables <code>.env</code>
+- No Password pushed in the Repository.
+- Hypertext Transfer Protocol Secure (HTTPS) for the Heroku App.
+#### App
+- Only the <strong>ADMIN</strong> has some privileges, such as:
+  - Add/Edit/Remove Questions.
+  - Delete users.
+  - Change privileges to the registered users.
+
 ***
