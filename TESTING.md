@@ -159,7 +159,6 @@ Friends and family members were asked to review the site and documentation to po
 It was through this testing that the following changes were made:
 - Assessing the combinations of colours and the related contrast.
 - Fonts choice looking smart and not invasive.
-- Improving the overall images quality compared to the initial framework idea.
 - Overall balance in the positioning and sizing of elements in the pages.
 
 ## Manual Testing  :wrench:
@@ -167,7 +166,7 @@ It was through this testing that the following changes were made:
 ### Common Elements Testing
 Manual testing was conducted on the following pages in order to assess responsiveness,functionality and usability:
 
-- Hovering over the Navbar will trigger `hover` effect. The page the user is in it is clearly visible by the text decoration.
+- Hovering over the Navbar will trigger `hover` effect.
   <details><summary>Navbar hover</summary>
     <img src="docs/testing/validators/ux_stories/hover_navbar.gif">
   </details>
@@ -309,10 +308,10 @@ registration.html | [Results](docs/testing/validators/registration_lighthouse.pn
 
 Bug no. | Bug description |  Bug fix |
 ------------ | ------------- | ------------- | 
-1 | The biggest trouble i had was trying to work out why the app (successfully deployed) on Heroku would not launch| After several days of consulting the specific documentation i was suggested to go and check the settings. I neglected to add: PORT 5000 and IP 0.0.0.0
+1 | The biggest trouble i had was trying to work out why the app (successfully deployed) on Heroku would not run| After several days of consulting the specific documentation i was suggested to go and check the settings. I neglected to add:  <code>PORT 5000</code>  and  <code>IP 0.0.0.0</code>.
 2 | Semicolons left in the app.py by mistake | They have been promptly removed as they were giving error warnings.
 3 | The buttons in the navbar would be all disorganized in the mobile view | Problem solved withn CSS.
-4 | External links would not open in another tab | Problem solved by adding target="_blank" attribute to the anchor tags.
+4 | External links would not open in another tab | Problem solved by adding <code>target="_blank"</code> attribute to the anchor tags.
 5 | Field required | During the registration process even an empty form was accepted. I had to add "required" so that the user would not get a positive feedback for registration unless filling all of the necessary fields.
 6 | User Cancellation | The Admin has the possibility to delete the registered user. Initially there was no warning when deleting a user. Now the admin will receive a warning message before proceeding.
 7 | Footer out of place in Ipad view | At the end i have noticed that the footer of all the pages except the home page would not go down in the Tablet view. I have resolved that using the Flex property.
