@@ -69,10 +69,10 @@ def login():
             session["level"] = user["level"]
 
             if user["level"] == "admin":
-                # Check level of this user - Jump to page for create questions
+                # Check level of this user - Jump to create questions
                 return redirect(url_for("questions"))
 
-            # Jump to page Quiz
+            # Jump to the quiz page
             return redirect(url_for("quiz"))
 
         # Return error in login page
@@ -99,7 +99,7 @@ def logout():
 @app.route("/registration", methods=["POST", "GET"])
 def registration():
     """
-    Registration page
+    Registration page complete of all required fields
     """
 
     # Variables initialization
@@ -143,7 +143,7 @@ def registration():
         }
         db_users.insert_one(new_user)
 
-        # Jump to login page whit message
+        # Jump to login page with the message
         message = "User created successfully, now you can log in"
         return render_template("registration.html", message=message)
 
@@ -154,13 +154,13 @@ def registration():
 @app.route("/quiz", methods=["POST", "GET"])
 def quiz():
     """
-    Quiz page
+    Quiz page with questions and sessions
     """
 
     if session.get("id_quiz") is None:
-        # If not exist quiz session -> create new one
+        # If quiz session does not exist -> create new one
 
-        # Create new quiz session in db and get the id
+        # Create new quiz session in db and get the the id
         query = {
             "id_user": session.get("id_user"),
             "total_corrects": 0,
@@ -168,7 +168,7 @@ def quiz():
         }
         id_quiz = str(db_quiz_done.insert_one(query).inserted_id)
 
-        # Create session for the quiz starting from the first question
+        # Create a session for the quiz starting from the first question
         session["id_quiz"] = id_quiz
         session["quiz_question"] = 0
 
@@ -182,10 +182,10 @@ def quiz():
     # Get all questions
     list_questions = list(db_questions.find())
 
-    # Check if number of actual question is smoller than total questions
+    # Check if number of actual question is smaller than total questions
     if session.get("quiz_question") >= len(list_questions):
 
-        # Go directly to results page
+        # Go directly to the results page
         return redirect(url_for("results"))
 
     # Get the actual question number
@@ -282,7 +282,7 @@ def quiz():
 @app.route("/results", methods=["POST", "GET"])
 def results():
     """
-    Results page, only for logged users
+    Results page, only for logged in users
     """
 
     id_quiz_done = request.args.get("id_quiz")
@@ -343,7 +343,7 @@ def results():
 @app.route("/404")
 def page404():
     """
-    Page 404
+    Page 404: rendering standard template
     """
     return render_template("404.html")
 
@@ -351,7 +351,7 @@ def page404():
 @app.route("/all_results")
 def all_results():
     """
-    Results page, only for logged users
+    Results page, only for registered users
     """
 
     if session.get("id_user") is None:
@@ -374,7 +374,7 @@ def all_results():
                            results=result, tot_results=len(result))
 
 
-# Edit profile page (only for logged user)
+# Edit profile page (only for registered users)
 @app.route("/edit_profile", methods=["POST", "GET"])
 def edit_profile():
     """
@@ -382,10 +382,10 @@ def edit_profile():
     """
 
     if session.get("id_user") is None:
-        # check if user are logged
+        # check if the user is logged
         return redirect(url_for("login"))
 
-    # get image if is present
+    # get image if it is present
     contents = show_image(s3_bucket_name, session.get("id_user"))
 
     # upload file
@@ -431,7 +431,7 @@ def upload_file(file_name: str, bucket: str):
     return response
 
 
-def show_image(bucket:str, id_user:str) -> str:
+def show_image(bucket: str, id_user: str) -> str:
     """
     In this function you can upload
     @param bucket: string
@@ -461,16 +461,16 @@ def show_image(bucket:str, id_user:str) -> str:
 @app.route("/delete_image_profile")
 def delete_image_profile():
     """
-    In this function delete your profile image
+    In this function you can delete your profile image
     """
     if session.get("id_user") is None:
-        # check if user are logged
+        # check if users are logged
         return redirect(url_for("login"))
 
     # get full name of the image
     namefile = session.get("id_user")+".jpg"
 
-    # delete image from bucket
+    # delete image from the bucket
     s3_client = boto3.client('s3')
     response = s3_client.delete_object(
         Bucket=s3_bucket_name,
@@ -505,11 +505,11 @@ def questions():
     if id_question:
         # Take values if is edit mode
 
-        # Get fields from db
+        # Get fields from the db
         query = {"_id": ObjectId(id_question)}
         result = db_questions.find_one(query)
 
-        # Get fields from Database
+        # Get fields from the db
         fields = {
             "question": result["question"],
             "answer1": result["answer1"],
@@ -560,7 +560,7 @@ def questions():
             }
             db_questions.update_one(query, {"$set": values})
 
-            # Jump to questions page whit message
+            # Jump to questions page with message
             message = "Question edited successfully"
             session["message"] = message
 
