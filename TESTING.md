@@ -382,7 +382,7 @@ Bug no. | Bug description |  Bug fix |
 ### Security Features Considered
 
 #### General
-- Use of environment variables <code>.env</code>
+- Use of <code>.gitignore</code> to hide all secret keys.
 - No Password pushed in the Repository.
 - Hypertext Transfer Protocol Secure (HTTPS) for the Heroku App.
 #### App
